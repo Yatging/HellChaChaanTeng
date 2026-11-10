@@ -11,12 +11,18 @@ header,footer{display:flex;align-items:center;justify-content:space-between;gap:
 .stage{flex:1;min-height:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1.1vw;align-items:center}.lane{position:relative;align-content:center;text-align:center;min-width:0}.setting{width:100%;aspect-ratio:5/3}.setting svg{width:100%;height:100%;display:block}
 .table-label{display:inline-block;margin-top:4px}footer small{background:var(--paper);padding:6px 10px}nav{display:flex;align-items:center;gap:8px}button,a{font:inherit;color:inherit}button{background:transparent;border:1px solid #76998a;padding:4px 8px;cursor:pointer}
 .clean header,.clean footer,.clean .table-label{visibility:hidden}
+.worktop{flex:1;min-height:0;display:grid;place-items:center;container-type:size}.plan{position:relative;width:min(100cqw,120cqh);aspect-ratio:6/5}.kitchen{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.stage{position:absolute;inset:0 auto auto 16.6667%;width:66.6667%;height:20%;gap:0;align-items:stretch}.lane{min-height:0}.setting{position:absolute;inset:0;width:100%;height:100%;aspect-ratio:auto}.table-label{position:absolute;bottom:0;left:50%;transform:translateX(-50%);white-space:nowrap;font-size:clamp(8px,.72vw,13px);padding:2px 5px}.clean .alignment{visibility:hidden}
+.kitchen text{font-family:"Microsoft JhengHei",system-ui,sans-serif;fill:#fff5d8;text-anchor:middle;font-weight:650}
 </style>
 </head>
 <body><main>
 <header><div class="brand"><h1>桌面投影</h1><small>TABLE PROJECTION</small></div><output id="connection" aria-live="polite">等待顧客頁 / Waiting for customer screen</output></header>
+<div class="worktop"><div class="plan">
+<svg class="kitchen" viewBox="0 0 960 800" role="img" aria-label="兩口煮鍋、一口炒鑊與四個原料位 / Two boiling pots, a wok and four ingredient stations"></svg>
 <section class="stage" aria-label="四張餐桌 / Four tables"></section>
+</div></div>
 <footer><small>地獄茶記 · Hell Cha Chaan Teng</small><nav><a href="index.html" target="_blank" rel="noopener">開啟顧客頁 / Customers ↗</a><button id="fullscreen">全屏 F</button><button id="hide">淨畫面 H</button></nav></footer>
 </main>
-<script src="menu-data.js"></script><script src="menu-art.js"></script><script src="table-sync.js"></script><script src="tables.js"></script></body></html>
+<script src="menu-data.js"></script><script src="menu-art.js"></script><script src="table-sync.js"></script><script src="stove-art.js"></script><script src="tables.js"></script></body></html>
 

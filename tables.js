@@ -2,6 +2,8 @@
 (()=>{
   const menu=new Map(TeaMenu.orders.map(o=>[o.key,o]));
   const stage=document.querySelector('.stage'),status=document.querySelector('#connection');
+  const stove=createStoveView(document.querySelector('.kitchen'),menu);
+  let kitchen=null;
   const lanes=Array.from({length:4},(_,i)=>{
     const node=document.createElement('article');
     node.className='lane';
@@ -14,6 +16,7 @@
     if(message?.type!=='tables'||!Array.isArray(message.tables)||message.tables.length!==4)return;
     if(host && message.host!==host && message.hostSince<=hostSince)return;
     host=message.host;hostSince=message.hostSince;lastSeen=performance.now();autoServe=message.autoServe;
+    kitchen=message.kitchen??null;
     for(const lane of lanes)lane.record=message.tables.find(r=>r.slot===lane.slot)??null;
     status.textContent='已連接顧客頁 / Connected';
     paint();
@@ -30,18 +33,20 @@
   function paint(){
     const now=Date.now();
     if(host && performance.now()-lastSeen>9000){
-      host=null;hostSince=0;
+      host=null;hostSince=0;kitchen=null;
       for(const lane of lanes)lane.record=null;
       status.textContent='等待顧客頁 / Waiting for customer screen';
     }
+    stove.paint(kitchen,lanes.map(l=>l.record),now);
     for(const lane of lanes){
       const r=lane.record,order=menu.get(r?.combination);
       const elapsed=r?.servedAt==null?Infinity:Math.max(0,now-r.servedAt);
-      if(!order || r.state!=='satisfied' || elapsed>=TableSync.duration){
+      if(!order || r.state!=='satisfied' || now<r.servedAt || elapsed>=TableSync.duration){
         clear(lane);
         let label='空枱 / Clear';
         if(!host)label='未連接 / Offline';
         else if(r?.state==='waiting')label=autoServe?'等上菜 '+Math.max(0,Math.ceil((r.dueAt-now)/1000))+'s':'待判定 / Waiting';
+        if(r?.state==='satisfied'&&now<r.servedAt)label='送餐中 / Serving';
         setLabel(lane,label);continue;
       }
       if(lane.drawn!==r.orderId){
@@ -58,7 +63,7 @@
       lane.bite.setAttribute('transform','translate('+(-16+234*eaten)+' 0)');
       lane.level.setAttribute('y',String(progress*180));
       const fadeOut=Math.max(0,(elapsed-full-eating-empty)/fade);
-      lane.setting.style.opacity=String(Math.min(1,elapsed/320)*(1-fadeOut));
+      lane.setting.style.opacity=String(1-fadeOut);
       setLabel(lane,progress===1?'空餐具 / Finished':progress>0?'用餐中 / Eating':'已上菜 / Served');
     }
   }
@@ -70,6 +75,18 @@
       channel.postMessage({type:'judge',host,orderId,matched});return true;
     }
   };
+  window.ChaChaanKitchen={
+    state:()=>kitchen?structuredClone(kitchen):null,
+    setMode(mode){
+      if(!host||!['demo','sensor'].includes(mode))return false;
+      channel.postMessage({type:'kitchen-mode',host,mode});return true;
+    },
+    setVesselPresent(stationId,present){
+      if(!host||!['pot-1','pot-2','wok'].includes(stationId)||typeof present!=='boolean')return false;
+      channel.postMessage({type:'vessel',host,stationId,present});return true;
+    }
+  };
+  window.addEventListener('cct:vessel',({detail})=>window.ChaChaanKitchen.setVesselPresent(detail?.stationId,detail?.present));
   if(!channel)status.textContent='請用同一瀏覽器開啟兩個 HTTPS 頁面 / Open both HTTPS pages in one browser';
   request();setInterval(request,1800);
   document.addEventListener('visibilitychange',()=>{if(!document.hidden)request()});

@@ -42,6 +42,27 @@ window.dispatchEvent(new CustomEvent('cct:judge', {
 window.addEventListener('cct:result', e => console.log(e.detail));
 ```
 
+### 灶台投影与 NFC
+
+桌面页内的 U 形区按草图 3 m × 2.5 m 的外轮廓等比缩放。上沿四张客桌由左到右为 1–4，左翼饮品道具位留空，下面依次为 pot-1、pot-2、wok。右翼为通粉、米、蛋和火腿。每张订单按自身配方取料，共用灶位排队。煮锅加工通粉、米和烚蛋，炒镬炒蛋或煎火腿。加腿投两份，走蛋跳过蛋。材料处理好后在出餐位组合，等待放行。自动模式在接单满 60 秒且菜已做好时出餐，送餐动画用 1.8 秒，抵桌后才开始用餐。
+
+默认 demo 假定锅具在位。硬件桥接程序可以在**顾客页或已连线的桌面页**调用下列接口。sensor 模式以各灶位的在位读数为准，初始均为 false。移锅暂停该灶位的进度，放回继续。重复上报同一读数不会重新计时。读卡器断连时，桥接程序应为受影响灶位上报 false。
+
+```js
+const stove = window.ChaChaanKitchen;
+stove.setMode('sensor');
+stove.setVesselPresent('pot-1', true);  // NFC 检出锅
+stove.setVesselPresent('pot-1', false); // 锅已移开
+// 也支持事件形式
+window.dispatchEvent(new CustomEvent('cct:vessel', {
+  detail: {stationId:'wok', present:true}
+}));
+stove.state(); // 模式、灶位、当前工序、进度和已完成的配料
+stove.setMode('demo'); // 恢复自动演示
+```
+
+锅具在位和上菜许可独立。要由装置决定何时上菜，在顾客页调用 `ChaChaanTeng.setAutoServe(false)` 关闭定时上菜，再使用订单编号提交判定；提前收到的成功判定会等菜做好，失败判定会取消该单并释放灶位。桌面页的接口返回值表示消息是否已发出，以 `state()` 读回的顾客页状态为准。
+
 ### 粤语语音
 
 登记回调后，每张新单都会把可朗读的粤语对白和角色资料交给回调。现场可按 `slot` 分配声音，按 `orderId` 在结单时取消过时的音频。首批已入场的顾客可用 `orders()` 读取。回调可返回 Promise，播放失败不会阻塞游戏。

@@ -10,5 +10,5 @@ window.TableSync = (() => {
       return channel;
     }catch{return null}
   }
-  return {timing,duration,connect};
+  return {timing,duration,transfer:1800,connect};
 })();

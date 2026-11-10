@@ -15,6 +15,7 @@
 <aside class="panel" hidden><strong>裝置試單</strong><select id="target" aria-label="選擇站位"></select><button id="yes">符合 ✓</button><button id="no">不符 ×</button><button id="close">關閉</button><p>H 切換投影工具　·　F 全屏</p><output id="message"></output></aside>
 <script src="menu-data.js"></script>
 <script src="table-sync.js"></script>
+<script src="kitchen.js"></script>
 <script>
 'use strict';
 const menu = TeaMenu.orders;
@@ -44,13 +45,16 @@ let serial=0,served=0,voice=null;
 const stage=document.querySelector('.stage'), panel=document.querySelector('.panel');
 const instance=(globalThis.crypto?.randomUUID?.()||Date.now().toString(36));
 let autoServe=true;
+const kitchen=createKitchen(now);
 const hostSince=performance.timeOrigin;
 const tableChannel=TableSync.connect(message=>{
  if(message?.type==='request'){tick();publishTables()}
  if(message?.type==='judge' && message.host===instance)resolveOrder(message.orderId,message.matched);
+ if(message?.host===instance && message.type==='vessel')window.ChaChaanKitchen.setVesselPresent(message.stationId,message.present);
+ if(message?.host===instance && message.type==='kitchen-mode')window.ChaChaanKitchen.setMode(message.mode);
 });
 function publishTables(){
- tableChannel?.postMessage({type:'tables',host:instance,hostSince,autoServe,tables:slots.map(s=>({
+ tableChannel?.postMessage({type:'tables',host:instance,hostSince,autoServe,kitchen:kitchen.snapshot(),tables:slots.map(s=>({
    slot:s.i+1,orderId:s.id,combination:s.order.key,state:s.state,dueAt:s.deadline,servedAt:s.servedAt
  }))});
 }
@@ -72,37 +76,57 @@ function spawn(s){
  s.order=pick(available.filter(o=>o.setCode===set.code));
  s.id=instance+'-'+(++serial);s.state='waiting';s.deadline=now()+60000;s.node.querySelector('.actor').classList.remove('empty');
  s.servedAt=null;
+ s.approved=false;kitchen.add(s.id,s.i+1,s.order);
  render(s);const data=snapshot(s);emit('order',data);publishTables();
  if(voice)Promise.resolve().then(()=>voice(data)).catch(e=>console.warn('Voice adapter',e));
 }
 function resolveOrder(id,matched){
  const s=slots.find(s=>s.id===id);
- if(!s||s.state!=='waiting'||typeof matched!=='boolean')return false;
- s.state=matched?'satisfied':'angry';s.servedAt=matched?now():null;
+ if(!s||s.state!=='waiting'||typeof matched!=='boolean'||(s.approved&&!matched))return false;
+ kitchen.advance();
+ if(matched&&!kitchen.ready(id)){
+   if(s.approved)return false;
+   s.approved=true;return true;
+ }
+ kitchen.remove(id);
+ s.state=matched?'satisfied':'angry';s.servedAt=matched?now()+TableSync.transfer:null;
  s.deadline=matched?s.servedAt+TableSync.duration:now()+1900;
  render(s,matched?pick(['啱晒，多謝！','正呀，唔該！']):pick(['落錯單喇！','唔係我要嗰份！']));
  document.querySelector('#count').textContent=String(++served).padStart(2,'0');emit('result',{...snapshot(s),matched});publishTables();return true;
 }
-function tick(){for(const s of slots){
+function tick(){kitchen.advance();for(const s of slots){
+ if(s.state==='waiting'&&s.approved&&kitchen.ready(s.id)){resolveOrder(s.id,true);continue}
  if(now()<s.deadline){if(s.state==='waiting')s.node.querySelector('.clock').textContent=Math.ceil((s.deadline-now())/1000)+'s';continue}
- if(s.state==='waiting'){if(autoServe)resolveOrder(s.id,true);else s.node.querySelector('.clock').textContent='待判定'}
+ if(s.state==='waiting'){
+   if(autoServe&&kitchen.ready(s.id))resolveOrder(s.id,true);
+   else s.node.querySelector('.clock').textContent=kitchen.ready(s.id)?'待判定':'烹調中';
+ }
  else if(['satisfied','angry'].includes(s.state)){s.state='leaving';s.deadline=now()+800;s.node.querySelector('.actor').classList.add('leaving')}
  else if(s.state==='leaving'){s.state='empty';s.deadline=now()+1500+Math.random()*5500;s.node.querySelector('.actor').className='actor empty'}
  else spawn(s);
 }}
 window.ChaChaanTeng={orders:()=>slots.filter(s=>s.state==='waiting').map(snapshot),resolveOrder,setVoiceAdapter(fn){if(fn!==null&&typeof fn!=='function')throw TypeError('Expected function or null');voice=fn}};
 window.addEventListener('cct:judge',({detail})=>resolveOrder(detail?.orderId,detail?.matched));
+window.ChaChaanKitchen={
+ setMode(value){const ok=kitchen.setMode(value);if(ok)publishTables();return ok},
+ setVesselPresent(stationId,present){const ok=kitchen.setVesselPresent(stationId,present);if(ok)publishTables();return ok},
+ state(){kitchen.advance();return kitchen.snapshot()}
+};
+window.addEventListener('cct:vessel',({detail})=>window.ChaChaanKitchen.setVesselPresent(detail?.stationId,detail?.present));
 window.ChaChaanTeng.setAutoServe=enabled=>{
  if(typeof enabled!=='boolean')throw TypeError('Expected boolean');
  autoServe=enabled;publishTables();
 };
 for(let i=0;i<4;i++){const node=document.createElement('article');node.className='lane';node.innerHTML='<div class="actor"></div><span class="lane-no">枱 '+String(i+1).padStart(2,'0')+'</span>';stage.append(node);const s={i,node,state:'empty'};slots.push(s);spawn(s);document.getElementById('target').add(new Option('枱 '+(i+1),i))}
-setInterval(tick,200);
+setInterval(()=>{tick();publishTables()},250);
 const $=id=>document.getElementById(id);
 function full(){const action=document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen();action.catch(()=>{$('screen').textContent='請按 F11'})}
 function clean(){document.body.classList.toggle('clean');panel.hidden=true}
 $('screen').onclick=full;$('hide').onclick=clean;$('test').onclick=()=>{panel.hidden=!panel.hidden};$('close').onclick=()=>panel.hidden=true;
-for(const [btn,value] of [['yes',true],['no',false]])$(btn).onclick=()=>{$('message').textContent=resolveOrder(slots[$('target').value].id,value)?'已交收':'這位客人正在離場'};
+for(const [btn,value] of [['yes',true],['no',false]])$(btn).onclick=()=>{
+ const slot=slots[$('target').value],accepted=resolveOrder(slot.id,value);
+ $('message').textContent=slot.approved&&slot.state==='waiting'?'已確認，等候煮好':accepted?'已交收':'此單已處理';
+};
 window.addEventListener('keydown',e=>{if(e.repeat||e.ctrlKey||e.metaKey||e.altKey)return;
  if(e.key.toLowerCase()==='f')full();if(e.key.toLowerCase()==='h')clean();if(e.key==='Escape')panel.hidden=true});
 if(new URLSearchParams(location.search).has('projection'))clean();
