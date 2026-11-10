@@ -24,6 +24,10 @@ A 餐为火腿炒蛋通粉，B 餐为火腿炒蛋饭，C 餐为火腿通粉，�
 
 ### 装置判定
 
+**双投影**　用同一台电脑、同一浏览器配置打开一个顾客窗口与一个 [桌面窗口](tables.html)。把两个窗口分别移到对应投影机上，按 F 全屏、H 隐藏界面；也可用 `tables.html?projection` 直接进入透明净画面。桌号从左到右一一对应。两页须使用同一 HTTPS 站点，或同一本地 HTTP 服务。桌面页可先开，也可在用餐中重开，会按顾客页的订单和已过时间恢复。顾客页提供唯一的订单与计时。
+
+默认接单 60 秒自动上菜。整份出品先展示 1.5 秒，接着用 6.5 秒吃完，空餐具停留 1.5 秒，再用 1 秒淡出。顾客等本桌餐具消失后离开。判错的订单不上菜。接入硬件时，在顾客页调用 `ChaChaanTeng.setAutoServe(false)` 关闭自动上菜；使用下方 `resolveOrder` 接口，或在桌面页读取 `ChaChaanTables.orders()`，再调用 `ChaChaanTables.judge(orderId, matched)` 将布尔判定传回顾客页。顾客页只接受仍在等待的订单。传入 `setAutoServe(true)` 可恢复演示。
+
 每次入场触发 `cct:order`。载入后接入的控制器可调用 `orders()` 获取正在等待的订单。每单包含 `slot`（1 至 4）、`orderId`、`customer`、`text`、`requirements`（饮食需求标签）和 `dueAt`（演示截止时间，Unix 毫秒）。
 
 ```js

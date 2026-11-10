@@ -11,9 +11,10 @@
 </style>
 <main><header><div class="brand"><h1>地獄茶記</h1><span class="latin">HELL CHA CHAAN TENG</span></div><div class="status"><b class="dot">●</b> 水吧開檔　<span id="count">00</span> 單已交收</div></header>
 <section class="stage" aria-label="四個顧客站位"></section>
-<footer><small>堂食　/　DINE IN</small><div class="tools"><a class="menu-link" href="menu.html" target="_blank" rel="noopener">餐牌 Menu ↗</a><button id="test">試單</button><button id="screen">全屏 F</button><button id="hide">淨畫面 H</button></div></footer></main>
+<footer><small>堂食　/　DINE IN</small><div class="tools"><a class="menu-link" href="tables.html" target="_blank" rel="noopener">桌面投影 Tables ↗</a><a class="menu-link" href="menu.html" target="_blank" rel="noopener">餐牌 Menu ↗</a><button id="test">試單</button><button id="screen">全屏 F</button><button id="hide">淨畫面 H</button></div></footer></main>
 <aside class="panel" hidden><strong>裝置試單</strong><select id="target" aria-label="選擇站位"></select><button id="yes">符合 ✓</button><button id="no">不符 ×</button><button id="close">關閉</button><p>H 切換投影工具　·　F 全屏</p><output id="message"></output></aside>
 <script src="menu-data.js"></script>
+<script src="table-sync.js"></script>
 <script>
 'use strict';
 const menu = TeaMenu.orders;
@@ -42,6 +43,17 @@ const slots=[],now=()=>Date.now(),pick=a=>a[Math.floor(Math.random()*a.length)];
 let serial=0,served=0,voice=null;
 const stage=document.querySelector('.stage'), panel=document.querySelector('.panel');
 const instance=(globalThis.crypto?.randomUUID?.()||Date.now().toString(36));
+let autoServe=true;
+const hostSince=performance.timeOrigin;
+const tableChannel=TableSync.connect(message=>{
+ if(message?.type==='request'){tick();publishTables()}
+ if(message?.type==='judge' && message.host===instance)resolveOrder(message.orderId,message.matched);
+});
+function publishTables(){
+ tableChannel?.postMessage({type:'tables',host:instance,hostSince,autoServe,tables:slots.map(s=>({
+   slot:s.i+1,orderId:s.id,combination:s.order.key,state:s.state,dueAt:s.deadline,servedAt:s.servedAt
+ }))});
+}
 function snapshot(s){return {slot:s.i+1,orderId:s.id,text:s.order.text,english:s.order.english,setCode:s.order.setCode,modifier:s.order.modifier,drink:s.order.drink,temperature:s.order.temperature,drinkPrep:s.order.drinkPrep,combination:s.order.key,eggStyle:s.order.eggStyle,ingredients:{...s.order.ingredients},requirements:[...s.order.requirements],customer:s.person[0],dueAt:s.deadline,state:s.state}}
 function emit(name,data){window.dispatchEvent(new CustomEvent('cct:'+name,{detail:data}))}
 function render(s,reply=''){
@@ -59,25 +71,31 @@ function spawn(s){
  const set=pick(TeaMenu.sets.filter(set=>available.some(o=>o.setCode===set.code)));
  s.order=pick(available.filter(o=>o.setCode===set.code));
  s.id=instance+'-'+(++serial);s.state='waiting';s.deadline=now()+60000;s.node.querySelector('.actor').classList.remove('empty');
- render(s);const data=snapshot(s);emit('order',data);
+ s.servedAt=null;
+ render(s);const data=snapshot(s);emit('order',data);publishTables();
  if(voice)Promise.resolve().then(()=>voice(data)).catch(e=>console.warn('Voice adapter',e));
 }
 function resolveOrder(id,matched){
  const s=slots.find(s=>s.id===id);
  if(!s||s.state!=='waiting'||typeof matched!=='boolean')return false;
- s.state=matched?'satisfied':'angry';s.deadline=now()+1900;
+ s.state=matched?'satisfied':'angry';s.servedAt=matched?now():null;
+ s.deadline=matched?s.servedAt+TableSync.duration:now()+1900;
  render(s,matched?pick(['啱晒，多謝！','正呀，唔該！']):pick(['落錯單喇！','唔係我要嗰份！']));
- document.querySelector('#count').textContent=String(++served).padStart(2,'0');emit('result',{...snapshot(s),matched});return true;
+ document.querySelector('#count').textContent=String(++served).padStart(2,'0');emit('result',{...snapshot(s),matched});publishTables();return true;
 }
 function tick(){for(const s of slots){
  if(now()<s.deadline){if(s.state==='waiting')s.node.querySelector('.clock').textContent=Math.ceil((s.deadline-now())/1000)+'s';continue}
- if(s.state==='waiting')resolveOrder(s.id,true);
+ if(s.state==='waiting'){if(autoServe)resolveOrder(s.id,true);else s.node.querySelector('.clock').textContent='待判定'}
  else if(['satisfied','angry'].includes(s.state)){s.state='leaving';s.deadline=now()+800;s.node.querySelector('.actor').classList.add('leaving')}
  else if(s.state==='leaving'){s.state='empty';s.deadline=now()+1500+Math.random()*5500;s.node.querySelector('.actor').className='actor empty'}
  else spawn(s);
 }}
 window.ChaChaanTeng={orders:()=>slots.filter(s=>s.state==='waiting').map(snapshot),resolveOrder,setVoiceAdapter(fn){if(fn!==null&&typeof fn!=='function')throw TypeError('Expected function or null');voice=fn}};
 window.addEventListener('cct:judge',({detail})=>resolveOrder(detail?.orderId,detail?.matched));
+window.ChaChaanTeng.setAutoServe=enabled=>{
+ if(typeof enabled!=='boolean')throw TypeError('Expected boolean');
+ autoServe=enabled;publishTables();
+};
 for(let i=0;i<4;i++){const node=document.createElement('article');node.className='lane';node.innerHTML='<div class="actor"></div><span class="lane-no">枱 '+String(i+1).padStart(2,'0')+'</span>';stage.append(node);const s={i,node,state:'empty'};slots.push(s);spawn(s);document.getElementById('target').add(new Option('枱 '+(i+1),i))}
 setInterval(tick,200);
 const $=id=>document.getElementById(id);

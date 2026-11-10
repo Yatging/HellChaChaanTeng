@@ -16,10 +16,13 @@ const ham=path('M-35 -9Q-40 -17 -29 -21L21 -31Q29 -32 34 -27L43 -13Q47 -6 37 -3L
 +path('M-37 -14Q-40 -21 -29 -25L21 -35Q29 -36 34 -31L42 -18Q46 -11 36 -8L-16 6Q-24 8 -28 0Z','#f0ad9b')
 +path('M-31 -17q1 -4 8 -5l41 -9','none','#ffe1c2',2);
 const pasta=path('M-12 -6Q-10 9 1 9Q10 9 14 -3L8 -7Q3 3 0 2Q-4 2 -4 -8Z','#f6d58d','#8b7044',1.3)+oval(-8,-7,4,2,'#af8650','#8b7044',1)+oval(11,-5,3.5,1.8,'#ad804c','#8b7044',1);
-function soup(egg,extraHam){
-  const bowl=path('M21 104Q28 147 77 159L82 167Q112 175 141 166L145 159Q188 145 198 105Z','#c0d6bd')
+function soupBowl(fill){
+  return path('M21 104Q28 147 77 159L82 167Q112 175 141 166L145 159Q188 145 198 105Z','#c0d6bd')
     +path('M30 118Q106 160 190 118M43 134Q104 166 178 136','none','#5b8979',3)
-    +oval(110,102,89,34,'#fff3d8')+oval(110,103,82,27,'#deb578','#64775f',1.4);
+    +oval(110,102,89,34,'#fff3d8')+oval(110,103,82,27,fill,'#64775f',1.4);
+}
+function soup(egg,extraHam){
+  const bowl=soupBowl('#deb578');
   const noodles=[[58,97,20],[81,88,-16],[107,90,18],[137,88,-12],[163,98,16],[49,108,20],[72,115,-15],[97,120,7],[122,118,-20],[147,112,15],[173,109,-10]]
     .map(([x,y,a])=>place(pasta,x,y,.74,a)).join('');
   const strips=[[-2,0],[4,7],[10,13]].map(([x,y])=>place(path('M-30 -3L26 -8L32 -2L-25 4Z','#efaa99','#a56359',1.3),86+x,91+y,1,-12)).join('');
@@ -87,5 +90,27 @@ function serving(order){
   const food=dish(order);
   return order.beverage?image(place(food,0,0,1.06)+place(beverage(order.beverage),166,6,.96),true):image(food);
 }
-return {serving,food:order=>image(dish(order)),drink:b=>image(beverage(b))};
+function emptyGlass(water){
+  const y=water?73:57;
+  return path('M65 '+y+'Q109 '+(y-17)+' 155 '+y+'L145 164Q110 181 75 164Z','#e1eddf')
+    +oval(110,y,45,10,'none')+path('M77 89l6 56 M80 151l1 8 M83 162q28 10 54 0','none','#9bb7aa',2);
+}
+// Keep the crockery in place while revealing it beneath the disappearing food.
+function tableSetting(order,slot){
+  const foodId='food-bites-'+slot,liquidId='liquid-level-'+slot;
+  const clips='<defs><clipPath id="'+foodId+'"><path class="bite-edge" d="M0 -5 Q14 20 1 40T4 76Q20 90 3 106T5 142Q18 156 2 176T3 225H460V-5Z"/></clipPath>'+
+    '<clipPath id="'+liquidId+'"><rect class="drink-level" x="0" y="0" width="220" height="225"/></clipPath></defs>';
+  const emptyDish=order.ingredients.macaroni?soupBowl('#dce0c8'):plate;
+  const food=emptyDish+'<g clip-path="url(#'+foodId+')">'+dish(order)+'</g>';
+  const b=order.beverage;
+  let art=food;
+  if(b){
+    const emptyCup=b.temperature==='hot'?cup('#ddd9bb',b.drink==='coffee'?'#b5cbb3':'#f0e5c9',b.drink==='lemonTea'?'#bd8953':'#537b66'):emptyGlass(b.drink==='water');
+    const drink=emptyCup+'<g clip-path="url(#'+liquidId+')">'+beverage(b)+'</g>';
+    art=place(food,0,0,1.06)+place(drink,166,6,.96);
+  }
+  const box=b?'0 0 366.67 220':'-73.33 0 366.67 220';
+  return '<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="'+box+'">'+clips+art+'</svg>';
+}
+return {serving,food:order=>image(dish(order)),drink:b=>image(beverage(b)),tableSetting};
 })();
