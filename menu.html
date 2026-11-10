@@ -17,13 +17,16 @@ h1,h2,h3,p{margin:0}.title{margin:30px 0 20px;align-items:baseline;justify-conte
 .subhead{border-top:4px double var(--ink);margin:32px 0 12px;padding-top:16px;align-items:baseline;flex-wrap:wrap}.subhead h2 span{font:italic 1.3rem Georgia,serif}.caption{color:#4f6557}
 .gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.asset{margin:0;border:1px solid var(--line);background:var(--paper)}.asset img{display:block;width:100%;height:clamp(120px,14vw,180px);object-fit:contain;background:#e5ebda}.asset-foot{padding:12px;align-items:start;flex-wrap:wrap}.asset-foot small{display:block;font-family:Georgia,serif}.asset-foot a{color:var(--red)}.note{border-top:1px dashed var(--line);padding:8px 12px;font-size:.83rem;line-height:1.45}
 @media(max-width:740px){.grid{grid-template-columns:1fr}.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}nav div{gap:10px}.subhead{gap:6px}}@media(max-width:400px){.asset-foot{display:grid}}
+.meal-art{margin:14px 0 0;border:0}.meal-art img{height:clamp(130px,13vw,175px)}.meal-art .asset-foot{align-items:center;padding:6px 0}.meal-art .asset-foot small{display:inline;font:inherit}.meal-art .asset-foot b{font-weight:500}.meal-art .asset-foot small:before{content:" / "}.meal-art .asset-foot{font-size:.83rem}
+@media(min-width:741px){#drinks .gallery{grid-template-columns:repeat(4,minmax(0,1fr))}}
 </style>
 </head>
 <body><main>
-<nav><strong>地獄茶記</strong><div><a href="#textures">道具貼圖 / Textures ↓</a><a href="index.html">投影遊戲 / Game ↗</a></div></nav>
+<nav><strong>地獄茶記</strong><div><a href="#drinks">飲品 / Drinks ↓</a><a href="#textures">道具貼圖 / Textures ↓</a><a href="index.html">投影遊戲 / Game ↗</a></div></nav>
 <header class="title"><h1>常餐牌</h1><span class="en" lang="en">Set Menu</span></header>
 <p class="service"><strong>每枱先上水，再上餸。A、B、C 餐最後上飲品；D 餐上餸即齊。</strong><span lang="en">Serve water at every table first, then food. Finish sets A–C with the ordered drink. Set D is complete after the food.</span></p>
 <section class="grid" aria-label="套餐 / Set meals"></section>
+<section id="drinks"><header class="subhead"><h2>飲品 <span lang="en">Drinks</span></h2><p class="caption">透明 PNG · 768 × 768 px</p></header><div class="gallery"></div></section>
 <section id="textures"><header class="subhead"><h2>道具貼圖 <span lang="en">Kitchen textures</span></h2><p class="caption">透明 PNG · 768 × 768 px</p></header><div class="gallery"></div></section>
 </main>
 <template id="set-card"><article class="card"><header class="card-head"><b class="letter"></b><div><h2></h2><p class="en" lang="en"></p></div></header>
@@ -46,6 +49,9 @@ for(const set of sets){
   card.querySelector('.letter').textContent=set.code;
   card.querySelector('h2').textContent=set.zh;
   card.querySelector('.en').textContent=set.en;
+  const mealArt=textureFigure('set-'+set.code.toLowerCase(),[set.zh,set.en],['標準出品','Standard serving']);
+  mealArt.classList.add('meal-art');
+  card.querySelector('.card-head').after(mealArt);
   const variants=orders.filter(o=>o.setCode===set.code);
   card.querySelector('.recipe').textContent=portions(variants[0])+(set.drink?' · 配飲品 / Choice of drink':'');
   const modifier=card.querySelector('.modifier'),drink=card.querySelector('.drink');
@@ -68,17 +74,24 @@ const textures=[
   {key:'pot',names:['煮鍋','Boiling pot'],note:'×2 · 烚通粉、煮飯、烚蛋 / Boil macaroni, rice or eggs.'},
   {key:'wok',names:['炒鑊','Wok'],note:'×1 · 用鑊鏟炒蛋 / Scramble eggs with the spatula.'}
 ];
-for(const {key,names,note} of textures){
+function textureFigure(key,names,caption=names){
   const fig=document.createElement('figure');
   fig.className='asset';
   const url='assets/'+key+'.png';
   fig.innerHTML='<img width="768" height="768"><figcaption class="asset-foot"><div><b></b><small lang="en"></small></div><a>↓ 下載 / Save PNG</a></figcaption>';
   const img=fig.querySelector('img'),link=fig.querySelector('a');
   img.src=url;img.alt=names.join(' / ');
-  fig.querySelector('b').textContent=names[0];fig.querySelector('small').textContent=names[1];
+  fig.querySelector('b').textContent=caption[0];fig.querySelector('small').textContent=caption[1];
   link.href=url;link.download=key+'.png';link.setAttribute('aria-label',names.join(' / ')+' — 下載 / Save PNG');
+  return fig;
+}
+for(const [key,names] of Object.entries(drinks)){
+  document.querySelector('#drinks .gallery').append(textureFigure(key,[drinkLabels[key],names[1]]));
+}
+for(const {key,names,note} of textures){
+  const fig=textureFigure(key,names);
   if(note){const p=document.createElement('p');p.className='note';p.textContent=note;fig.append(p)}
-  document.querySelector('.gallery').append(fig);
+  document.querySelector('#textures .gallery').append(fig);
 }
 </script></body></html>
 
