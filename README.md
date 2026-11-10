@@ -8,11 +8,15 @@
 
 四种食材是生通粉、生米、火腿和生蛋。菜单的贴图区提供这四种道具、煮锅和炒镬的独立透明 PNG。离线使用时请同时保留 assets 文件夹。
 
+离线餐牌还需要同目录的 `menu-art.js` 和 `menu-ui.js`。餐卡可按当前选择导出透明 PNG，页面底部列出全部有效组合。奶茶、咖啡、柠檬茶各有热饮和冻饮，另可分别选茶走、飞沙走奶或加柠。适用的套餐可将加腿与走蛋或转烚蛋叠加。
+
 A 餐为火腿炒蛋通粉，B 餐为火腿炒蛋饭，C 餐为火腿通粉，均可配奶茶、咖啡、柠檬茶或水。D 餐为火腿炒蛋。每桌先上水，再上菜，A–C 餐最后上所点饮品。菜单可切换每款餐支持的改配。
 
 订单提供 `ingredients`（macaroni、rice、ham、egg 的份数，省略表示零）、`eggStyle`（scrambled、boiled 或 null）、`drink`（milkTea、coffee、lemonTea、water 或 null）、套餐编号和要求标签。通粉和饭须煮熟。所有订单的 table-water 表示先上水，与 drink 独立。传感器可结合份数、熟度、饮品及上菜顺序判定，再回传结果。
 
 ### 现场使用
+
+投影订单还提供 `temperature`（hot、iced 或 null）、`drinkPrep`（regular、condensed、black、extraLemon 或 null）以及 `combination`（与餐牌组合图下载文件名对应，省略 .png）。清水不指定温度，D 餐没有配饮。
 
 建议先用 16:9 画面试投。按 **F** 进入全屏，按 **H** 隐藏操作栏和店牌，再按一次恢复。通过网页服务器打开时，可在网址末尾加 `?projection` 直接进入净画面。透明页面可用于 OBS 浏览器源叠加。普通浏览器在实体投影时会自行填充透明区域，现场可用 OBS 将透明区域合成到黑底。
 

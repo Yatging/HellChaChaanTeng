@@ -42,7 +42,7 @@ const slots=[],now=()=>Date.now(),pick=a=>a[Math.floor(Math.random()*a.length)];
 let serial=0,served=0,voice=null;
 const stage=document.querySelector('.stage'), panel=document.querySelector('.panel');
 const instance=(globalThis.crypto?.randomUUID?.()||Date.now().toString(36));
-function snapshot(s){return {slot:s.i+1,orderId:s.id,text:s.order.text,english:s.order.english,setCode:s.order.setCode,modifier:s.order.modifier,drink:s.order.drink,eggStyle:s.order.eggStyle,ingredients:{...s.order.ingredients},requirements:[...s.order.requirements],customer:s.person[0],dueAt:s.deadline,state:s.state}}
+function snapshot(s){return {slot:s.i+1,orderId:s.id,text:s.order.text,english:s.order.english,setCode:s.order.setCode,modifier:s.order.modifier,drink:s.order.drink,temperature:s.order.temperature,drinkPrep:s.order.drinkPrep,combination:s.order.key,eggStyle:s.order.eggStyle,ingredients:{...s.order.ingredients},requirements:[...s.order.requirements],customer:s.person[0],dueAt:s.deadline,state:s.state}}
 function emit(name,data){window.dispatchEvent(new CustomEvent('cct:'+name,{detail:data}))}
 function render(s,reply=''){
  const who=s.node.querySelector('.actor');who.className='actor '+(s.state==='waiting'?'':s.state);
@@ -55,7 +55,9 @@ function render(s,reply=''){
 function spawn(s){
  const others=slots.filter(o=>o!==s&&o.state!=='empty');
  s.person=pick(cast.filter(p=>p!==s.person&&!others.some(o=>o.person===p)));
- s.order=pick(menu.filter(o=>o!==s.order&&!others.some(q=>q.order===o)));
+ const available=menu.filter(o=>o!==s.order&&!others.some(q=>q.order===o));
+ const set=pick(TeaMenu.sets.filter(set=>available.some(o=>o.setCode===set.code)));
+ s.order=pick(available.filter(o=>o.setCode===set.code));
  s.id=instance+'-'+(++serial);s.state='waiting';s.deadline=now()+60000;s.node.querySelector('.actor').classList.remove('empty');
  render(s);const data=snapshot(s);emit('order',data);
  if(voice)Promise.resolve().then(()=>voice(data)).catch(e=>console.warn('Voice adapter',e));
