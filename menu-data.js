@@ -2,7 +2,7 @@
 window.TeaMenu = (() => {
   const stock = {macaroni:['生通粉','Dry macaroni'],rice:['生米','Uncooked rice'],ham:['火腿','Ham'],egg:['生雞蛋','Raw egg']};
   const drinks = {milkTea:['奶茶','Milk tea'],coffee:['咖啡','Coffee'],lemonTea:['檸檬茶','Lemon tea'],water:['清水','Water']};
-  const temperatures = {hot:['熱','Hot'],iced:['凍','Iced']};
+  const temperatures = {hot:['熱','Hot']};
   const preparations = {
     regular:['照舊','Regular'],
     condensed:['茶走','Condensed milk tea'],

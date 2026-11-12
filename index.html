@@ -54,7 +54,7 @@ const tableChannel=TableSync.connect(message=>{
  if(message?.host===instance && message.type==='kitchen-mode')window.ChaChaanKitchen.setMode(message.mode);
 });
 function publishTables(){
- tableChannel?.postMessage({type:'tables',host:instance,hostSince,autoServe,kitchen:kitchen.snapshot(),tables:slots.map(s=>({
+ tableChannel?.postMessage({type:'tables',host:instance,hostSince,sentAt:now(),autoServe,kitchen:kitchen.snapshot(),tables:slots.map(s=>({
    slot:s.i+1,orderId:s.id,combination:s.order.key,state:s.state,dueAt:s.deadline,servedAt:s.servedAt
  }))});
 }

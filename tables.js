@@ -14,6 +14,10 @@
   let host=null,hostSince=0,lastSeen=0,autoServe=true;
   const channel=TableSync.connect(message=>{
     if(message?.type!=='tables'||!Array.isArray(message.tables)||message.tables.length!==4)return;
+    // Convert the host clock into this computer's local timeline.
+    const offset=Number.isFinite(message.sentAt)?Date.now()-message.sentAt:0;
+    message.tables=message.tables.map(r=>({...r,dueAt:r.dueAt+offset,servedAt:r.servedAt==null?null:r.servedAt+offset}));
+    if(message.kitchen)message.kitchen={...message.kitchen,at:message.kitchen.at+offset};
     if(host && message.host!==host && message.hostSince<=hostSince)return;
     host=message.host;hostSince=message.hostSince;lastSeen=performance.now();autoServe=message.autoServe;
     kitchen=message.kitchen??null;

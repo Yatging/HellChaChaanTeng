@@ -77,7 +77,7 @@ for(const set of sets){
   function update(refreshStyles=false){
     if(refreshStyles)fillSelect(prep,styles[drink.value],preparations);
     const custom=set.drink && drink.value!=='water';
-    temp.parentElement.hidden=prep.parentElement.hidden=!custom;
+    temp.parentElement.hidden=true;prep.parentElement.hidden=!custom;
     current=variants.find(o=>o.modifier===mod.value && o.drink===(set.drink?drink.value:null)
       && o.temperature===(custom?temp.value:null) && o.drinkPrep===(set.drink?prep.value:null));
     img.src=MenuArt.serving(current);img.alt=current.english;
