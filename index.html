@@ -1,133 +1,20 @@
-<!doctype html>
-<html lang="zh-HK">
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>地獄茶記 · Hell Cha Chaan Teng</title>
-<style>
-:root{--ink:#183c34;--cream:#fff5d8;--jade:#89c69b;--red:#bb4735;font-family:"Microsoft JhengHei","PingFang HK",system-ui,sans-serif;color:var(--ink);background:transparent}
-*{box-sizing:border-box}body{margin:0;background:transparent}main{height:100svh;min-height:300px;display:flex;flex-direction:column;padding:3vh 2.6vw 2vh}header,footer{display:flex;align-items:center;justify-content:space-between;gap:1vw}header{align-items:flex-start}.brand,.status,.tools,.lane-no{background:var(--ink);color:var(--cream)}.brand{padding:.7em 1em;border-left:6px solid var(--jade)}h1{font-size:clamp(17px,2.4vw,48px);line-height:1;margin:0 0 .22em;letter-spacing:.12em}.latin,small,.status,button,.lane-no{font:600 clamp(9px,.85vw,17px)/1.4 ui-monospace,monospace;letter-spacing:.08em}.latin{color:#bedabf}.status{padding:9px 14px;border-radius:2px}.dot{color:#b4ed9e}
-.stage{flex:1;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1.1vw;align-items:end;padding:3vh 0 4vh;min-height:0}.lane{text-align:center;min-width:0;position:relative}.actor{display:flex;flex-direction:column;align-items:center;transform-origin:center bottom;animation:enter .48s ease-out}.bubble{background:var(--cream);border:3px solid var(--ink);color:var(--ink);text-align:left;position:relative;width:100%;padding:.65vw .75vw .85vw;box-shadow:3px 3px 0 var(--ink);margin-bottom:1.8vh}.bubble:after{content:"";position:absolute;left:48%;bottom:-9px;width:12px;height:12px;background:inherit;border-right:3px solid var(--ink);border-bottom:3px solid var(--ink);transform:rotate(45deg)}.ticket{display:flex;justify-content:space-between;border-bottom:1px dashed #859485;margin-bottom:.5em;padding-bottom:.3em;font:700 clamp(8px,.8vw,16px)/1.2 monospace}.words{font-size:clamp(13px,1.83vw,38px);font-weight:850;line-height:1.24;min-height:2.55em;display:flex;align-items:center;text-wrap:balance}.portrait{width:100%;height:min(43vh,27vw);overflow:visible;filter:drop-shadow(1px 2px 0 #fff7dc)}.lane-no{display:inline-block;padding:3px 10px;letter-spacing:.14em;border-radius:2px}.tools{display:flex;align-items:center;padding:4px;gap:4px}button{cursor:pointer;color:var(--cream);background:var(--ink);border:1px solid #76998a;padding:6px 10px}button:hover,button:focus-visible{background:#39705d}footer>small{background:var(--cream);padding:5px 9px}.satisfied .bubble{background:#c5edb1}.angry .bubble{background:#ffbc9e}.leaving{animation:exit .8s ease-in forwards}.angry .portrait{animation:shake .16s alternate 5}.satisfied .portrait{animation:bounce .35s alternate 2}.clean header,.clean footer{visibility:hidden}.panel{position:fixed;z-index:2;bottom:8vh;right:3vw;padding:1em;background:var(--cream);border:3px solid var(--ink);box-shadow:4px 4px 0 var(--ink)}.panel>*{margin:4px}select{font-size:16px}.panel p{font-size:14px}.empty{visibility:hidden}
-@keyframes enter{from{opacity:0;transform:translateY(14%)}}@keyframes exit{to{opacity:0;transform:translateX(45%)}}@keyframes shake{to{transform:rotate(4deg)}}@keyframes bounce{to{transform:translateY(-8px)}}@media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important}}
-.menu-link{color:var(--cream);font-size:clamp(11px,.92vw,18px);padding:4px 8px}.translation{font:600 clamp(10px,.95vw,20px)/1.2 system-ui;margin-top:.35em}.translation:empty{display:none}
-</style>
-<main><header><div class="brand"><h1>地獄茶記</h1><span class="latin">HELL CHA CHAAN TENG</span></div><div class="status"><b class="dot">●</b> 水吧開檔　<span id="count">00</span> 單已交收</div></header>
-<section class="stage" aria-label="四個顧客站位"></section>
-<footer><small>堂食　/　DINE IN</small><div class="tools"><a class="menu-link" href="tables.html" target="_blank" rel="noopener">桌面投影 Tables ↗</a><a class="menu-link" href="menu.html" target="_blank" rel="noopener">餐牌 Menu ↗</a><button id="test">試單</button><button id="screen">全屏 F</button><button id="hide">淨畫面 H</button></div></footer></main>
-<aside class="panel" hidden><strong>裝置試單</strong><select id="target" aria-label="選擇站位"></select><button id="yes">符合 ✓</button><button id="no">不符 ×</button><button id="close">關閉</button><p>H 切換投影工具　·　F 全屏</p><output id="message"></output></aside>
-<script src="menu-data.js"></script>
-<script src="table-sync.js"></script>
-<script src="kitchen.js"></script>
-<script>
-'use strict';
-const menu = TeaMenu.orders;
-// Original cut-paper portraits: polygon silhouettes, two-tone inks and personal accessories.
-const cast=[
- ['阿姐','market','#dc6b46','#813c39','#db9c78','bun'],
- ['後生仔','student','#5b9681','#325d62','#edb99a','fringe'],
- ['陳伯','reader','#b5a576','#746b53','#ce946f','grey'],
- ['寫字樓職員','office','#c5d6ca','#628686','#e3ad89','bob'],
- ['送貨師傅','courier','#5c8eb0','#365776','#c88962','cap'],
- ['街坊','shopper','#bc849c','#78556a','#efc3a1','curls'],
- ['女學生','student','#d6a95d','#9a784b','#dfa67c','bob'],
- ['街坊叔叔','reader','#70a39f','#476d70','#edb896','grey']];
-function portrait(person,mood=''){
- const [label,role,shirt,shade,skin,hair]=person, ink='#243733',dark='#403630';
- const poly=(points,fill,stroke=ink)=>'<polygon points="'+points+'" fill="'+fill+'" stroke="'+stroke+'" stroke-width="1.2" stroke-linejoin="round"/>';
- const line=(d,c=ink,w=1.6)=>'<path d="'+d+'" fill="none" stroke="'+c+'" stroke-width="'+w+'" stroke-linecap="square"/>';
- const box=(x,y,w,h,c)=>'<rect x="'+x+'" y="'+y+'" width="'+w+'" height="'+h+'" fill="'+c+'"/>';
- const haircuts={bun:'30,32 27,20 31,11 40,7 42,2 50,2 54,8 59,11 62,25 57,29 54,16 47,20 32,21',fringe:'28,31 25,17 32,9 46,6 59,12 63,23 56,28 52,18 44,22 41,18 31,24',grey:'28,30 26,19 32,11 42,8 53,10 60,17 60,30 55,26 53,19 44,16 33,20 32,30',bob:'25,46 24,19 30,10 43,6 55,10 61,20 63,46 55,43 53,22 45,17 36,22 31,27 34,44',cap:'24,22 27,12 34,7 49,7 58,15 69,18 68,22 54,22 53,18 32,23 30,32',curls:'25,35 21,28 23,21 21,17 26,12 30,12 32,7 39,8 43,4 48,7 54,7 57,12 62,14 60,20 64,26 60,31 54,28 53,20 45,19 39,22 32,21 30,34'};
- const acc={office:poly('36,50 43,54 40,61 38,58',shade)+poly('43,54 48,50 47,60',shade)+line('M42 60v34',shade),reader:line('M33 26h9v6h-9z M46 26h9v6h-9z M42 28h4',ink,1)+poly('49,78 69,75 70,92 50,96','#eee4c5')+line('M53 82l12 -2 M54 86l9 -2',shade),student:line('M28 50l5 34 M56 50l-6 34',dark,4)+box(35,88,17,8,'#ded7b5'),market:poly('25,57 32,59 35,69 53,69 56,57 60,55 58,98 28,98','#5e8077')+box(36,78,15,9,'#90aa89'),courier:box(24,63,36,4,'#deb957')+box(45,72,11,7,shade),shopper:line('M56 52l-25 40',dark,3)+poly('19,87 36,84 39,99 20,102','#e5bd75')};
- return '<svg class="portrait" viewBox="12 0 66 150" role="img" aria-label="'+label+'">'+
- poly('29,92 57,92 60,137 47,138 42,107 39,137 25,137',role==='office'?'#3b5256':'#485e63')+line('M43 103l-6 30','#78918b',2)+poly('25,134 39,134 39,143 18,143 18,139',dark)+poly('47,135 60,134 66,139 66,143 47,143',dark)+
- poly('31,48 38,44 48,44 56,49 63,52 70,78 62,82 56,67 59,97 26,97 28,67 21,81 14,77 21,55',shirt)+poly('16,76 23,78 21,91 16,94 13,89',skin)+poly('61,79 69,76 72,88 68,92 64,90',skin)+poly('37,39 49,39 50,47 44,53 36,48',skin)+poly('29,19 35,13 50,13 58,21 57,34 50,43 39,44 32,38',skin)+poly(haircuts[hair],hair==='grey'?'#a79f90':hair==='cap'?shade:dark)+box(35,27,2.5,3,ink)+box(49,27,2.5,3,ink)+line('M44 29l-2 5h3','#ad735b',1)+line(mood==='angry'?'M38 39l5 -2 4 2 M34 24l5 2 M48 26l5 -2':mood==='satisfied'?'M38 36q5 8 11 -1':'M40 38h6',dark)+acc[role]+'</svg>';
-}
-const slots=[],now=()=>Date.now(),pick=a=>a[Math.floor(Math.random()*a.length)];
-let serial=0,served=0,voice=null;
-const stage=document.querySelector('.stage'), panel=document.querySelector('.panel');
-const instance=(globalThis.crypto?.randomUUID?.()||Date.now().toString(36));
-let autoServe=true;
-const kitchen=createKitchen(now);
-const hostSince=performance.timeOrigin;
-const tableChannel=TableSync.connect(message=>{
- if(message?.type==='request'){tick();publishTables()}
- if(message?.type==='judge' && message.host===instance)resolveOrder(message.orderId,message.matched);
- if(message?.host===instance && message.type==='vessel')window.ChaChaanKitchen.setVesselPresent(message.stationId,message.present);
- if(message?.host===instance && message.type==='kitchen-mode')window.ChaChaanKitchen.setMode(message.mode);
-});
-function publishTables(){
- tableChannel?.postMessage({type:'tables',host:instance,hostSince,sentAt:now(),autoServe,kitchen:kitchen.snapshot(),tables:slots.map(s=>({
-   slot:s.i+1,orderId:s.id,combination:s.order.key,state:s.state,dueAt:s.deadline,servedAt:s.servedAt
- }))});
-}
-function snapshot(s){return {slot:s.i+1,orderId:s.id,text:s.order.text,english:s.order.english,setCode:s.order.setCode,modifier:s.order.modifier,drink:s.order.drink,temperature:s.order.temperature,drinkPrep:s.order.drinkPrep,combination:s.order.key,eggStyle:s.order.eggStyle,ingredients:{...s.order.ingredients},requirements:[...s.order.requirements],customer:s.person[0],dueAt:s.deadline,state:s.state}}
-function emit(name,data){window.dispatchEvent(new CustomEvent('cct:'+name,{detail:data}))}
-function render(s,reply=''){
- const who=s.node.querySelector('.actor');who.className='actor '+(s.state==='waiting'?'':s.state);
- who.innerHTML='<div class="bubble"><div class="ticket"><span>堂食 '+String(s.i+1).padStart(2,'0')+'</span><span class="clock"></span></div><div class="words"></div><div class="translation" lang="en"></div></div>'+portrait(s.person,s.state);
- who.querySelector('.words').textContent=reply||s.order.text;
- who.querySelector('.translation').textContent=reply?'':s.order.english;
- who.querySelector('.clock').textContent=reply?'✓':Math.ceil((s.deadline-now())/1000)+'s';
- if(s.state==='angry')who.querySelector('.clock').textContent='×';
-}
-function spawn(s){
- const others=slots.filter(o=>o!==s&&o.state!=='empty');
- s.person=pick(cast.filter(p=>p!==s.person&&!others.some(o=>o.person===p)));
- const available=menu.filter(o=>o!==s.order&&!others.some(q=>q.order===o));
- const set=pick(TeaMenu.sets.filter(set=>available.some(o=>o.setCode===set.code)));
- s.order=pick(available.filter(o=>o.setCode===set.code));
- s.id=instance+'-'+(++serial);s.state='waiting';s.deadline=now()+60000;s.node.querySelector('.actor').classList.remove('empty');
- s.servedAt=null;
- s.approved=false;kitchen.add(s.id,s.i+1,s.order);
- render(s);const data=snapshot(s);emit('order',data);publishTables();
- if(voice)Promise.resolve().then(()=>voice(data)).catch(e=>console.warn('Voice adapter',e));
-}
-function resolveOrder(id,matched){
- const s=slots.find(s=>s.id===id);
- if(!s||s.state!=='waiting'||typeof matched!=='boolean'||(s.approved&&!matched))return false;
- kitchen.advance();
- if(matched&&!kitchen.ready(id)){
-   if(s.approved)return false;
-   s.approved=true;return true;
- }
- kitchen.remove(id);
- s.state=matched?'satisfied':'angry';s.servedAt=matched?now()+TableSync.transfer:null;
- s.deadline=matched?s.servedAt+TableSync.duration:now()+1900;
- render(s,matched?pick(['啱晒，多謝！','正呀，唔該！']):pick(['落錯單喇！','唔係我要嗰份！']));
- document.querySelector('#count').textContent=String(++served).padStart(2,'0');emit('result',{...snapshot(s),matched});publishTables();return true;
-}
-function tick(){kitchen.advance();for(const s of slots){
- if(s.state==='waiting'&&s.approved&&kitchen.ready(s.id)){resolveOrder(s.id,true);continue}
- if(now()<s.deadline){if(s.state==='waiting')s.node.querySelector('.clock').textContent=Math.ceil((s.deadline-now())/1000)+'s';continue}
- if(s.state==='waiting'){
-   if(autoServe&&kitchen.ready(s.id))resolveOrder(s.id,true);
-   else s.node.querySelector('.clock').textContent=kitchen.ready(s.id)?'待判定':'烹調中';
- }
- else if(['satisfied','angry'].includes(s.state)){s.state='leaving';s.deadline=now()+800;s.node.querySelector('.actor').classList.add('leaving')}
- else if(s.state==='leaving'){s.state='empty';s.deadline=now()+1500+Math.random()*5500;s.node.querySelector('.actor').className='actor empty'}
- else spawn(s);
-}}
-window.ChaChaanTeng={orders:()=>slots.filter(s=>s.state==='waiting').map(snapshot),resolveOrder,setVoiceAdapter(fn){if(fn!==null&&typeof fn!=='function')throw TypeError('Expected function or null');voice=fn}};
-window.addEventListener('cct:judge',({detail})=>resolveOrder(detail?.orderId,detail?.matched));
-window.ChaChaanKitchen={
- setMode(value){const ok=kitchen.setMode(value);if(ok)publishTables();return ok},
- setVesselPresent(stationId,present){const ok=kitchen.setVesselPresent(stationId,present);if(ok)publishTables();return ok},
- state(){kitchen.advance();return kitchen.snapshot()}
-};
-window.addEventListener('cct:vessel',({detail})=>window.ChaChaanKitchen.setVesselPresent(detail?.stationId,detail?.present));
-window.ChaChaanTeng.setAutoServe=enabled=>{
- if(typeof enabled!=='boolean')throw TypeError('Expected boolean');
- autoServe=enabled;publishTables();
-};
-for(let i=0;i<4;i++){const node=document.createElement('article');node.className='lane';node.innerHTML='<div class="actor"></div><span class="lane-no">枱 '+String(i+1).padStart(2,'0')+'</span>';stage.append(node);const s={i,node,state:'empty'};slots.push(s);spawn(s);document.getElementById('target').add(new Option('枱 '+(i+1),i))}
-setInterval(()=>{tick();publishTables()},250);
-const $=id=>document.getElementById(id);
-function full(){const action=document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen();action.catch(()=>{$('screen').textContent='請按 F11'})}
-function clean(){document.body.classList.toggle('clean');panel.hidden=true}
-$('screen').onclick=full;$('hide').onclick=clean;$('test').onclick=()=>{panel.hidden=!panel.hidden};$('close').onclick=()=>panel.hidden=true;
-for(const [btn,value] of [['yes',true],['no',false]])$(btn).onclick=()=>{
- const slot=slots[$('target').value],accepted=resolveOrder(slot.id,value);
- $('message').textContent=slot.approved&&slot.state==='waiting'?'已確認，等候煮好':accepted?'已交收':'此單已處理';
-};
-window.addEventListener('keydown',e=>{if(e.repeat||e.ctrlKey||e.metaKey||e.altKey)return;
- if(e.key.toLowerCase()==='f')full();if(e.key.toLowerCase()==='h')clean();if(e.key==='Escape')panel.hidden=true});
-if(new URLSearchParams(location.search).has('projection'))clean();
-</script></html>
+<!doctype html><html lang="zh-HK"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>地獄茶記 · Hell Cha Chaan Teng</title><meta name="description" content="用茶餐廳點單黑話、實體道具與投影互動，體驗一場廚房出餐挑戰。項目介紹、遊戲入口、投影與美術貼圖。"><link rel="stylesheet" href="hub.css">
+<script>if(new URLSearchParams(location.search).has('projection'))location.replace('customers.html'+location.search+location.hash)</script></head>
+<body><nav class="site-nav" aria-label="主導航"><a class="wordmark" href="index.html">地獄茶記<small>HELL CHA<br>CHAAN TENG</small></a><div class="site-links"><a href="index.html" aria-current="page">項目介紹</a><a href="textures.html">貼圖庫</a><a href="menu.html">常餐牌</a><a href="customers.html">顧客遊戲</a></div></nav>
+<main class="shell">
+<section class="hero"><div><span class="eyebrow">實景投影互動裝置 · Interactive installation</span><h1>地獄茶記<span lang="en">Hell Cha Chaan Teng</span></h1><p class="intro">一聲「A 餐，轉烚蛋，加腿，熱茶走」，廚房就要開始轉。讀懂點單黑話，處理原料，趕在客人失去耐性前上菜。</p><p class="english" lang="en">Decode a cha chaan teng order. Cook, plate and serve under pressure. A projection installation about the speed and rhythm of Hong Kong tea restaurants.</p><div class="actions"><a class="button" href="customers.html">進入顧客遊戲</a><a class="button secondary" href="textures.html">審閱與下載貼圖</a></div></div>
+<figure class="hero-art"><img class="room" src="HellChaChaanTeng_ArtPack_2026-11-22/02_Backgrounds/background_customer_four_tables.png" alt="綠色卡座、奶油色牆面與四張空餐桌的茶餐廳"><div class="hero-people" aria-hidden="true"><img src="HellChaChaanTeng_ArtPack_2026-11-22/01_Customers/customer_01_red_polo.png" alt=""><img src="HellChaChaanTeng_ArtPack_2026-11-22/01_Customers/customer_02_newspaper_man.png" alt=""><img src="HellChaChaanTeng_ArtPack_2026-11-22/01_Customers/customer_03_construction_worker.png" alt=""><img src="HellChaChaanTeng_ArtPack_2026-11-22/01_Customers/customer_04_hair_rollers.png" alt=""></div><figcaption class="hero-caption">美術概念 · 顧客、茶餐廳背景與四個出餐位置</figcaption></figure></section>
+<div class="strip"><p>四位客人，同時落單<small>Four customers, four independent orders</small></p><p>四種原料，交叉配餐<small>Macaroni · Rice · Ham · Egg</small></p><p>取料、煮食、上菜、清桌<small>Prepare, cook, serve and clear</small></p></div>
+<section aria-labelledby="entrances"><div class="section-heading"><h2 id="entrances">開檔入口 <small>Explore the project</small></h2><span class="eyebrow">遊戲 · 投影 · 美術審閱</span></div>
+<div class="entry-grid">
+<a class="entry" href="customers.html"><img src="HellChaChaanTeng_ArtPack_2026-11-22/11_Preview/contact_customers.png" alt="八款顧客美術總覽"><div class="entry-copy"><h3>顧客遊戲</h3><p class="english">Customer screen</p><p>四位街坊用中英對照的茶記黑話點單，各自倒數等餐。</p></div></a>
+<a class="entry" href="tables.html"><img src="HellChaChaanTeng_ArtPack_2026-11-22/07_Cooking_States/pot_macaroni_02_cooking.png" alt="鍋中通粉冒泡烹調"><div class="entry-copy"><h3>灶台與餐桌</h3><p class="english">Kitchen & tabletop projection</p><p>完整 U 形布局。觀看取料、烹調、送餐與吃完清桌。</p></div></a>
+<a class="entry" href="menu.html"><img src="HellChaChaanTeng_ArtPack_2026-11-22/03_Food_Only/food_a_regular.png" alt="A 餐火腿炒蛋通粉"><div class="entry-copy"><h3>中英常餐牌</h3><p class="english">Bilingual set menu</p><p>A–D 餐、熱飲與改配，選好後預覽出品並下載組合圖。</p></div></a>
+<a class="entry" href="textures.html"><img class="cover" src="HellChaChaanTeng_ArtPack_2026-11-22/11_Preview/contact_food_drinks.png" alt="餐點與飲品貼圖總覽"><div class="entry-copy"><h3>美術貼圖庫</h3><p class="english">Art library</p><p>150 張 PNG，按分類搜尋、放大審閱，單張或整包下載。</p></div></a>
+<a class="entry" href="tables.html?view=stove"><img src="HellChaChaanTeng_ArtPack_2026-11-22/07_Cooking_States/wok_scrambled_02_cooking.png" alt="炒鑊中的蛋與鑊鏟"><div class="entry-copy"><h3>左側灶台</h3><p class="english">Projector · Stove</p><p>兩口煮鍋與一口炒鑊，食材依菜式處理並移往出餐位。</p></div></a>
+<a class="entry" href="tables.html?view=ingredients"><img src="HellChaChaanTeng_ArtPack_2026-11-22/05_Ingredients_Bulk/ingredient_bulk_macaroni_tray.png" alt="大盤生通粉"><div class="entry-copy"><h3>右側原料</h3><p class="english">Projector · Ingredients</p><p>通粉、米、蛋、火腿四個備料位置，對應實體道具。</p></div></a>
+</div></section>
+<section class="guide"><div><h2>從一張餐單開始</h2><p>玩家以鍋、鑊和杯子回應訂單。每張單包含套餐、蛋的做法、火腿份量與飲品要求；配方完成後，餐點移到對應桌號，逐漸吃完並留下空餐具。</p><p class="english" lang="en">Physical cookware and cups connect orders to the kitchen. The shared state keeps cooking and serving aligned across the projection surfaces.</p></div><div><h2>試投與現場連線</h2><p>先開啟顧客遊戲，再開投影窗口；同一瀏覽器內會自動同步。三台電腦現場使用局域網啟動程式，各自開啟一個投影區域，另保持一個顧客控制頁運行。</p><div class="actions"><a class="button secondary" href="tables.html?view=tables">上方四桌投影</a><a class="button secondary" href="https://github.com/Yatging/HellChaChaanTeng#三台电脑与三路投影" target="_blank" rel="noopener">三機連線說明</a></div><p>目前提供定時演示，並預留 NFC 鍋具在位與訂單判定接口。實體感應器仍需現場聯調。</p></div></section>
+</main><footer class="site-footer"><span>地獄茶記 · Hell Cha Chaan Teng</span><div><a href="textures.html">美術素材</a><a href="https://github.com/Yatging/HellChaChaanTeng">項目代碼</a></div></footer>
+<script src="hub-nav.js"></script></body></html>
+

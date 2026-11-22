@@ -1,10 +1,12 @@
 # 地獄茶記 · Hell Cha Chaan Teng
 
-面向横向投影的四枱粤语点单游戏。用桌面浏览器直接打开同目录的 **index.html** 即开档，角色、对白和动画均可离线运行。
+项目主页为 [index.html](index.html)，汇集项目简介、顾客游戏、菜单、三路投影和贴图库。[textures.html](textures.html) 提供 150 张 PNG 的分类搜索、放大预览、动画播放、单图及整包下载。顾客游戏移至 [customers.html](customers.html)，原 `index.html?projection` 链接自动跳转。完整素材目录及 ZIP 一并提供，贴图库在本地与线上均可使用。
+
+面向横向投影的四枱粤语点单游戏。用桌面浏览器直接打开同目录的 **customers.html** 即开档，角色、对白和动画均可离线运行。
 
 ### 双语餐牌
 
-打开 [常餐牌](menu.html)，点击每款套餐的要求，即可看到顾客对白、英文翻译和该单的实际配料份数。请将 `index.html`、`menu.html` 和 `menu-data.js` 放在同一目录。两个页面共享同一份餐单。
+打开 [常餐牌](menu.html)，点击每款套餐的要求，即可看到顾客对白、英文翻译和该单的实际配料份数。请将 `customers.html`、`menu.html` 和 `menu-data.js` 放在同一目录。两个页面共享同一份餐单。
 
 四种食材是生通粉、生米、火腿和生蛋。菜单的贴图区提供这四种道具、煮锅和炒镬的独立透明 PNG。离线使用时请同时保留 assets 文件夹。
 

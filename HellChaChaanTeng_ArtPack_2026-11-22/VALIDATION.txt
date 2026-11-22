@@ -1,0 +1,4 @@
+Verified PNG files: 150
+8 customers; 18 separate food variants; 7 separate drinks; 4 bulk trays; 15 cooking states; 60 aligned animation frames.
+All current production sprites have non-opaque alpha. Backgrounds and archive keep their original format.
+Every PNG decoded successfully. SHA-256 hashes listed in manifest.json and ASSET_INDEX.csv.

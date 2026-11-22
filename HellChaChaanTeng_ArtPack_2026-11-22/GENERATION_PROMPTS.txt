@@ -1,0 +1,26 @@
+Built-in ImageGen generation prompts
+2026-11-22
+Reference character: customer.zip / 3ebeb3a1-afa4-4e56-923e-3c8bbb1da56b.png
+Reference background: customer.zip / 2c4a81b4-0c8d-4a85-b1a6-cc6fbf166365.png
+
+Shared character prompt
+Use case: stylized-concept. Create ONE standalone transparent PNG customer game sprite. Use reference for exact art language: thick rounded black outline, large rounded head, tiny solid dot eyes, tiny straight mouth, warm peach skin, smooth subtle shading, simple clean friendly cartoon. Match proportions and crop of reference, entire head and upper torso fully visible, centered, generous transparent margin, no background, no text, no ground, no extra person. Distinct clothing without logos.
+
+customer_05_office_woman
+Hong Kong female office worker, straight black chin-length bob hair, thin dark rectangular spectacles, muted teal blouse, cream collar, shoulder bag strap. Front-facing waist-up with hands at sides, neutral small straight mouth.
+
+customer_06_schoolboy
+Hong Kong teenage male school student, neat black fringe, white short sleeved school shirt with a small navy tie, navy backpack straps. Front-facing waist-up, neutral small straight mouth.
+
+customer_07_delivery_man
+Hong Kong delivery worker, short black hair, jade green baseball cap and matching short sleeved uniform, cross-body parcel strap, holding small plain tan parcel at waist. Front-facing waist-up, neutral small straight mouth.
+
+customer_08_grandmother
+Elderly Hong Kong woman, short fluffy grey hair, round spectacles, plum cardigan over pale pink blouse, holding a small red gingham shopping tote at waist. Front-facing waist-up, neutral small straight mouth.
+
+background_customer_four_tables
+Edit this Hong Kong cha chaan teng interior reference into a production 16:9 customer projection background. Preserve nostalgic cream wall, jade green tiles and vinyl booth, green window on left, green pendant lamp and steel tea urns on right. Add FOUR equally spaced EMPTY cream laminate table tops across entire foreground LOWER 28 PERCENT, all clearly visible, generous uncluttered surfaces for projecting one food bowl and cup per guest. Each table front edge parallel to bottom frame, near frontal slightly top-down view. Retain booth behind tables at waist height. Four clear positions behind tables where separate cartoon customer sprites can be overlaid. Empty tables with NO objects, NO food, NO cups, NO people, NO tickets, NO UI. Use warm illustrated polished painterly environment style matching reference. Blank cream sign panels in wood frames, no text. Wide landscape high resolution, opaque background.
+
+Food, ingredients, cooking
+Exported from and extended the project's editable MenuArt illustrations. Transparent PNG renders, 1024 square, unified cookware position across all cooking frames. These assets were drawn deterministically to preserve the existing art language.
+
