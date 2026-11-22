@@ -84,3 +84,10 @@ game.setVoiceAdapter(order => playCustomerVoice(order.text, order.customer));
 // playCustomerVoice 由现场语音系统实现。
 game.setVoiceAdapter(null); // 解除
 ```
+
+### 實體鍋具貼圖 v2
+貼圖庫的「內容投影 v2」提供無鍋體、無鍋沿、無鍋鏟版本。
+每種食材以 00_raw → 16 幀冒泡循環（8 fps，可重播任意時長）→ 02_cooked 播放，
+由外部完成信號直接切熟食圖。通粉增加至 34 個並重疊排列。
+新版包為 HellChaChaanTeng_ArtPack_v2_2026-11-23.zip，
+原漸變動畫與帶鍋版本繼續提供。

@@ -2,11 +2,11 @@
 (()=>{
  const data=window.ArtLibrary,grid=document.querySelector('#asset-grid'),dialog=document.querySelector('#preview');
  const groups=[
- ['all','全部','All'],['01','顧客','Customers'],['02','背景','Backgrounds'],['03','餐點','Food'],['04','飲品','Drinks'],['05','大盤原料','Bulk ingredients'],['06','餐具鍋具','Cookware'],['07','烹飪狀態','Cooking states'],['08','動畫幀','Animation frames'],['09','生熟原料','Raw & cooked'],['10','原圖存檔','Archive'],['11','總覽圖','Contact sheets']
+ ['12','內容投影 v2','Contents only'],['all','全部','All'],['01','顧客','Customers'],['02','背景','Backgrounds'],['03','餐點','Food'],['04','飲品','Drinks'],['05','大盤原料','Bulk ingredients'],['06','餐具鍋具','Cookware'],['07','烹飪狀態','Cooking states'],['08','動畫幀','Animation frames'],['09','生熟原料','Raw & cooked'],['10','原圖存檔','Archive'],['11','總覽圖','Contact sheets']
  ];
  const sources={'imagegen':'新生成 / ImageGen','new-vector-art':'延續既有畫風繪製 / Original illustration style','existing-vector-export':'既有繪圖獨立匯出 / Existing art export','supplied-original':'提供的原圖 / Supplied original','existing-archive':'既有素材存檔 / Existing asset archive','preview':'分組總覽 / Contact sheet'};
  const ingredients={egg:['雞蛋','Egg'],rice:['米飯','Rice'],macaroni:['通粉','Macaroni'],scrambled:['炒蛋','Scrambled egg'],ham:['火腿','Ham']};
- let category='all',timer=null,sequence=[],current=null;
+ let category=new URLSearchParams(location.search).get('category')==='12'?'12':'all',timer=null,sequence=[],current=null;
  const $=s=>document.querySelector(s);
  const url=asset=>data.folder+'/'+asset.file.split('/').map(encodeURIComponent).join('/');
  function names(asset){
@@ -69,18 +69,30 @@
   $('#preview-alpha').textContent=asset.transparent?'透明背景 / Transparent':'完整底圖 / Opaque background';
   $('#preview-source').textContent=sources[asset.group]||asset.group;
   $('#preview-download').href=url(asset);$('#preview-download').download=asset.file.split('/').pop();
-  $('#frame-status').textContent=sequence.length?'第 '+(sequence.indexOf(asset)+1)+' / '+sequence.length+' 幀 · 4 fps':'';
+  const fps=sequence[0]?.animation?.fps||4;
+  $('#frame-status').textContent=sequence.length?(sequence.indexOf(asset)>=0?'第 '+(sequence.indexOf(asset)+1)+' / '+sequence.length+' 幀 · '+fps+' fps': '生料 → 冒泡循環（任意時長）→ 完成'):'';
  }
- function stop(){clearInterval(timer);timer=null;$('#play-animation').textContent='播放動畫 / Play'}
+ function stop(){clearInterval(timer);timer=null;$('#play-animation').textContent=current?.file.startsWith('12_')?'開始冒泡循環 / Start loop':'播放動畫 / Play'}
  function open(asset){
-  stop();sequence=asset.file.startsWith('08_')?assets.filter(a=>a.file.split('/').slice(0,-1).join('/')===asset.file.split('/').slice(0,-1).join('/')):[];
-  $('#animation-controls').hidden=!sequence.length;show(asset);dialog.showModal();$('#close-preview').focus();
+  stop();current=asset;
+  const root=asset.file.split('/').slice(0,2).join('/');
+  sequence=asset.file.startsWith('08_')?assets.filter(a=>a.file.split('/').slice(0,-1).join('/')===asset.file.split('/').slice(0,-1).join('/')):asset.file.startsWith('12_')?assets.filter(a=>a.file.startsWith(root+'/loop/')):[];
+  $('#animation-controls').hidden=!sequence.length;
+  $('#stage-controls').hidden=!asset.file.startsWith('12_')||!sequence.length;
+  show(asset);stop();dialog.showModal();$('#close-preview').focus();
  }
  $('#play-animation').onclick=()=>{
   if(timer){stop();return}
   $('#play-animation').textContent='暫停 / Pause';
-  timer=setInterval(()=>show(sequence[(sequence.indexOf(current)+1)%sequence.length]),250);
+  const fps=sequence[0]?.animation?.fps||4;
+  timer=setInterval(()=>show(sequence[(sequence.indexOf(current)+1)%sequence.length]),1000/fps);
  };
+ for(const [button,file] of [['raw-stage','00_raw.png'],['cooked-stage','02_cooked.png']]){
+  $('#'+button).onclick=()=>{
+   const root=current.file.split('/').slice(0,2).join('/');
+   stop();show(assets.find(a=>a.file===root+'/'+file));
+  };
+ }
  $('#close-preview').onclick=()=>dialog.close();
  dialog.addEventListener('close',stop);
  dialog.addEventListener('click',event=>{if(event.target===dialog){const r=dialog.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)dialog.close()}});

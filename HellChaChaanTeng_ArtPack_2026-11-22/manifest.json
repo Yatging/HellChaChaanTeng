@@ -1,25 +1,124 @@
 [
   {
-    "file": "03_Food_Only/food_a_regular.png",
-    "zh": "A餐 照舊",
-    "en": "A Regular",
-    "group": "existing-vector-export",
+    "file": "01_Customers/customer_01_red_polo.png",
+    "zh": "紅衫街坊",
+    "en": "紅衫街坊",
+    "group": "supplied-original",
     "width": 1024,
-    "height": 1024,
+    "height": 1280,
     "alpha": true,
     "transparent": true,
-    "sha256": "24f24b9a52c6c3d770a342d601cdf8134e8fd3c4da78a33a5600c24656939c72"
+    "sha256": "ca81011b0752ba860fbabcc2f67d6c47103418d3f6d4572d20956c9442a6088a"
   },
   {
-    "file": "03_Food_Only/food_a_no_egg.png",
-    "zh": "A餐 走蛋",
-    "en": "A No egg",
+    "file": "01_Customers/customer_02_newspaper_man.png",
+    "zh": "看報伯伯",
+    "en": "看報伯伯",
+    "group": "supplied-original",
+    "width": 1024,
+    "height": 1280,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "f5d300382108ef59d5cce481c57a087d8422a97c208cf4d45913e437a3e32bd8"
+  },
+  {
+    "file": "01_Customers/customer_03_construction_worker.png",
+    "zh": "建築工人",
+    "en": "建築工人",
+    "group": "supplied-original",
+    "width": 1024,
+    "height": 1280,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "ec7c3f5f3a6d828c86583459b936aad9d0974a6bbeaed4f5abd5115c73673d44"
+  },
+  {
+    "file": "01_Customers/customer_04_hair_rollers.png",
+    "zh": "髮卷街坊",
+    "en": "髮卷街坊",
+    "group": "supplied-original",
+    "width": 1024,
+    "height": 1280,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "94338e5a77e51f3f0cb289814567a1d169506e0745fb251d7cae1c17b93685b4"
+  },
+  {
+    "file": "01_Customers/customer_05_office_woman.png",
+    "zh": "寫字樓女士",
+    "en": "Office worker",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1280,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "4a9a82bdc2f0ef1140ac0da48a6aa5748932b99e921fd0672cbcda570cb8b404"
+  },
+  {
+    "file": "01_Customers/customer_06_schoolboy.png",
+    "zh": "中學生",
+    "en": "Schoolboy",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1280,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "852abd854fcc57b9cc4b31a79b96cceb779eba7f077851ee5d58d8dc6c018eaf"
+  },
+  {
+    "file": "01_Customers/customer_07_delivery_man.png",
+    "zh": "送貨員",
+    "en": "Delivery worker",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1280,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "7cfb0a7f66d1d11e9de47d2b0a16b8cdbca5840557e2802073457693edaec1ef"
+  },
+  {
+    "file": "01_Customers/customer_08_grandmother.png",
+    "zh": "買餸婆婆",
+    "en": "Grandmother",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1280,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "abebc6275118d4de589b9501b3cb5e3f19ed8a4c59760e90a5cf92a2ad85aa5e"
+  },
+  {
+    "file": "02_Backgrounds/background_customer_four_tables.png",
+    "zh": "四客桌背景",
+    "en": "Four customer tables background",
+    "group": "imagegen",
+    "width": 1672,
+    "height": 941,
+    "alpha": false,
+    "transparent": false,
+    "sha256": "3c1382bbaee8ec389b1d6b3cd1bd99753cbe69e958d82c343c985617fa72d043"
+  },
+  {
+    "file": "02_Backgrounds/background_customer_original.png",
+    "zh": "原始顧客背景",
+    "en": "原始顧客背景",
+    "group": "supplied-original",
+    "width": 1672,
+    "height": 941,
+    "alpha": false,
+    "transparent": false,
+    "sha256": "afc89517d9e6074d8dcbdd673eeb9eac8eb29e52dbdfc91117a95b85b65c12a8"
+  },
+  {
+    "file": "03_Food_Only/food_a_boiled_extra_ham.png",
+    "zh": "A餐 轉烚蛋加腿",
+    "en": "A Boiled egg + extra ham",
     "group": "existing-vector-export",
     "width": 1024,
     "height": 1024,
     "alpha": true,
     "transparent": true,
-    "sha256": "271119e9a4b513e9673f59edbff98fc952289c319792dc6a1c32595b5680a5ab"
+    "sha256": "872534ae6228ab403808c9994947c67baf82ea1bc746c019e38cfdcd956c49d9"
   },
   {
     "file": "03_Food_Only/food_a_boiled.png",
@@ -55,37 +154,37 @@
     "sha256": "37bc65b414e927e445df822540b8df4afd74a5d1637703f129532b83558f9d78"
   },
   {
-    "file": "03_Food_Only/food_a_boiled_extra_ham.png",
-    "zh": "A餐 轉烚蛋加腿",
-    "en": "A Boiled egg + extra ham",
+    "file": "03_Food_Only/food_a_no_egg.png",
+    "zh": "A餐 走蛋",
+    "en": "A No egg",
     "group": "existing-vector-export",
     "width": 1024,
     "height": 1024,
     "alpha": true,
     "transparent": true,
-    "sha256": "872534ae6228ab403808c9994947c67baf82ea1bc746c019e38cfdcd956c49d9"
+    "sha256": "271119e9a4b513e9673f59edbff98fc952289c319792dc6a1c32595b5680a5ab"
   },
   {
-    "file": "03_Food_Only/food_b_regular.png",
-    "zh": "B餐 照舊",
-    "en": "B Regular",
+    "file": "03_Food_Only/food_a_regular.png",
+    "zh": "A餐 照舊",
+    "en": "A Regular",
     "group": "existing-vector-export",
     "width": 1024,
     "height": 1024,
     "alpha": true,
     "transparent": true,
-    "sha256": "ec74b0ee19dd4d327d86d32a8b9b50293e4acb9cd995e36d756eb095d4b58ed6"
+    "sha256": "24f24b9a52c6c3d770a342d601cdf8134e8fd3c4da78a33a5600c24656939c72"
   },
   {
-    "file": "03_Food_Only/food_b_no_egg.png",
-    "zh": "B餐 走蛋",
-    "en": "B No egg",
+    "file": "03_Food_Only/food_b_boiled_extra_ham.png",
+    "zh": "B餐 轉烚蛋加腿",
+    "en": "B Boiled egg + extra ham",
     "group": "existing-vector-export",
     "width": 1024,
     "height": 1024,
     "alpha": true,
     "transparent": true,
-    "sha256": "5631db8f9e6ab9ad32c08c1e8f1bc766deca9a4ff44cf915ccdcab6096c0f6e8"
+    "sha256": "89aa49d1c830feed2cd5fab5bd523a69d26b06ff47f060c0b641885502d50095"
   },
   {
     "file": "03_Food_Only/food_b_boiled.png",
@@ -121,26 +220,26 @@
     "sha256": "1ba16ec6ce1eeb00f4f062714eb0dea45a530ae105d918c6990f66461972a39e"
   },
   {
-    "file": "03_Food_Only/food_b_boiled_extra_ham.png",
-    "zh": "B餐 轉烚蛋加腿",
-    "en": "B Boiled egg + extra ham",
+    "file": "03_Food_Only/food_b_no_egg.png",
+    "zh": "B餐 走蛋",
+    "en": "B No egg",
     "group": "existing-vector-export",
     "width": 1024,
     "height": 1024,
     "alpha": true,
     "transparent": true,
-    "sha256": "89aa49d1c830feed2cd5fab5bd523a69d26b06ff47f060c0b641885502d50095"
+    "sha256": "5631db8f9e6ab9ad32c08c1e8f1bc766deca9a4ff44cf915ccdcab6096c0f6e8"
   },
   {
-    "file": "03_Food_Only/food_c_regular.png",
-    "zh": "C餐 照舊",
-    "en": "C Regular",
+    "file": "03_Food_Only/food_b_regular.png",
+    "zh": "B餐 照舊",
+    "en": "B Regular",
     "group": "existing-vector-export",
     "width": 1024,
     "height": 1024,
     "alpha": true,
     "transparent": true,
-    "sha256": "271119e9a4b513e9673f59edbff98fc952289c319792dc6a1c32595b5680a5ab"
+    "sha256": "ec74b0ee19dd4d327d86d32a8b9b50293e4acb9cd995e36d756eb095d4b58ed6"
   },
   {
     "file": "03_Food_Only/food_c_extra_ham.png",
@@ -154,15 +253,26 @@
     "sha256": "37bc65b414e927e445df822540b8df4afd74a5d1637703f129532b83558f9d78"
   },
   {
-    "file": "03_Food_Only/food_d_regular.png",
-    "zh": "D餐 照舊",
-    "en": "D Regular",
+    "file": "03_Food_Only/food_c_regular.png",
+    "zh": "C餐 照舊",
+    "en": "C Regular",
     "group": "existing-vector-export",
     "width": 1024,
     "height": 1024,
     "alpha": true,
     "transparent": true,
-    "sha256": "cf425c31fdde46156eb5dfe5360b005aae74287ea70557342ba1bf7f8c03c463"
+    "sha256": "271119e9a4b513e9673f59edbff98fc952289c319792dc6a1c32595b5680a5ab"
+  },
+  {
+    "file": "03_Food_Only/food_d_boiled_extra_ham.png",
+    "zh": "D餐 轉烚蛋加腿",
+    "en": "D Boiled egg + extra ham",
+    "group": "existing-vector-export",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "e94050bee565d9c30b0d413aa5da61140b37a517b26c24a57aaf425306b2ebfe"
   },
   {
     "file": "03_Food_Only/food_d_boiled.png",
@@ -187,48 +297,15 @@
     "sha256": "47d2d0d3bda58345470b587b54af81a4335c9c38bdea130c26543a96df7f0bf8"
   },
   {
-    "file": "03_Food_Only/food_d_boiled_extra_ham.png",
-    "zh": "D餐 轉烚蛋加腿",
-    "en": "D Boiled egg + extra ham",
+    "file": "03_Food_Only/food_d_regular.png",
+    "zh": "D餐 照舊",
+    "en": "D Regular",
     "group": "existing-vector-export",
     "width": 1024,
     "height": 1024,
     "alpha": true,
     "transparent": true,
-    "sha256": "e94050bee565d9c30b0d413aa5da61140b37a517b26c24a57aaf425306b2ebfe"
-  },
-  {
-    "file": "04_Drinks_Only/drink_milkTea_hot_regular.png",
-    "zh": "熱奶茶",
-    "en": "Hot milk tea",
-    "group": "existing-vector-export",
-    "width": 1024,
-    "height": 1024,
-    "alpha": true,
-    "transparent": true,
-    "sha256": "5b3fbb450fe9b01a2f1c705c90d55f54e4d6cb8b65ea1a4f6ff1c7f15ad1923e"
-  },
-  {
-    "file": "04_Drinks_Only/drink_milkTea_hot_condensed.png",
-    "zh": "熱茶走",
-    "en": "Hot condensed milk tea",
-    "group": "existing-vector-export",
-    "width": 1024,
-    "height": 1024,
-    "alpha": true,
-    "transparent": true,
-    "sha256": "84520e4db30612b8749a7f5687ccbfe87944e83f68eebbfbf4ce7402ae59aed9"
-  },
-  {
-    "file": "04_Drinks_Only/drink_coffee_hot_regular.png",
-    "zh": "熱咖啡",
-    "en": "Hot coffee",
-    "group": "existing-vector-export",
-    "width": 1024,
-    "height": 1024,
-    "alpha": true,
-    "transparent": true,
-    "sha256": "e6ffbffb78139918968ece978621df61d281f3dfb983bbbb2a61d39e2f972aa6"
+    "sha256": "cf425c31fdde46156eb5dfe5360b005aae74287ea70557342ba1bf7f8c03c463"
   },
   {
     "file": "04_Drinks_Only/drink_coffee_hot_black.png",
@@ -242,15 +319,15 @@
     "sha256": "32369ff3ceb58ed44537837a5d5b55e1e85627299fe5d6605c5253b243bc571d"
   },
   {
-    "file": "04_Drinks_Only/drink_lemonTea_hot_regular.png",
-    "zh": "熱檸檬茶",
-    "en": "Hot lemon tea",
+    "file": "04_Drinks_Only/drink_coffee_hot_regular.png",
+    "zh": "熱咖啡",
+    "en": "Hot coffee",
     "group": "existing-vector-export",
     "width": 1024,
     "height": 1024,
     "alpha": true,
     "transparent": true,
-    "sha256": "a99d7dd3d0c97b797114fe4729683dde298d8cc092cb015bf97f34c1cf47e4fa"
+    "sha256": "e6ffbffb78139918968ece978621df61d281f3dfb983bbbb2a61d39e2f972aa6"
   },
   {
     "file": "04_Drinks_Only/drink_lemonTea_hot_extraLemon.png",
@@ -264,6 +341,39 @@
     "sha256": "64a74af811f1ad6e7ab4fc46ec675f4c87700722bf4dde0646cb27fe05c06340"
   },
   {
+    "file": "04_Drinks_Only/drink_lemonTea_hot_regular.png",
+    "zh": "熱檸檬茶",
+    "en": "Hot lemon tea",
+    "group": "existing-vector-export",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "a99d7dd3d0c97b797114fe4729683dde298d8cc092cb015bf97f34c1cf47e4fa"
+  },
+  {
+    "file": "04_Drinks_Only/drink_milkTea_hot_condensed.png",
+    "zh": "熱茶走",
+    "en": "Hot condensed milk tea",
+    "group": "existing-vector-export",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "84520e4db30612b8749a7f5687ccbfe87944e83f68eebbfbf4ce7402ae59aed9"
+  },
+  {
+    "file": "04_Drinks_Only/drink_milkTea_hot_regular.png",
+    "zh": "熱奶茶",
+    "en": "Hot milk tea",
+    "group": "existing-vector-export",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "5b3fbb450fe9b01a2f1c705c90d55f54e4d6cb8b65ea1a4f6ff1c7f15ad1923e"
+  },
+  {
     "file": "04_Drinks_Only/drink_water_regular.png",
     "zh": "清水",
     "en": "Water",
@@ -273,105 +383,6 @@
     "alpha": true,
     "transparent": true,
     "sha256": "22f2624a2d03b06cbb0b4290fb5cfdd5b52981da6913a429177d325ccd556768"
-  },
-  {
-    "file": "09_Raw_And_Cooked/ingredient_egg_raw.png",
-    "zh": "生原料 egg",
-    "en": "Raw egg",
-    "group": "new-vector-art",
-    "width": 1024,
-    "height": 1024,
-    "alpha": true,
-    "transparent": true,
-    "sha256": "916ca8f4a8cbaaee8eabfca3d3975fb993322ec3a94ddb504bf52d2fe6dcf89c"
-  },
-  {
-    "file": "09_Raw_And_Cooked/ingredient_rice_raw.png",
-    "zh": "生原料 rice",
-    "en": "Raw rice",
-    "group": "new-vector-art",
-    "width": 1024,
-    "height": 1024,
-    "alpha": true,
-    "transparent": true,
-    "sha256": "32381ada91e9557201666b7cd85c2117bd2dde9837bcd764ad94292532f48096"
-  },
-  {
-    "file": "09_Raw_And_Cooked/ingredient_macaroni_raw.png",
-    "zh": "生原料 macaroni",
-    "en": "Raw macaroni",
-    "group": "new-vector-art",
-    "width": 1024,
-    "height": 1024,
-    "alpha": true,
-    "transparent": true,
-    "sha256": "50fa123d608e611fe4913885158e8a586076e9c23ff15043546e8de240df8bf4"
-  },
-  {
-    "file": "09_Raw_And_Cooked/ingredient_ham_raw.png",
-    "zh": "生原料 ham",
-    "en": "Raw ham",
-    "group": "new-vector-art",
-    "width": 1024,
-    "height": 1024,
-    "alpha": true,
-    "transparent": true,
-    "sha256": "9df7174652ebdf7515560805942d33936c3ca566e05c2f03fe80a378f881e672"
-  },
-  {
-    "file": "09_Raw_And_Cooked/ingredient_egg_cooked.png",
-    "zh": "熟原料 egg",
-    "en": "Cooked egg",
-    "group": "new-vector-art",
-    "width": 1024,
-    "height": 1024,
-    "alpha": true,
-    "transparent": true,
-    "sha256": "8fc7f5ec24ed1d93cec1b84220f4de470a51331fddab5da13ba591d9497f1664"
-  },
-  {
-    "file": "09_Raw_And_Cooked/ingredient_scrambled_cooked.png",
-    "zh": "熟原料 scrambled",
-    "en": "Cooked scrambled",
-    "group": "new-vector-art",
-    "width": 1024,
-    "height": 1024,
-    "alpha": true,
-    "transparent": true,
-    "sha256": "1b8de6ea2bdece1d268cbfff07cf88a6fd11047caf71a8ef978806c8d20298c7"
-  },
-  {
-    "file": "09_Raw_And_Cooked/ingredient_rice_cooked.png",
-    "zh": "熟原料 rice",
-    "en": "Cooked rice",
-    "group": "new-vector-art",
-    "width": 1024,
-    "height": 1024,
-    "alpha": true,
-    "transparent": true,
-    "sha256": "1e19f985e5ef1205221754576dcd21a1193f25efab27c139a89973a08f8a24e0"
-  },
-  {
-    "file": "09_Raw_And_Cooked/ingredient_macaroni_cooked.png",
-    "zh": "熟原料 macaroni",
-    "en": "Cooked macaroni",
-    "group": "new-vector-art",
-    "width": 1024,
-    "height": 1024,
-    "alpha": true,
-    "transparent": true,
-    "sha256": "ea82f1488fabf20c094f780372d9824614ade183d33e482d9bae1e504e691d8b"
-  },
-  {
-    "file": "09_Raw_And_Cooked/ingredient_ham_cooked.png",
-    "zh": "熟原料 ham",
-    "en": "Cooked ham",
-    "group": "new-vector-art",
-    "width": 1024,
-    "height": 1024,
-    "alpha": true,
-    "transparent": true,
-    "sha256": "84412e0a6aeebc1309755f2bcdf09b1ab5f56e064a22c7972947d743b920675e"
   },
   {
     "file": "05_Ingredients_Bulk/ingredient_bulk_egg_tray.png",
@@ -385,15 +396,15 @@
     "sha256": "23f868f36963a71d85c3415c5b31ed448cfaeffdd224e9b9ba22e78f8cbbba03"
   },
   {
-    "file": "05_Ingredients_Bulk/ingredient_bulk_rice_tray.png",
-    "zh": "大盤生米",
-    "en": "Bulk rice canteen tray",
+    "file": "05_Ingredients_Bulk/ingredient_bulk_ham_tray.png",
+    "zh": "大盤火腿",
+    "en": "Bulk ham canteen tray",
     "group": "new-vector-art",
     "width": 1024,
     "height": 1024,
     "alpha": true,
     "transparent": true,
-    "sha256": "0d423a49b81157a7ccf15dca317f2fd743b623580f51b91b00be5ffe4f43a9cd"
+    "sha256": "e6d3909e1effb57f5531519e2f3c6fd42d064c0ca6b22187767f24737e59e84a"
   },
   {
     "file": "05_Ingredients_Bulk/ingredient_bulk_macaroni_tray.png",
@@ -407,15 +418,37 @@
     "sha256": "c332fd8c9d3c99efc73e8725c8e5f211fae93999dd0b46428a9479475732f05e"
   },
   {
-    "file": "05_Ingredients_Bulk/ingredient_bulk_ham_tray.png",
-    "zh": "大盤火腿",
-    "en": "Bulk ham canteen tray",
+    "file": "05_Ingredients_Bulk/ingredient_bulk_rice_tray.png",
+    "zh": "大盤生米",
+    "en": "Bulk rice canteen tray",
     "group": "new-vector-art",
     "width": 1024,
     "height": 1024,
     "alpha": true,
     "transparent": true,
-    "sha256": "e6d3909e1effb57f5531519e2f3c6fd42d064c0ca6b22187767f24737e59e84a"
+    "sha256": "0d423a49b81157a7ccf15dca317f2fd743b623580f51b91b00be5ffe4f43a9cd"
+  },
+  {
+    "file": "06_Cookware/bowl_empty.png",
+    "zh": "空碗",
+    "en": "bowl_empty",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "be0678bb5d74d770a0825edf26f2036227fee65403a03173b45afc414cd54288"
+  },
+  {
+    "file": "06_Cookware/plate_empty.png",
+    "zh": "空碟",
+    "en": "plate_empty",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "8a1fea55b621578ef912cf5cc96fed1bca42c76b40b8e2d90522622b45ff9f19"
   },
   {
     "file": "06_Cookware/pot_empty_with_water_top.png",
@@ -438,28 +471,6 @@
     "alpha": true,
     "transparent": true,
     "sha256": "aa19529fbd161396e20d84948d80a23812d172bd0c3d3fb544a1db635a86e951"
-  },
-  {
-    "file": "06_Cookware/plate_empty.png",
-    "zh": "空碟",
-    "en": "plate_empty",
-    "group": "new-vector-art",
-    "width": 1024,
-    "height": 1024,
-    "alpha": true,
-    "transparent": true,
-    "sha256": "8a1fea55b621578ef912cf5cc96fed1bca42c76b40b8e2d90522622b45ff9f19"
-  },
-  {
-    "file": "06_Cookware/bowl_empty.png",
-    "zh": "空碗",
-    "en": "bowl_empty",
-    "group": "new-vector-art",
-    "width": 1024,
-    "height": 1024,
-    "alpha": true,
-    "transparent": true,
-    "sha256": "be0678bb5d74d770a0825edf26f2036227fee65403a03173b45afc414cd54288"
   },
   {
     "file": "07_Cooking_States/pot_egg_01_raw.png",
@@ -493,6 +504,138 @@
     "alpha": true,
     "transparent": true,
     "sha256": "b4092b44fdb0cb80d03b9049079e929618765eaf930ffae82ab7084b53243edf"
+  },
+  {
+    "file": "07_Cooking_States/pot_macaroni_01_raw.png",
+    "zh": "烹飪 macaroni 01_raw",
+    "en": "pot macaroni 01_raw",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "5766da5073b29fd2990d686febadea63807be01d5a970365d6e453a7c6dcf4ff"
+  },
+  {
+    "file": "07_Cooking_States/pot_macaroni_02_cooking.png",
+    "zh": "烹飪 macaroni 02_cooking",
+    "en": "pot macaroni 02_cooking",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "0725596a848176a772eced318db55911a69b50036e0ee6e50da8cdd3cb509a99"
+  },
+  {
+    "file": "07_Cooking_States/pot_macaroni_03_cooked.png",
+    "zh": "烹飪 macaroni 03_cooked",
+    "en": "pot macaroni 03_cooked",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "c51e242d0c990893fd9ec555f874b03162aa73cf8bc0254c59ce4139bc519409"
+  },
+  {
+    "file": "07_Cooking_States/pot_rice_01_raw.png",
+    "zh": "烹飪 rice 01_raw",
+    "en": "pot rice 01_raw",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "846113ab4c4c17c1fa0186110bf6fe6d2d89a826317d5a55865ed0e5b014ebd8"
+  },
+  {
+    "file": "07_Cooking_States/pot_rice_02_cooking.png",
+    "zh": "烹飪 rice 02_cooking",
+    "en": "pot rice 02_cooking",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "34f5f4bbb8e89805230cdb203ddc0562a28eb1f2603c12ce60821161101d147a"
+  },
+  {
+    "file": "07_Cooking_States/pot_rice_03_cooked.png",
+    "zh": "烹飪 rice 03_cooked",
+    "en": "pot rice 03_cooked",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "744ca420d54b358338bb6a5f0666e26b708663edfc2314b547fbb1e31d986ed2"
+  },
+  {
+    "file": "07_Cooking_States/wok_ham_01_raw.png",
+    "zh": "烹飪 ham 01_raw",
+    "en": "wok ham 01_raw",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "39c713c24326bad58f8e1e565936d0936e92f3ae0466b3e9e3091b4490d0e903"
+  },
+  {
+    "file": "07_Cooking_States/wok_ham_02_cooking.png",
+    "zh": "烹飪 ham 02_cooking",
+    "en": "wok ham 02_cooking",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "883ae7928547844769a0e3459eee075477b21d6090f667951c22dd8d37090f14"
+  },
+  {
+    "file": "07_Cooking_States/wok_ham_03_cooked.png",
+    "zh": "烹飪 ham 03_cooked",
+    "en": "wok ham 03_cooked",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "02ee0c14db1a7480058f0c78722c46e0e05b056cc6cd9280d8eb6d76f54aaf5c"
+  },
+  {
+    "file": "07_Cooking_States/wok_scrambled_01_raw.png",
+    "zh": "烹飪 scrambled 01_raw",
+    "en": "wok scrambled 01_raw",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "75feddb9a987661159868c83c833ae2b777cdd27962c9f2dac0072b7653bd994"
+  },
+  {
+    "file": "07_Cooking_States/wok_scrambled_02_cooking.png",
+    "zh": "烹飪 scrambled 02_cooking",
+    "en": "wok scrambled 02_cooking",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "1c170b1430034b646c144801f7c03a6a72f8e4e6c888b9b2872eb851faa326a3"
+  },
+  {
+    "file": "07_Cooking_States/wok_scrambled_03_cooked.png",
+    "zh": "烹飪 scrambled 03_cooked",
+    "en": "wok scrambled 03_cooked",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "76ffb911db6ff96ec2baa0e76ca45ec8aa84432e7acfbebef6be939e9eb713b7"
   },
   {
     "file": "08_Cooking_Animation/pot_egg/frame_00.png",
@@ -627,37 +770,136 @@
     "sha256": "b4092b44fdb0cb80d03b9049079e929618765eaf930ffae82ab7084b53243edf"
   },
   {
-    "file": "07_Cooking_States/pot_rice_01_raw.png",
-    "zh": "烹飪 rice 01_raw",
-    "en": "pot rice 01_raw",
+    "file": "08_Cooking_Animation/pot_macaroni/frame_00.png",
+    "zh": "macaroni 動畫 0",
+    "en": "macaroni frame 0",
     "group": "new-vector-art",
     "width": 1024,
     "height": 1024,
     "alpha": true,
     "transparent": true,
-    "sha256": "846113ab4c4c17c1fa0186110bf6fe6d2d89a826317d5a55865ed0e5b014ebd8"
+    "sha256": "5766da5073b29fd2990d686febadea63807be01d5a970365d6e453a7c6dcf4ff"
   },
   {
-    "file": "07_Cooking_States/pot_rice_02_cooking.png",
-    "zh": "烹飪 rice 02_cooking",
-    "en": "pot rice 02_cooking",
+    "file": "08_Cooking_Animation/pot_macaroni/frame_01.png",
+    "zh": "macaroni 動畫 1",
+    "en": "macaroni frame 1",
     "group": "new-vector-art",
     "width": 1024,
     "height": 1024,
     "alpha": true,
     "transparent": true,
-    "sha256": "34f5f4bbb8e89805230cdb203ddc0562a28eb1f2603c12ce60821161101d147a"
+    "sha256": "3474b57ed832d1b1b8277094c9ace5ae426e10398d0f0a79a2b539a3dc985285"
   },
   {
-    "file": "07_Cooking_States/pot_rice_03_cooked.png",
-    "zh": "烹飪 rice 03_cooked",
-    "en": "pot rice 03_cooked",
+    "file": "08_Cooking_Animation/pot_macaroni/frame_02.png",
+    "zh": "macaroni 動畫 2",
+    "en": "macaroni frame 2",
     "group": "new-vector-art",
     "width": 1024,
     "height": 1024,
     "alpha": true,
     "transparent": true,
-    "sha256": "744ca420d54b358338bb6a5f0666e26b708663edfc2314b547fbb1e31d986ed2"
+    "sha256": "ebcc0cc1882a26fdc496134720fd1f60760e928b991f4fc97228c2fa6838c3af"
+  },
+  {
+    "file": "08_Cooking_Animation/pot_macaroni/frame_03.png",
+    "zh": "macaroni 動畫 3",
+    "en": "macaroni frame 3",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "4fbe878e678953cfa17bc08def95901197b3af722838ad6bf61dac5780f4d7b9"
+  },
+  {
+    "file": "08_Cooking_Animation/pot_macaroni/frame_04.png",
+    "zh": "macaroni 動畫 4",
+    "en": "macaroni frame 4",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "194b8c88e9bb79e01b0b589f4f6c997e8b9819f9c634c6ab6c38a73584f59343"
+  },
+  {
+    "file": "08_Cooking_Animation/pot_macaroni/frame_05.png",
+    "zh": "macaroni 動畫 5",
+    "en": "macaroni frame 5",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "60c8e43a1b5c74412e1602db4705b66ff0987546e34118ec1c496620a5249783"
+  },
+  {
+    "file": "08_Cooking_Animation/pot_macaroni/frame_06.png",
+    "zh": "macaroni 動畫 6",
+    "en": "macaroni frame 6",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "8e129852d8455d9b7d648ed8335e174747fa7e252eba303492dde3bfeb0c676e"
+  },
+  {
+    "file": "08_Cooking_Animation/pot_macaroni/frame_07.png",
+    "zh": "macaroni 動畫 7",
+    "en": "macaroni frame 7",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "57f6ddd94596fc467fe0d98e85ec76db3e8fb65f328b4fda0e7360cc2809bef6"
+  },
+  {
+    "file": "08_Cooking_Animation/pot_macaroni/frame_08.png",
+    "zh": "macaroni 動畫 8",
+    "en": "macaroni frame 8",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "ec33407b0e3a3886e2985ccba627c5cea890fafb93038ad059ec9003128c1a1c"
+  },
+  {
+    "file": "08_Cooking_Animation/pot_macaroni/frame_09.png",
+    "zh": "macaroni 動畫 9",
+    "en": "macaroni frame 9",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "0865140a243a91d36cecdc658b94b4e4a7d22f1b03ec7ae1bd055699f23354c0"
+  },
+  {
+    "file": "08_Cooking_Animation/pot_macaroni/frame_10.png",
+    "zh": "macaroni 動畫 10",
+    "en": "macaroni frame 10",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "74742926c306a3c4d2ee72235fb85c9290df3f67a76d5ac1d1cfb00be51b0835"
+  },
+  {
+    "file": "08_Cooking_Animation/pot_macaroni/frame_11.png",
+    "zh": "macaroni 動畫 11",
+    "en": "macaroni frame 11",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "c51e242d0c990893fd9ec555f874b03162aa73cf8bc0254c59ce4139bc519409"
   },
   {
     "file": "08_Cooking_Animation/pot_rice/frame_00.png",
@@ -792,202 +1034,136 @@
     "sha256": "744ca420d54b358338bb6a5f0666e26b708663edfc2314b547fbb1e31d986ed2"
   },
   {
-    "file": "07_Cooking_States/pot_macaroni_01_raw.png",
-    "zh": "烹飪 macaroni 01_raw",
-    "en": "pot macaroni 01_raw",
+    "file": "08_Cooking_Animation/wok_ham/frame_00.png",
+    "zh": "ham 動畫 0",
+    "en": "ham frame 0",
     "group": "new-vector-art",
     "width": 1024,
     "height": 1024,
     "alpha": true,
     "transparent": true,
-    "sha256": "5766da5073b29fd2990d686febadea63807be01d5a970365d6e453a7c6dcf4ff"
+    "sha256": "39c713c24326bad58f8e1e565936d0936e92f3ae0466b3e9e3091b4490d0e903"
   },
   {
-    "file": "07_Cooking_States/pot_macaroni_02_cooking.png",
-    "zh": "烹飪 macaroni 02_cooking",
-    "en": "pot macaroni 02_cooking",
+    "file": "08_Cooking_Animation/wok_ham/frame_01.png",
+    "zh": "ham 動畫 1",
+    "en": "ham frame 1",
     "group": "new-vector-art",
     "width": 1024,
     "height": 1024,
     "alpha": true,
     "transparent": true,
-    "sha256": "0725596a848176a772eced318db55911a69b50036e0ee6e50da8cdd3cb509a99"
+    "sha256": "6f6245574cffa231650a79f286052163a1d233ce9791a039b98e8acc6d0a96e8"
   },
   {
-    "file": "07_Cooking_States/pot_macaroni_03_cooked.png",
-    "zh": "烹飪 macaroni 03_cooked",
-    "en": "pot macaroni 03_cooked",
+    "file": "08_Cooking_Animation/wok_ham/frame_02.png",
+    "zh": "ham 動畫 2",
+    "en": "ham frame 2",
     "group": "new-vector-art",
     "width": 1024,
     "height": 1024,
     "alpha": true,
     "transparent": true,
-    "sha256": "c51e242d0c990893fd9ec555f874b03162aa73cf8bc0254c59ce4139bc519409"
+    "sha256": "0de983fb22fe2e5fc680c4ecfa26ccec288aa0f74c1a01d9302bd72945533bcb"
   },
   {
-    "file": "08_Cooking_Animation/pot_macaroni/frame_00.png",
-    "zh": "macaroni 動畫 0",
-    "en": "macaroni frame 0",
+    "file": "08_Cooking_Animation/wok_ham/frame_03.png",
+    "zh": "ham 動畫 3",
+    "en": "ham frame 3",
     "group": "new-vector-art",
     "width": 1024,
     "height": 1024,
     "alpha": true,
     "transparent": true,
-    "sha256": "5766da5073b29fd2990d686febadea63807be01d5a970365d6e453a7c6dcf4ff"
+    "sha256": "f9b3f722791cbaf1c40ae5e749a8cc7294ae60a6c0488aa126b96ed61ef63878"
   },
   {
-    "file": "08_Cooking_Animation/pot_macaroni/frame_01.png",
-    "zh": "macaroni 動畫 1",
-    "en": "macaroni frame 1",
+    "file": "08_Cooking_Animation/wok_ham/frame_04.png",
+    "zh": "ham 動畫 4",
+    "en": "ham frame 4",
     "group": "new-vector-art",
     "width": 1024,
     "height": 1024,
     "alpha": true,
     "transparent": true,
-    "sha256": "3474b57ed832d1b1b8277094c9ace5ae426e10398d0f0a79a2b539a3dc985285"
+    "sha256": "2d42cc8f8530939488db718f15ef0e14635ed30e9cf40efd15f4c2633ee5a644"
   },
   {
-    "file": "08_Cooking_Animation/pot_macaroni/frame_02.png",
-    "zh": "macaroni 動畫 2",
-    "en": "macaroni frame 2",
+    "file": "08_Cooking_Animation/wok_ham/frame_05.png",
+    "zh": "ham 動畫 5",
+    "en": "ham frame 5",
     "group": "new-vector-art",
     "width": 1024,
     "height": 1024,
     "alpha": true,
     "transparent": true,
-    "sha256": "ebcc0cc1882a26fdc496134720fd1f60760e928b991f4fc97228c2fa6838c3af"
+    "sha256": "c8b211a878f6cadeda191158dcb8c23de27c6e8164fe6b170f14155c666df0cb"
   },
   {
-    "file": "08_Cooking_Animation/pot_macaroni/frame_03.png",
-    "zh": "macaroni 動畫 3",
-    "en": "macaroni frame 3",
+    "file": "08_Cooking_Animation/wok_ham/frame_06.png",
+    "zh": "ham 動畫 6",
+    "en": "ham frame 6",
     "group": "new-vector-art",
     "width": 1024,
     "height": 1024,
     "alpha": true,
     "transparent": true,
-    "sha256": "4fbe878e678953cfa17bc08def95901197b3af722838ad6bf61dac5780f4d7b9"
+    "sha256": "aba550e9264fd8ff47cfaa041cb79ac7f38b5dfe85402af92799da325c6ecf83"
   },
   {
-    "file": "08_Cooking_Animation/pot_macaroni/frame_04.png",
-    "zh": "macaroni 動畫 4",
-    "en": "macaroni frame 4",
+    "file": "08_Cooking_Animation/wok_ham/frame_07.png",
+    "zh": "ham 動畫 7",
+    "en": "ham frame 7",
     "group": "new-vector-art",
     "width": 1024,
     "height": 1024,
     "alpha": true,
     "transparent": true,
-    "sha256": "194b8c88e9bb79e01b0b589f4f6c997e8b9819f9c634c6ab6c38a73584f59343"
+    "sha256": "39111f87c48ef81a53a1b6bfae10441ff9fe2e7b2f1161e52ad8645bfc002224"
   },
   {
-    "file": "08_Cooking_Animation/pot_macaroni/frame_05.png",
-    "zh": "macaroni 動畫 5",
-    "en": "macaroni frame 5",
+    "file": "08_Cooking_Animation/wok_ham/frame_08.png",
+    "zh": "ham 動畫 8",
+    "en": "ham frame 8",
     "group": "new-vector-art",
     "width": 1024,
     "height": 1024,
     "alpha": true,
     "transparent": true,
-    "sha256": "60c8e43a1b5c74412e1602db4705b66ff0987546e34118ec1c496620a5249783"
+    "sha256": "39196b8c8f88cc4797495de9a4498b46869102f51116687738569d07d6c823b2"
   },
   {
-    "file": "08_Cooking_Animation/pot_macaroni/frame_06.png",
-    "zh": "macaroni 動畫 6",
-    "en": "macaroni frame 6",
+    "file": "08_Cooking_Animation/wok_ham/frame_09.png",
+    "zh": "ham 動畫 9",
+    "en": "ham frame 9",
     "group": "new-vector-art",
     "width": 1024,
     "height": 1024,
     "alpha": true,
     "transparent": true,
-    "sha256": "8e129852d8455d9b7d648ed8335e174747fa7e252eba303492dde3bfeb0c676e"
+    "sha256": "33396be3b6a7b650654dcecb74fd81cb091616b04a3b6d3d3189945358950fad"
   },
   {
-    "file": "08_Cooking_Animation/pot_macaroni/frame_07.png",
-    "zh": "macaroni 動畫 7",
-    "en": "macaroni frame 7",
+    "file": "08_Cooking_Animation/wok_ham/frame_10.png",
+    "zh": "ham 動畫 10",
+    "en": "ham frame 10",
     "group": "new-vector-art",
     "width": 1024,
     "height": 1024,
     "alpha": true,
     "transparent": true,
-    "sha256": "57f6ddd94596fc467fe0d98e85ec76db3e8fb65f328b4fda0e7360cc2809bef6"
+    "sha256": "ce449140b8ffeaba0234812797e061caa9553df6654cd4e7a0db09609b54f500"
   },
   {
-    "file": "08_Cooking_Animation/pot_macaroni/frame_08.png",
-    "zh": "macaroni 動畫 8",
-    "en": "macaroni frame 8",
+    "file": "08_Cooking_Animation/wok_ham/frame_11.png",
+    "zh": "ham 動畫 11",
+    "en": "ham frame 11",
     "group": "new-vector-art",
     "width": 1024,
     "height": 1024,
     "alpha": true,
     "transparent": true,
-    "sha256": "ec33407b0e3a3886e2985ccba627c5cea890fafb93038ad059ec9003128c1a1c"
-  },
-  {
-    "file": "08_Cooking_Animation/pot_macaroni/frame_09.png",
-    "zh": "macaroni 動畫 9",
-    "en": "macaroni frame 9",
-    "group": "new-vector-art",
-    "width": 1024,
-    "height": 1024,
-    "alpha": true,
-    "transparent": true,
-    "sha256": "0865140a243a91d36cecdc658b94b4e4a7d22f1b03ec7ae1bd055699f23354c0"
-  },
-  {
-    "file": "08_Cooking_Animation/pot_macaroni/frame_10.png",
-    "zh": "macaroni 動畫 10",
-    "en": "macaroni frame 10",
-    "group": "new-vector-art",
-    "width": 1024,
-    "height": 1024,
-    "alpha": true,
-    "transparent": true,
-    "sha256": "74742926c306a3c4d2ee72235fb85c9290df3f67a76d5ac1d1cfb00be51b0835"
-  },
-  {
-    "file": "08_Cooking_Animation/pot_macaroni/frame_11.png",
-    "zh": "macaroni 動畫 11",
-    "en": "macaroni frame 11",
-    "group": "new-vector-art",
-    "width": 1024,
-    "height": 1024,
-    "alpha": true,
-    "transparent": true,
-    "sha256": "c51e242d0c990893fd9ec555f874b03162aa73cf8bc0254c59ce4139bc519409"
-  },
-  {
-    "file": "07_Cooking_States/wok_scrambled_01_raw.png",
-    "zh": "烹飪 scrambled 01_raw",
-    "en": "wok scrambled 01_raw",
-    "group": "new-vector-art",
-    "width": 1024,
-    "height": 1024,
-    "alpha": true,
-    "transparent": true,
-    "sha256": "75feddb9a987661159868c83c833ae2b777cdd27962c9f2dac0072b7653bd994"
-  },
-  {
-    "file": "07_Cooking_States/wok_scrambled_02_cooking.png",
-    "zh": "烹飪 scrambled 02_cooking",
-    "en": "wok scrambled 02_cooking",
-    "group": "new-vector-art",
-    "width": 1024,
-    "height": 1024,
-    "alpha": true,
-    "transparent": true,
-    "sha256": "1c170b1430034b646c144801f7c03a6a72f8e4e6c888b9b2872eb851faa326a3"
-  },
-  {
-    "file": "07_Cooking_States/wok_scrambled_03_cooked.png",
-    "zh": "烹飪 scrambled 03_cooked",
-    "en": "wok scrambled 03_cooked",
-    "group": "new-vector-art",
-    "width": 1024,
-    "height": 1024,
-    "alpha": true,
-    "transparent": true,
-    "sha256": "76ffb911db6ff96ec2baa0e76ca45ec8aa84432e7acfbebef6be939e9eb713b7"
+    "sha256": "02ee0c14db1a7480058f0c78722c46e0e05b056cc6cd9280d8eb6d76f54aaf5c"
   },
   {
     "file": "08_Cooking_Animation/wok_scrambled/frame_00.png",
@@ -1122,224 +1298,103 @@
     "sha256": "76ffb911db6ff96ec2baa0e76ca45ec8aa84432e7acfbebef6be939e9eb713b7"
   },
   {
-    "file": "07_Cooking_States/wok_ham_01_raw.png",
-    "zh": "烹飪 ham 01_raw",
-    "en": "wok ham 01_raw",
+    "file": "09_Raw_And_Cooked/ingredient_egg_cooked.png",
+    "zh": "熟原料 egg",
+    "en": "Cooked egg",
     "group": "new-vector-art",
     "width": 1024,
     "height": 1024,
     "alpha": true,
     "transparent": true,
-    "sha256": "39c713c24326bad58f8e1e565936d0936e92f3ae0466b3e9e3091b4490d0e903"
+    "sha256": "8fc7f5ec24ed1d93cec1b84220f4de470a51331fddab5da13ba591d9497f1664"
   },
   {
-    "file": "07_Cooking_States/wok_ham_02_cooking.png",
-    "zh": "烹飪 ham 02_cooking",
-    "en": "wok ham 02_cooking",
+    "file": "09_Raw_And_Cooked/ingredient_egg_raw.png",
+    "zh": "生原料 egg",
+    "en": "Raw egg",
     "group": "new-vector-art",
     "width": 1024,
     "height": 1024,
     "alpha": true,
     "transparent": true,
-    "sha256": "883ae7928547844769a0e3459eee075477b21d6090f667951c22dd8d37090f14"
+    "sha256": "916ca8f4a8cbaaee8eabfca3d3975fb993322ec3a94ddb504bf52d2fe6dcf89c"
   },
   {
-    "file": "07_Cooking_States/wok_ham_03_cooked.png",
-    "zh": "烹飪 ham 03_cooked",
-    "en": "wok ham 03_cooked",
+    "file": "09_Raw_And_Cooked/ingredient_ham_cooked.png",
+    "zh": "熟原料 ham",
+    "en": "Cooked ham",
     "group": "new-vector-art",
     "width": 1024,
     "height": 1024,
     "alpha": true,
     "transparent": true,
-    "sha256": "02ee0c14db1a7480058f0c78722c46e0e05b056cc6cd9280d8eb6d76f54aaf5c"
+    "sha256": "84412e0a6aeebc1309755f2bcdf09b1ab5f56e064a22c7972947d743b920675e"
   },
   {
-    "file": "08_Cooking_Animation/wok_ham/frame_00.png",
-    "zh": "ham 動畫 0",
-    "en": "ham frame 0",
+    "file": "09_Raw_And_Cooked/ingredient_ham_raw.png",
+    "zh": "生原料 ham",
+    "en": "Raw ham",
     "group": "new-vector-art",
     "width": 1024,
     "height": 1024,
     "alpha": true,
     "transparent": true,
-    "sha256": "39c713c24326bad58f8e1e565936d0936e92f3ae0466b3e9e3091b4490d0e903"
+    "sha256": "9df7174652ebdf7515560805942d33936c3ca566e05c2f03fe80a378f881e672"
   },
   {
-    "file": "08_Cooking_Animation/wok_ham/frame_01.png",
-    "zh": "ham 動畫 1",
-    "en": "ham frame 1",
+    "file": "09_Raw_And_Cooked/ingredient_macaroni_cooked.png",
+    "zh": "熟原料 macaroni",
+    "en": "Cooked macaroni",
     "group": "new-vector-art",
     "width": 1024,
     "height": 1024,
     "alpha": true,
     "transparent": true,
-    "sha256": "6f6245574cffa231650a79f286052163a1d233ce9791a039b98e8acc6d0a96e8"
+    "sha256": "ea82f1488fabf20c094f780372d9824614ade183d33e482d9bae1e504e691d8b"
   },
   {
-    "file": "08_Cooking_Animation/wok_ham/frame_02.png",
-    "zh": "ham 動畫 2",
-    "en": "ham frame 2",
+    "file": "09_Raw_And_Cooked/ingredient_macaroni_raw.png",
+    "zh": "生原料 macaroni",
+    "en": "Raw macaroni",
     "group": "new-vector-art",
     "width": 1024,
     "height": 1024,
     "alpha": true,
     "transparent": true,
-    "sha256": "0de983fb22fe2e5fc680c4ecfa26ccec288aa0f74c1a01d9302bd72945533bcb"
+    "sha256": "50fa123d608e611fe4913885158e8a586076e9c23ff15043546e8de240df8bf4"
   },
   {
-    "file": "08_Cooking_Animation/wok_ham/frame_03.png",
-    "zh": "ham 動畫 3",
-    "en": "ham frame 3",
+    "file": "09_Raw_And_Cooked/ingredient_rice_cooked.png",
+    "zh": "熟原料 rice",
+    "en": "Cooked rice",
     "group": "new-vector-art",
     "width": 1024,
     "height": 1024,
     "alpha": true,
     "transparent": true,
-    "sha256": "f9b3f722791cbaf1c40ae5e749a8cc7294ae60a6c0488aa126b96ed61ef63878"
+    "sha256": "1e19f985e5ef1205221754576dcd21a1193f25efab27c139a89973a08f8a24e0"
   },
   {
-    "file": "08_Cooking_Animation/wok_ham/frame_04.png",
-    "zh": "ham 動畫 4",
-    "en": "ham frame 4",
+    "file": "09_Raw_And_Cooked/ingredient_rice_raw.png",
+    "zh": "生原料 rice",
+    "en": "Raw rice",
     "group": "new-vector-art",
     "width": 1024,
     "height": 1024,
     "alpha": true,
     "transparent": true,
-    "sha256": "2d42cc8f8530939488db718f15ef0e14635ed30e9cf40efd15f4c2633ee5a644"
+    "sha256": "32381ada91e9557201666b7cd85c2117bd2dde9837bcd764ad94292532f48096"
   },
   {
-    "file": "08_Cooking_Animation/wok_ham/frame_05.png",
-    "zh": "ham 動畫 5",
-    "en": "ham frame 5",
+    "file": "09_Raw_And_Cooked/ingredient_scrambled_cooked.png",
+    "zh": "熟原料 scrambled",
+    "en": "Cooked scrambled",
     "group": "new-vector-art",
     "width": 1024,
     "height": 1024,
     "alpha": true,
     "transparent": true,
-    "sha256": "c8b211a878f6cadeda191158dcb8c23de27c6e8164fe6b170f14155c666df0cb"
-  },
-  {
-    "file": "08_Cooking_Animation/wok_ham/frame_06.png",
-    "zh": "ham 動畫 6",
-    "en": "ham frame 6",
-    "group": "new-vector-art",
-    "width": 1024,
-    "height": 1024,
-    "alpha": true,
-    "transparent": true,
-    "sha256": "aba550e9264fd8ff47cfaa041cb79ac7f38b5dfe85402af92799da325c6ecf83"
-  },
-  {
-    "file": "08_Cooking_Animation/wok_ham/frame_07.png",
-    "zh": "ham 動畫 7",
-    "en": "ham frame 7",
-    "group": "new-vector-art",
-    "width": 1024,
-    "height": 1024,
-    "alpha": true,
-    "transparent": true,
-    "sha256": "39111f87c48ef81a53a1b6bfae10441ff9fe2e7b2f1161e52ad8645bfc002224"
-  },
-  {
-    "file": "08_Cooking_Animation/wok_ham/frame_08.png",
-    "zh": "ham 動畫 8",
-    "en": "ham frame 8",
-    "group": "new-vector-art",
-    "width": 1024,
-    "height": 1024,
-    "alpha": true,
-    "transparent": true,
-    "sha256": "39196b8c8f88cc4797495de9a4498b46869102f51116687738569d07d6c823b2"
-  },
-  {
-    "file": "08_Cooking_Animation/wok_ham/frame_09.png",
-    "zh": "ham 動畫 9",
-    "en": "ham frame 9",
-    "group": "new-vector-art",
-    "width": 1024,
-    "height": 1024,
-    "alpha": true,
-    "transparent": true,
-    "sha256": "33396be3b6a7b650654dcecb74fd81cb091616b04a3b6d3d3189945358950fad"
-  },
-  {
-    "file": "08_Cooking_Animation/wok_ham/frame_10.png",
-    "zh": "ham 動畫 10",
-    "en": "ham frame 10",
-    "group": "new-vector-art",
-    "width": 1024,
-    "height": 1024,
-    "alpha": true,
-    "transparent": true,
-    "sha256": "ce449140b8ffeaba0234812797e061caa9553df6654cd4e7a0db09609b54f500"
-  },
-  {
-    "file": "08_Cooking_Animation/wok_ham/frame_11.png",
-    "zh": "ham 動畫 11",
-    "en": "ham frame 11",
-    "group": "new-vector-art",
-    "width": 1024,
-    "height": 1024,
-    "alpha": true,
-    "transparent": true,
-    "sha256": "02ee0c14db1a7480058f0c78722c46e0e05b056cc6cd9280d8eb6d76f54aaf5c"
-  },
-  {
-    "file": "01_Customers/customer_01_red_polo.png",
-    "zh": "紅衫街坊",
-    "en": "紅衫街坊",
-    "group": "supplied-original",
-    "width": 1024,
-    "height": 1280,
-    "alpha": true,
-    "transparent": true,
-    "sha256": "ca81011b0752ba860fbabcc2f67d6c47103418d3f6d4572d20956c9442a6088a"
-  },
-  {
-    "file": "01_Customers/customer_02_newspaper_man.png",
-    "zh": "看報伯伯",
-    "en": "看報伯伯",
-    "group": "supplied-original",
-    "width": 1024,
-    "height": 1280,
-    "alpha": true,
-    "transparent": true,
-    "sha256": "f5d300382108ef59d5cce481c57a087d8422a97c208cf4d45913e437a3e32bd8"
-  },
-  {
-    "file": "01_Customers/customer_03_construction_worker.png",
-    "zh": "建築工人",
-    "en": "建築工人",
-    "group": "supplied-original",
-    "width": 1024,
-    "height": 1280,
-    "alpha": true,
-    "transparent": true,
-    "sha256": "ec7c3f5f3a6d828c86583459b936aad9d0974a6bbeaed4f5abd5115c73673d44"
-  },
-  {
-    "file": "01_Customers/customer_04_hair_rollers.png",
-    "zh": "髮卷街坊",
-    "en": "髮卷街坊",
-    "group": "supplied-original",
-    "width": 1024,
-    "height": 1280,
-    "alpha": true,
-    "transparent": true,
-    "sha256": "94338e5a77e51f3f0cb289814567a1d169506e0745fb251d7cae1c17b93685b4"
-  },
-  {
-    "file": "02_Backgrounds/background_customer_original.png",
-    "zh": "原始顧客背景",
-    "en": "原始顧客背景",
-    "group": "supplied-original",
-    "width": 1672,
-    "height": 941,
-    "alpha": false,
-    "transparent": false,
-    "sha256": "afc89517d9e6074d8dcbdd673eeb9eac8eb29e52dbdfc91117a95b85b65c12a8"
+    "sha256": "1b8de6ea2bdece1d268cbfff07cf88a6fd11047caf71a8ef978806c8d20298c7"
   },
   {
     "file": "10_Existing_Archive/background_order_tickets_original.png",
@@ -1362,6 +1417,50 @@
     "alpha": true,
     "transparent": true,
     "sha256": "7d15e4f08c237fafdac0dfa828b0acfd39a73bbb5d76b3c2e0036ff577e17908"
+  },
+  {
+    "file": "10_Existing_Archive/customer_01_red_polo.png",
+    "zh": "原始顧客存檔",
+    "en": "Original customer archive",
+    "group": "supplied-original",
+    "width": 1097,
+    "height": 1434,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "0337bcfda50e3852678c7564d95b636983fdae676b3cf7e0cdb23e0736471fa5"
+  },
+  {
+    "file": "10_Existing_Archive/customer_02_newspaper_man.png",
+    "zh": "原始顧客存檔",
+    "en": "Original customer archive",
+    "group": "supplied-original",
+    "width": 1178,
+    "height": 1335,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "8917cd6143eb9d833f772f614506f178e298de3b9749da1975282564f0778316"
+  },
+  {
+    "file": "10_Existing_Archive/customer_03_construction_worker.png",
+    "zh": "原始顧客存檔",
+    "en": "Original customer archive",
+    "group": "supplied-original",
+    "width": 1071,
+    "height": 1469,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "a0a807b7dfadc6dc35da5028c5e8bff17568c11a07bf887cfafb15fa5da5141e"
+  },
+  {
+    "file": "10_Existing_Archive/customer_04_hair_rollers.png",
+    "zh": "原始顧客存檔",
+    "en": "Original customer archive",
+    "group": "supplied-original",
+    "width": 1098,
+    "height": 1433,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "9a7bdca0f1ba9a435c720c943c760a7d5a42c7eb19af63ea54ccaf293e95d564"
   },
   {
     "file": "10_Existing_Archive/egg.png",
@@ -1507,105 +1606,6 @@
     "sha256": "f136872e85d4f447414deebb2ca6bb75d71fbc73afca1cb957cfea22371d754c"
   },
   {
-    "file": "01_Customers/customer_05_office_woman.png",
-    "zh": "寫字樓女士",
-    "en": "Office worker",
-    "group": "imagegen",
-    "width": 1024,
-    "height": 1280,
-    "alpha": true,
-    "transparent": true,
-    "sha256": "4a9a82bdc2f0ef1140ac0da48a6aa5748932b99e921fd0672cbcda570cb8b404"
-  },
-  {
-    "file": "01_Customers/customer_06_schoolboy.png",
-    "zh": "中學生",
-    "en": "Schoolboy",
-    "group": "imagegen",
-    "width": 1024,
-    "height": 1280,
-    "alpha": true,
-    "transparent": true,
-    "sha256": "852abd854fcc57b9cc4b31a79b96cceb779eba7f077851ee5d58d8dc6c018eaf"
-  },
-  {
-    "file": "01_Customers/customer_07_delivery_man.png",
-    "zh": "送貨員",
-    "en": "Delivery worker",
-    "group": "imagegen",
-    "width": 1024,
-    "height": 1280,
-    "alpha": true,
-    "transparent": true,
-    "sha256": "7cfb0a7f66d1d11e9de47d2b0a16b8cdbca5840557e2802073457693edaec1ef"
-  },
-  {
-    "file": "01_Customers/customer_08_grandmother.png",
-    "zh": "買餸婆婆",
-    "en": "Grandmother",
-    "group": "imagegen",
-    "width": 1024,
-    "height": 1280,
-    "alpha": true,
-    "transparent": true,
-    "sha256": "abebc6275118d4de589b9501b3cb5e3f19ed8a4c59760e90a5cf92a2ad85aa5e"
-  },
-  {
-    "file": "02_Backgrounds/background_customer_four_tables.png",
-    "zh": "四客桌背景",
-    "en": "Four customer tables background",
-    "group": "imagegen",
-    "width": 1672,
-    "height": 941,
-    "alpha": false,
-    "transparent": false,
-    "sha256": "3c1382bbaee8ec389b1d6b3cd1bd99753cbe69e958d82c343c985617fa72d043"
-  },
-  {
-    "file": "10_Existing_Archive/customer_01_red_polo.png",
-    "zh": "原始顧客存檔",
-    "en": "Original customer archive",
-    "group": "supplied-original",
-    "width": 1097,
-    "height": 1434,
-    "alpha": true,
-    "transparent": true,
-    "sha256": "0337bcfda50e3852678c7564d95b636983fdae676b3cf7e0cdb23e0736471fa5"
-  },
-  {
-    "file": "10_Existing_Archive/customer_02_newspaper_man.png",
-    "zh": "原始顧客存檔",
-    "en": "Original customer archive",
-    "group": "supplied-original",
-    "width": 1178,
-    "height": 1335,
-    "alpha": true,
-    "transparent": true,
-    "sha256": "8917cd6143eb9d833f772f614506f178e298de3b9749da1975282564f0778316"
-  },
-  {
-    "file": "10_Existing_Archive/customer_03_construction_worker.png",
-    "zh": "原始顧客存檔",
-    "en": "Original customer archive",
-    "group": "supplied-original",
-    "width": 1071,
-    "height": 1469,
-    "alpha": true,
-    "transparent": true,
-    "sha256": "a0a807b7dfadc6dc35da5028c5e8bff17568c11a07bf887cfafb15fa5da5141e"
-  },
-  {
-    "file": "10_Existing_Archive/customer_04_hair_rollers.png",
-    "zh": "原始顧客存檔",
-    "en": "Original customer archive",
-    "group": "supplied-original",
-    "width": 1098,
-    "height": 1433,
-    "alpha": true,
-    "transparent": true,
-    "sha256": "9a7bdca0f1ba9a435c720c943c760a7d5a42c7eb19af63ea54ccaf293e95d564"
-  },
-  {
     "file": "11_Preview/contact_backgrounds.png",
     "zh": "分組預覽",
     "en": "Contact sheet",
@@ -1615,6 +1615,16 @@
     "alpha": true,
     "transparent": false,
     "sha256": "e8290c9fc8ea28f390c0081bb482bcd4a6648ccc5d07aa024e10931b31a0fb4e"
+  },
+  {
+    "file": "11_Preview/contact_contents_v2.png",
+    "zh": "無鍋體內容 v2 總覽",
+    "en": "Contents-only v2 overview",
+    "group": "preview",
+    "width": 960,
+    "height": 920,
+    "transparent": false,
+    "sha256": "5b43ea533dc1d1617caf023e314c60cc8e839d3a5f32883ba9f4f11e868d84d7"
   },
   {
     "file": "11_Preview/contact_customers.png",
@@ -1648,5 +1658,1461 @@
     "alpha": true,
     "transparent": false,
     "sha256": "b47a59cf01102a1a2aa4033e18698ab8085e4fe77ae5a01e9f8477e92bd91d3b"
+  },
+  {
+    "file": "12_Contents_Only/pot_egg/00_raw.png",
+    "zh": "煮蛋 · 生料內容",
+    "en": "Boiled egg · Raw contents",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "f2c0438f2a5c64226ebc738dbdc775889c08631b615eed814bbe2c68a12aa46b"
+  },
+  {
+    "file": "12_Contents_Only/pot_egg/01_cooking.png",
+    "zh": "煮蛋 · 循環狀態",
+    "en": "Boiled egg · Cooking loop state",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "cf1e42bb4ceba6bd0aedcdeef9a73d00bbdbb52d4f17de120ee903c107e510b6"
+  },
+  {
+    "file": "12_Contents_Only/pot_egg/02_cooked.png",
+    "zh": "煮蛋 · 熟食內容",
+    "en": "Boiled egg · Cooked contents",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "f2c0438f2a5c64226ebc738dbdc775889c08631b615eed814bbe2c68a12aa46b"
+  },
+  {
+    "file": "12_Contents_Only/pot_egg/loop/frame_00.png",
+    "zh": "煮蛋 · 冒泡循環 1/16",
+    "en": "Boiled egg · Seamless loop 1/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "704823ada68078d57cf39fefec39930794ea4563d72d7594cde6cc3a2a431ad8",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/pot_egg/loop/frame_01.png",
+    "zh": "煮蛋 · 冒泡循環 2/16",
+    "en": "Boiled egg · Seamless loop 2/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "68614a6a8cf600752c77df92ada319ee11154bf7676ee9ecf32edc18b090890b",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/pot_egg/loop/frame_02.png",
+    "zh": "煮蛋 · 冒泡循環 3/16",
+    "en": "Boiled egg · Seamless loop 3/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "0a99c06086298baf1dd415d7cd410c1bde818eaed10adc6295d1759a270002fd",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/pot_egg/loop/frame_03.png",
+    "zh": "煮蛋 · 冒泡循環 4/16",
+    "en": "Boiled egg · Seamless loop 4/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "22ddf8331b73a5a9aeb2fb354c8b418a940c76d2dc0824fe94684bbd24b84b2c",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/pot_egg/loop/frame_04.png",
+    "zh": "煮蛋 · 冒泡循環 5/16",
+    "en": "Boiled egg · Seamless loop 5/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "cf1e42bb4ceba6bd0aedcdeef9a73d00bbdbb52d4f17de120ee903c107e510b6",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/pot_egg/loop/frame_05.png",
+    "zh": "煮蛋 · 冒泡循環 6/16",
+    "en": "Boiled egg · Seamless loop 6/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "6291a1141f67bd988428c4235ec6cc5923cab1cac1413f2e578d1b75fdc55361",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/pot_egg/loop/frame_06.png",
+    "zh": "煮蛋 · 冒泡循環 7/16",
+    "en": "Boiled egg · Seamless loop 7/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "6a93ede349106437be5eebb390de9fb3a965c11a47a6cbcb9debdf32839ccf17",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/pot_egg/loop/frame_07.png",
+    "zh": "煮蛋 · 冒泡循環 8/16",
+    "en": "Boiled egg · Seamless loop 8/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "d7113efde721605e9ca83c5a2040018c0074fdce6c1cd19cfb2f42af21afbabd",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/pot_egg/loop/frame_08.png",
+    "zh": "煮蛋 · 冒泡循環 9/16",
+    "en": "Boiled egg · Seamless loop 9/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "7485c919756685585e15e7258c83988b7930fa69c61fa6a919f86bce138f03e0",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/pot_egg/loop/frame_09.png",
+    "zh": "煮蛋 · 冒泡循環 10/16",
+    "en": "Boiled egg · Seamless loop 10/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "396d0b48464baa5c32746afdd0d98622e0db688c846a63dc386ca5f4c8de134a",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/pot_egg/loop/frame_10.png",
+    "zh": "煮蛋 · 冒泡循環 11/16",
+    "en": "Boiled egg · Seamless loop 11/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "a3d4d2911122e8b2b2ed45c46f2b30dc69fab8304ce4934c2dc1b5d859a56e15",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/pot_egg/loop/frame_11.png",
+    "zh": "煮蛋 · 冒泡循環 12/16",
+    "en": "Boiled egg · Seamless loop 12/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "73d94127bf5597335faa421c3a2463e952fb9a92cc6e9b5296ed5bb7df57bd8f",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/pot_egg/loop/frame_12.png",
+    "zh": "煮蛋 · 冒泡循環 13/16",
+    "en": "Boiled egg · Seamless loop 13/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "ae7afb0b61492430b97ec96670df82ae6145125840ec13ead3592854f36f0fc8",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/pot_egg/loop/frame_13.png",
+    "zh": "煮蛋 · 冒泡循環 14/16",
+    "en": "Boiled egg · Seamless loop 14/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "c19ad2fb69956988e978efb30531661a3b188d5389f46be6a38131262ff39a12",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/pot_egg/loop/frame_14.png",
+    "zh": "煮蛋 · 冒泡循環 15/16",
+    "en": "Boiled egg · Seamless loop 15/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "4bb0f7c3fb941de091b66c5b7386dadb250e0744e0bfb09a93fb5083b76dbe3d",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/pot_egg/loop/frame_15.png",
+    "zh": "煮蛋 · 冒泡循環 16/16",
+    "en": "Boiled egg · Seamless loop 16/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "262a9b3c02cd37f7c4f0943def4f739e17d33b9d3fc6e3d2253aa0446711ac46",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/pot_macaroni/00_raw.png",
+    "zh": "煮通粉 · 生料內容",
+    "en": "Boiled macaroni · Raw contents",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "c2ac8600323084dc417cc12480f728dc14ba26a2b5464e9dae1dde8d599b31f4"
+  },
+  {
+    "file": "12_Contents_Only/pot_macaroni/01_cooking.png",
+    "zh": "煮通粉 · 循環狀態",
+    "en": "Boiled macaroni · Cooking loop state",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "ac24a7c9ab4feeae983aff15a3ffcde4a7469903b261f5a2c0e03749f6b5a3c4"
+  },
+  {
+    "file": "12_Contents_Only/pot_macaroni/02_cooked.png",
+    "zh": "煮通粉 · 熟食內容",
+    "en": "Boiled macaroni · Cooked contents",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "b4afcb3543ced2a899a7f17144c7e3d1d447d6596cc31bfbe5ff31c8c87f4e18"
+  },
+  {
+    "file": "12_Contents_Only/pot_macaroni/loop/frame_00.png",
+    "zh": "煮通粉 · 冒泡循環 1/16",
+    "en": "Boiled macaroni · Seamless loop 1/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "feae84ab7dc6967c3e4f9d985c349722e11fe8fa026ca64faee3214c6ac4579c",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/pot_macaroni/loop/frame_01.png",
+    "zh": "煮通粉 · 冒泡循環 2/16",
+    "en": "Boiled macaroni · Seamless loop 2/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "c4e9e372f4608bb80214a82895299d7ad70c037693a02be64ad4dc0121303d2f",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/pot_macaroni/loop/frame_02.png",
+    "zh": "煮通粉 · 冒泡循環 3/16",
+    "en": "Boiled macaroni · Seamless loop 3/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "6167df842586353b43e3f8fb34a6487cb7936a7546d76944b16baa62939947ee",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/pot_macaroni/loop/frame_03.png",
+    "zh": "煮通粉 · 冒泡循環 4/16",
+    "en": "Boiled macaroni · Seamless loop 4/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "f0e437e726455f61c5785efdeb9cc0c16ffdc9ecb49d510f12acd2fe6499b4e2",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/pot_macaroni/loop/frame_04.png",
+    "zh": "煮通粉 · 冒泡循環 5/16",
+    "en": "Boiled macaroni · Seamless loop 5/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "ac24a7c9ab4feeae983aff15a3ffcde4a7469903b261f5a2c0e03749f6b5a3c4",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/pot_macaroni/loop/frame_05.png",
+    "zh": "煮通粉 · 冒泡循環 6/16",
+    "en": "Boiled macaroni · Seamless loop 6/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "7df4cad10cfb0f09e9eb4edeaacbaded19d7e7b0c0dae43da9bbb70de0aa1518",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/pot_macaroni/loop/frame_06.png",
+    "zh": "煮通粉 · 冒泡循環 7/16",
+    "en": "Boiled macaroni · Seamless loop 7/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "cd62e9a6b885743253f8784bff93d16fe70c4a42f4e7f413e9956c361cb068c5",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/pot_macaroni/loop/frame_07.png",
+    "zh": "煮通粉 · 冒泡循環 8/16",
+    "en": "Boiled macaroni · Seamless loop 8/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "29afee50632a597befea93354c1da086fc9689019f8e191f3b71cdd09a0a3895",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/pot_macaroni/loop/frame_08.png",
+    "zh": "煮通粉 · 冒泡循環 9/16",
+    "en": "Boiled macaroni · Seamless loop 9/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "05203b81fa914e6ab789f352fdf26a54a56d994cdb3aa003ef3723d4f9f3b450",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/pot_macaroni/loop/frame_09.png",
+    "zh": "煮通粉 · 冒泡循環 10/16",
+    "en": "Boiled macaroni · Seamless loop 10/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "cf21c00a71ab5aa746cf9bc1f42409fb69c2bf2719932b5cc13fc78384206152",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/pot_macaroni/loop/frame_10.png",
+    "zh": "煮通粉 · 冒泡循環 11/16",
+    "en": "Boiled macaroni · Seamless loop 11/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "9f771173d2fe32abc7029d4e35d29984236f90b9c510a5bbe1cf0dac48e41db3",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/pot_macaroni/loop/frame_11.png",
+    "zh": "煮通粉 · 冒泡循環 12/16",
+    "en": "Boiled macaroni · Seamless loop 12/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "e482312ec37b50a1c1d11635d9bca5f9b0852555185c6e61d8b6f916b8d8e0ca",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/pot_macaroni/loop/frame_12.png",
+    "zh": "煮通粉 · 冒泡循環 13/16",
+    "en": "Boiled macaroni · Seamless loop 13/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "354297e3a1252bddeeb24123ea527fffd818b86f80d27156ea7a459aa9d81dba",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/pot_macaroni/loop/frame_13.png",
+    "zh": "煮通粉 · 冒泡循環 14/16",
+    "en": "Boiled macaroni · Seamless loop 14/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "f4e95c60331dcd6526d9b5a46dc1084b2d98b77694c8c8656745215fca04f445",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/pot_macaroni/loop/frame_14.png",
+    "zh": "煮通粉 · 冒泡循環 15/16",
+    "en": "Boiled macaroni · Seamless loop 15/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "615276af4ed83b4205f80da8999cf5a0e9dc5bc637f28448588a0f67850399e6",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/pot_macaroni/loop/frame_15.png",
+    "zh": "煮通粉 · 冒泡循環 16/16",
+    "en": "Boiled macaroni · Seamless loop 16/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "6108801ea2679a560dfb19e3752e92a78fc64b9755a3abc2fcc4fa1b170c2013",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/pot_rice/00_raw.png",
+    "zh": "煮飯 · 生料內容",
+    "en": "Rice · Raw contents",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "361c7c7c0b49fceed9a3d95c00dac805a0baa2af5b619c9a3e3886c50e9ea0b8"
+  },
+  {
+    "file": "12_Contents_Only/pot_rice/01_cooking.png",
+    "zh": "煮飯 · 循環狀態",
+    "en": "Rice · Cooking loop state",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "91a40f067fa0d4808ed29e4e6880c9502bf046f14103d094484419168542fc07"
+  },
+  {
+    "file": "12_Contents_Only/pot_rice/02_cooked.png",
+    "zh": "煮飯 · 熟食內容",
+    "en": "Rice · Cooked contents",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "5631d2e1d249af16f9eb866f23cbed754a0a9dc403f77cd761b602c4e80e9905"
+  },
+  {
+    "file": "12_Contents_Only/pot_rice/loop/frame_00.png",
+    "zh": "煮飯 · 冒泡循環 1/16",
+    "en": "Rice · Seamless loop 1/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "da3a5ac3dea0e29baecc62f94a6688c9b81cde318bcc4e3cf57107a04734ff01",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/pot_rice/loop/frame_01.png",
+    "zh": "煮飯 · 冒泡循環 2/16",
+    "en": "Rice · Seamless loop 2/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "4b7f03bd5aac23d542cf07f771b46582129fefd1974e6bbb4de2547ae74fdae3",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/pot_rice/loop/frame_02.png",
+    "zh": "煮飯 · 冒泡循環 3/16",
+    "en": "Rice · Seamless loop 3/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "bd3c4613e3415a2abe7f31065af0b4c81f33e39d47abcbf669c7f7fd279a599d",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/pot_rice/loop/frame_03.png",
+    "zh": "煮飯 · 冒泡循環 4/16",
+    "en": "Rice · Seamless loop 4/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "a90d3659d716ed940ec685991680084c683e766f31b0cea0fd44db56cb77cbaa",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/pot_rice/loop/frame_04.png",
+    "zh": "煮飯 · 冒泡循環 5/16",
+    "en": "Rice · Seamless loop 5/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "91a40f067fa0d4808ed29e4e6880c9502bf046f14103d094484419168542fc07",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/pot_rice/loop/frame_05.png",
+    "zh": "煮飯 · 冒泡循環 6/16",
+    "en": "Rice · Seamless loop 6/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "8624f26463f41bc0e843e96c0f7ed236c3c286ed8d8a78d5aebb13e6a0f7cf6e",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/pot_rice/loop/frame_06.png",
+    "zh": "煮飯 · 冒泡循環 7/16",
+    "en": "Rice · Seamless loop 7/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "4885b27b0260f673a018209a93e1aea40d56673d8a7e312d6a012632f43d39b3",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/pot_rice/loop/frame_07.png",
+    "zh": "煮飯 · 冒泡循環 8/16",
+    "en": "Rice · Seamless loop 8/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "c3e8c542616dcc85e77d1159e876842fff685b3d05617f98797dbad10a07b81c",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/pot_rice/loop/frame_08.png",
+    "zh": "煮飯 · 冒泡循環 9/16",
+    "en": "Rice · Seamless loop 9/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "be224a69e92f8d5aaf33b68c052247dd280f09866d862c5cf3656bae88f68480",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/pot_rice/loop/frame_09.png",
+    "zh": "煮飯 · 冒泡循環 10/16",
+    "en": "Rice · Seamless loop 10/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "2572d01e9d43c6b2cdbc8b694cdd20c31f2f0345dcdb99a36ddbe9ad307ca398",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/pot_rice/loop/frame_10.png",
+    "zh": "煮飯 · 冒泡循環 11/16",
+    "en": "Rice · Seamless loop 11/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "17b9f3070e49e8d3673ade8b1617c5cf3b4aef9865bab44449555f2e3b7e6655",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/pot_rice/loop/frame_11.png",
+    "zh": "煮飯 · 冒泡循環 12/16",
+    "en": "Rice · Seamless loop 12/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "a21248639dcf3f8356e45f53ae98bb3003405f2d50b5751c86ad3bb896943dd3",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/pot_rice/loop/frame_12.png",
+    "zh": "煮飯 · 冒泡循環 13/16",
+    "en": "Rice · Seamless loop 13/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "7de18f28ea2ee1202bc91483d6326c5f7d9b1cdbccb7333cfe0c1ca7e036af76",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/pot_rice/loop/frame_13.png",
+    "zh": "煮飯 · 冒泡循環 14/16",
+    "en": "Rice · Seamless loop 14/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "19946c1af6e9c75181e1a02ed6ec4165ad66aaab5f69f721740bf8bd7fe81f8f",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/pot_rice/loop/frame_14.png",
+    "zh": "煮飯 · 冒泡循環 15/16",
+    "en": "Rice · Seamless loop 15/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "9c9c6654db70c2d8270d02dd1d32c2259ef7bb153fb815b069fddd86c4e60576",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/pot_rice/loop/frame_15.png",
+    "zh": "煮飯 · 冒泡循環 16/16",
+    "en": "Rice · Seamless loop 16/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "e52cd9aa6a3e22fa3833e7d55385f35032ca8a0b0c9606e6d3444b40dfcfd2c4",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/water_only.png",
+    "zh": "圓形水面 · 無鍋體",
+    "en": "Circular water, no cookware",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "87db8aab98b5dc9ea5fd3f4ab1185499bb2e9e402928fe21405870589a27c5b8"
+  },
+  {
+    "file": "12_Contents_Only/wok_ham/00_raw.png",
+    "zh": "煎火腿 · 生料內容",
+    "en": "Fried ham · Raw contents",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "f4d4045ac8f0ea778974c2bc10cf2401ecd1123086d080597ceb0c64a00ca9b5"
+  },
+  {
+    "file": "12_Contents_Only/wok_ham/01_cooking.png",
+    "zh": "煎火腿 · 循環狀態",
+    "en": "Fried ham · Cooking loop state",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "db2cb937778c0660d399b70802116584ff3c74b8e2e9479af4a0bb3d22a78999"
+  },
+  {
+    "file": "12_Contents_Only/wok_ham/02_cooked.png",
+    "zh": "煎火腿 · 熟食內容",
+    "en": "Fried ham · Cooked contents",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "5940952c9e831d05ec1056ee92a8654da8ff4e68ade8b125930e2b3c101a14df"
+  },
+  {
+    "file": "12_Contents_Only/wok_ham/loop/frame_00.png",
+    "zh": "煎火腿 · 冒泡循環 1/16",
+    "en": "Fried ham · Seamless loop 1/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "c6c234255822ee7a6c7582d1d42999ad306fb57caba332342ebdd816d80ea4df",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/wok_ham/loop/frame_01.png",
+    "zh": "煎火腿 · 冒泡循環 2/16",
+    "en": "Fried ham · Seamless loop 2/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "8caf959fb37a0a75e303f46ad58ee3c9f32a22cea13006d557fe2728fc58ea9d",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/wok_ham/loop/frame_02.png",
+    "zh": "煎火腿 · 冒泡循環 3/16",
+    "en": "Fried ham · Seamless loop 3/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "372fa24c83d0437e4891a390e86d233980b8f1b5f28e1a1c840d1d79e4b4a52a",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/wok_ham/loop/frame_03.png",
+    "zh": "煎火腿 · 冒泡循環 4/16",
+    "en": "Fried ham · Seamless loop 4/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "5630ae70f692bfb98cc38e919fd33ad83eaa3e7ae41eb51935559fa6aa0608bf",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/wok_ham/loop/frame_04.png",
+    "zh": "煎火腿 · 冒泡循環 5/16",
+    "en": "Fried ham · Seamless loop 5/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "db2cb937778c0660d399b70802116584ff3c74b8e2e9479af4a0bb3d22a78999",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/wok_ham/loop/frame_05.png",
+    "zh": "煎火腿 · 冒泡循環 6/16",
+    "en": "Fried ham · Seamless loop 6/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "e0576fca0f55c821954eef24ea4a71ed9e238d8a5c2fc141dfbec4d84957697f",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/wok_ham/loop/frame_06.png",
+    "zh": "煎火腿 · 冒泡循環 7/16",
+    "en": "Fried ham · Seamless loop 7/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "b020445a437fe18c853ac1d0a0b43bd3cafe5fec3b2e2060f99c4b81bb49dee0",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/wok_ham/loop/frame_07.png",
+    "zh": "煎火腿 · 冒泡循環 8/16",
+    "en": "Fried ham · Seamless loop 8/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "2875a75141d5c25040c52f4c8059c98c0c715351fe3dceec4343e60b6c112ffd",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/wok_ham/loop/frame_08.png",
+    "zh": "煎火腿 · 冒泡循環 9/16",
+    "en": "Fried ham · Seamless loop 9/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "59c77dff3599d8eeb29c319097403c1550492d3b9325ad5acc882eb9ca32796c",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/wok_ham/loop/frame_09.png",
+    "zh": "煎火腿 · 冒泡循環 10/16",
+    "en": "Fried ham · Seamless loop 10/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "424e8ab99772c0673bcefdb88d0a73c76f29f7b05d7e388a8331adcd66192437",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/wok_ham/loop/frame_10.png",
+    "zh": "煎火腿 · 冒泡循環 11/16",
+    "en": "Fried ham · Seamless loop 11/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "d35dab46919343119bbdf10065442eef1826b5eb86373a1560900b1a05c2d745",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/wok_ham/loop/frame_11.png",
+    "zh": "煎火腿 · 冒泡循環 12/16",
+    "en": "Fried ham · Seamless loop 12/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "7607bae5ef27d490d639f3fbdae99c19cab3c7eb9d83b7604702e15380c84ab2",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/wok_ham/loop/frame_12.png",
+    "zh": "煎火腿 · 冒泡循環 13/16",
+    "en": "Fried ham · Seamless loop 13/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "0acd75016c0102d82fb8d340c30303a160f63b862f5cf3570b88302e9d5ddce9",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/wok_ham/loop/frame_13.png",
+    "zh": "煎火腿 · 冒泡循環 14/16",
+    "en": "Fried ham · Seamless loop 14/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "fc49577ea3f56ca4cb3fb41dcd43c015b0cde1f07ad1f4122496649d7abcecc2",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/wok_ham/loop/frame_14.png",
+    "zh": "煎火腿 · 冒泡循環 15/16",
+    "en": "Fried ham · Seamless loop 15/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "e165411fa4d2097f132b641279b6e7316163a012d48de21c61f4fdcb1ca56fe0",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/wok_ham/loop/frame_15.png",
+    "zh": "煎火腿 · 冒泡循環 16/16",
+    "en": "Fried ham · Seamless loop 16/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "1c962d5f9e6c3021c3d0f234ecb067f4bcad3ddfc75946022977252a9d3072df",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/wok_scrambled/00_raw.png",
+    "zh": "炒蛋 · 生料內容",
+    "en": "Scrambled egg · Raw contents",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "c011b11b7eb6d2bea059395c38da19c98481b3429320e21b2cf4537e88cbafab"
+  },
+  {
+    "file": "12_Contents_Only/wok_scrambled/01_cooking.png",
+    "zh": "炒蛋 · 循環狀態",
+    "en": "Scrambled egg · Cooking loop state",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "b1233517d96266ada001b55d23c614893fa50920bb958a3e1d204d2ce3efe5c5"
+  },
+  {
+    "file": "12_Contents_Only/wok_scrambled/02_cooked.png",
+    "zh": "炒蛋 · 熟食內容",
+    "en": "Scrambled egg · Cooked contents",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "7363a6f672eab2869db0f686fdc50cde96daa013941875b790770b03c99345a5"
+  },
+  {
+    "file": "12_Contents_Only/wok_scrambled/loop/frame_00.png",
+    "zh": "炒蛋 · 冒泡循環 1/16",
+    "en": "Scrambled egg · Seamless loop 1/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "b9f1b3926050a4bde0748b013e4eaa33b103439208baf2478eb53df7c2a3c64a",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/wok_scrambled/loop/frame_01.png",
+    "zh": "炒蛋 · 冒泡循環 2/16",
+    "en": "Scrambled egg · Seamless loop 2/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "d51ed2f25acbeca7d71c8c1fd62f05cf2e2a9b03841fb67037c17e86be2db68e",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/wok_scrambled/loop/frame_02.png",
+    "zh": "炒蛋 · 冒泡循環 3/16",
+    "en": "Scrambled egg · Seamless loop 3/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "68599cfb9b333313d8b8784c42c05eebe687754b8f1970dc75790e3153efd4b3",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/wok_scrambled/loop/frame_03.png",
+    "zh": "炒蛋 · 冒泡循環 4/16",
+    "en": "Scrambled egg · Seamless loop 4/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "5d6683498067386911dc2f8c640c02bdb5f2883f7907c729e0980a3ee9967058",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/wok_scrambled/loop/frame_04.png",
+    "zh": "炒蛋 · 冒泡循環 5/16",
+    "en": "Scrambled egg · Seamless loop 5/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "b1233517d96266ada001b55d23c614893fa50920bb958a3e1d204d2ce3efe5c5",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/wok_scrambled/loop/frame_05.png",
+    "zh": "炒蛋 · 冒泡循環 6/16",
+    "en": "Scrambled egg · Seamless loop 6/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "0b479f72144252f5a5b0684614af90ff314a76b27d71a34c3d730fa98cef2f81",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/wok_scrambled/loop/frame_06.png",
+    "zh": "炒蛋 · 冒泡循環 7/16",
+    "en": "Scrambled egg · Seamless loop 7/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "3268348a1efe5d603c52de40539fee1ef48c6c81d962fbfe298be7610d8e4735",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/wok_scrambled/loop/frame_07.png",
+    "zh": "炒蛋 · 冒泡循環 8/16",
+    "en": "Scrambled egg · Seamless loop 8/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "854a8879835ef92ac9c80e26bf3dc184c4ff30136d0fe48eefc7b6b531cec9e2",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/wok_scrambled/loop/frame_08.png",
+    "zh": "炒蛋 · 冒泡循環 9/16",
+    "en": "Scrambled egg · Seamless loop 9/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "7554c27cfa545aec7e4a5c9fa845f3a83ba30e30eb5760c4252bd4b453ba0586",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/wok_scrambled/loop/frame_09.png",
+    "zh": "炒蛋 · 冒泡循環 10/16",
+    "en": "Scrambled egg · Seamless loop 10/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "589c7c7d8b9ff30036f0c8128c3e037e9fc1cd500afc92b26d9bbc55aab3e422",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/wok_scrambled/loop/frame_10.png",
+    "zh": "炒蛋 · 冒泡循環 11/16",
+    "en": "Scrambled egg · Seamless loop 11/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "e1a5b6fbc4cb1a0729bf4f088c99bfe81d440f08e1c93932d7dde4f08f0f56f3",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/wok_scrambled/loop/frame_11.png",
+    "zh": "炒蛋 · 冒泡循環 12/16",
+    "en": "Scrambled egg · Seamless loop 12/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "05975d33e2b19b94f43ea50fd40ca1951e83c69e3ec548f1f283dfeb670a9e35",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/wok_scrambled/loop/frame_12.png",
+    "zh": "炒蛋 · 冒泡循環 13/16",
+    "en": "Scrambled egg · Seamless loop 13/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "89e5e2c161dff09181a9c69cd7191eb67a24a6f183a02e9879f450d4768180eb",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/wok_scrambled/loop/frame_13.png",
+    "zh": "炒蛋 · 冒泡循環 14/16",
+    "en": "Scrambled egg · Seamless loop 14/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "2bad906adf835223d3ce1a54b5d969c5fa0d755e2b36aa234bccc92a3533763e",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/wok_scrambled/loop/frame_14.png",
+    "zh": "炒蛋 · 冒泡循環 15/16",
+    "en": "Scrambled egg · Seamless loop 15/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "200f4336a4f5b4404b13695e87d026b90656c574ab0f4a0ec3b5af3b0837cf75",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "12_Contents_Only/wok_scrambled/loop/frame_15.png",
+    "zh": "炒蛋 · 冒泡循環 16/16",
+    "en": "Scrambled egg · Seamless loop 16/16",
+    "group": "new-vector-art",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "9ab893d0c1e8143e5b761a10c20f0e490f40f56569ee7d18b283b0902818af88",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
   }
 ]

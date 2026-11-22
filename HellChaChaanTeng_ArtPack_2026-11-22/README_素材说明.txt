@@ -56,3 +56,10 @@ wok_scrambled / wok_ham 為炒蛋、煎火腿。
 ASSET_INDEX.csv 提供中英名稱、來源、尺寸、透明度；manifest.json 同步提供。
 顧客與背景用內建 ImageGen 依參考生成。餐點與食材沿用原有可編輯繪圖，
 另補足盤量、獨立匯出與烹飪序列。提示詞見 GENERATION_PROMPTS.txt。
+
+v2 更新 · 2026-11-23
+12_Contents_Only 為實體鍋具投影版本，只有水面、食材和冒泡效果。
+5 組各有 00_raw、01_cooking 快照、02_cooked，以及 16 幀獨立循環。
+先播生料，開始加熱後重播循環，熟成信號來時直接切完成圖。
+循環可任意延長。詳見該目錄的 使用说明.txt 和 PLAYBACK.json。
+本版共 247 張 PNG，新增 96 張內容貼圖及 1 張總覽。
