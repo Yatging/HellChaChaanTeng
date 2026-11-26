@@ -2,11 +2,11 @@
 (()=>{
  const data=window.ArtLibrary,grid=document.querySelector('#asset-grid'),dialog=document.querySelector('#preview');
  const groups=[
- ['12','內容投影 v2','Contents only'],['all','全部','All'],['01','顧客','Customers'],['02','背景','Backgrounds'],['03','餐點','Food'],['04','飲品','Drinks'],['05','大盤原料','Bulk ingredients'],['06','餐具鍋具','Cookware'],['07','烹飪狀態','Cooking states'],['08','動畫幀','Animation frames'],['09','生熟原料','Raw & cooked'],['10','原圖存檔','Archive'],['11','總覽圖','Contact sheets']
+ ['13','單品上桌','Single servings'],['03','成品餐點','Finished meals'],['14','新版備料盤','Prep trays'],['15','新版烹調動畫','Cooking loops'],['16','配套餐具','Empty settings'],['12','內容投影 v2','Contents only'],['all','全部','All'],['01','顧客','Customers'],['02','背景','Backgrounds'],['04','飲品','Drinks'],['05','大盤原料','Bulk ingredients'],['06','餐具鍋具','Cookware'],['07','烹飪狀態','Cooking states'],['08','動畫幀','Animation frames'],['09','生熟原料','Raw & cooked'],['10','原圖存檔','Archive'],['11','總覽圖','Contact sheets']
  ];
  const sources={'imagegen':'新生成 / ImageGen','new-vector-art':'延續既有畫風繪製 / Original illustration style','existing-vector-export':'既有繪圖獨立匯出 / Existing art export','supplied-original':'提供的原圖 / Supplied original','existing-archive':'既有素材存檔 / Existing asset archive','preview':'分組總覽 / Contact sheet'};
  const ingredients={egg:['雞蛋','Egg'],rice:['米飯','Rice'],macaroni:['通粉','Macaroni'],scrambled:['炒蛋','Scrambled egg'],ham:['火腿','Ham']};
- let category=new URLSearchParams(location.search).get('category')==='12'?'12':'all',timer=null,sequence=[],current=null;
+ let category=groups.find(([id])=>id===new URLSearchParams(location.search).get('category'))?.[0]||'all',timer=null,sequence=[],current=null;
  const $=s=>document.querySelector(s);
  const url=asset=>data.folder+'/'+asset.file.split('/').map(encodeURIComponent).join('/');
  function names(asset){
@@ -72,13 +72,14 @@
   const fps=sequence[0]?.animation?.fps||4;
   $('#frame-status').textContent=sequence.length?(sequence.indexOf(asset)>=0?'第 '+(sequence.indexOf(asset)+1)+' / '+sequence.length+' 幀 · '+fps+' fps': '生料 → 冒泡循環（任意時長）→ 完成'):'';
  }
- function stop(){clearInterval(timer);timer=null;$('#play-animation').textContent=current?.file.startsWith('12_')?'開始冒泡循環 / Start loop':'播放動畫 / Play'}
+ const isCooking=a=>/^(12|15)_/.test(a?.file||'');
+ function stop(){clearInterval(timer);timer=null;$('#play-animation').textContent=isCooking(current)?'開始冒泡循環 / Start loop':'播放動畫 / Play'}
  function open(asset){
   stop();current=asset;
   const root=asset.file.split('/').slice(0,2).join('/');
-  sequence=asset.file.startsWith('08_')?assets.filter(a=>a.file.split('/').slice(0,-1).join('/')===asset.file.split('/').slice(0,-1).join('/')):asset.file.startsWith('12_')?assets.filter(a=>a.file.startsWith(root+'/loop/')):[];
+  sequence=asset.file.startsWith('08_')?assets.filter(a=>a.file.split('/').slice(0,-1).join('/')===asset.file.split('/').slice(0,-1).join('/')):isCooking(asset)?assets.filter(a=>a.file.startsWith(root+'/loop/')):[];
   $('#animation-controls').hidden=!sequence.length;
-  $('#stage-controls').hidden=!asset.file.startsWith('12_')||!sequence.length;
+  $('#stage-controls').hidden=!isCooking(asset)||!sequence.length;
   show(asset);stop();dialog.showModal();$('#close-preview').focus();
  }
  $('#play-animation').onclick=()=>{

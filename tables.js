@@ -46,7 +46,14 @@
       const r=lane.record,order=menu.get(r?.combination);
       const elapsed=r?.servedAt==null?Infinity:Math.max(0,now-r.servedAt);
       if(!order || r.state!=='satisfied' || now<r.servedAt || elapsed>=TableSync.duration){
-        clear(lane);
+        const done=r?.state==='waiting'?kitchen?.portions.find(t=>t.orderId===r.orderId)?.done:[];
+        if(done?.length){
+          const key=r.orderId+'-partial-'+done.join('-');
+          if(lane.drawn!==key){
+            const items=done.map(item=>{const img=document.createElement('img');img.src=MenuArt.single(item);img.alt={macaroni:'湯通粉 / Macaroni',rice:'白飯 / Rice',ham:'火腿 / Ham',boiled:'烚蛋 / Boiled egg',scrambled:'炒蛋 / Scrambled egg'}[item];return img;});
+            lane.setting.replaceChildren(...items);lane.setting.style.opacity='1';lane.drawn=key;
+          }
+        }else clear(lane);
         let label='空枱 / Clear';
         if(!host)label='未連接 / Offline';
         else if(r?.state==='waiting')label=autoServe?'等上菜 '+Math.max(0,Math.ceil((r.dueAt-now)/1000))+'s':'待判定 / Waiting';
@@ -65,7 +72,7 @@
       const step=progress*8,phase=Math.min(1,(step%1)*2.4);
       const eaten=(Math.floor(step)+phase*phase*(3-2*phase))/8;
       lane.bite.setAttribute('transform','translate('+(-16+234*eaten)+' 0)');
-      lane.level.setAttribute('y',String(progress*180));
+      lane.level.setAttribute('y',String(progress*220));
       const fadeOut=Math.max(0,(elapsed-full-eating-empty)/fade);
       lane.setting.style.opacity=String(1-fadeOut);
       setLabel(lane,progress===1?'空餐具 / Finished':progress>0?'用餐中 / Eating':'已上菜 / Served');

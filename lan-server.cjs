@@ -6,7 +6,7 @@ const os=require('node:os');
 const root=__dirname,port=Number(process.env.PORT||8080);
 const clients=new Map();
 let owner=null;
-const types={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.png':'image/png','.css':'text/css; charset=utf-8','.json':'application/json; charset=utf-8','.csv':'text/csv; charset=utf-8','.zip':'application/zip','.txt':'text/plain; charset=utf-8'};
+const types={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.png':'image/png','.webp':'image/webp','.css':'text/css; charset=utf-8','.json':'application/json; charset=utf-8','.csv':'text/csv; charset=utf-8','.zip':'application/zip','.txt':'text/plain; charset=utf-8'};
 function broadcast(message,except){
   const payload='data: '+JSON.stringify(message)+'\n\n';
   for(const [id,response] of clients)if(id!==except)response.write(payload);

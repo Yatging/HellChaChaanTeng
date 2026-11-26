@@ -1,0 +1,52 @@
+{
+  "fps": 8,
+  "loopFrames": 16,
+  "loopSeconds": 2,
+  "canvas": [
+    1024,
+    1024
+  ],
+  "center": [
+    512,
+    512
+  ],
+  "waterRadius": 382,
+  "playback": "Show 00_raw once, repeat the loop indefinitely, then cut directly to 02_cooked on the completion signal.",
+  "sequences": [
+    {
+      "id": "pot_egg",
+      "raw": "15_Cooking_Contents/pot_egg/00_raw.png",
+      "cooking": "15_Cooking_Contents/pot_egg/01_cooking.png",
+      "loop": "15_Cooking_Contents/pot_egg/loop/frame_{00..15}.png",
+      "cooked": "15_Cooking_Contents/pot_egg/02_cooked.png"
+    },
+    {
+      "id": "pot_macaroni",
+      "raw": "15_Cooking_Contents/pot_macaroni/00_raw.png",
+      "cooking": "15_Cooking_Contents/pot_macaroni/01_cooking.png",
+      "loop": "15_Cooking_Contents/pot_macaroni/loop/frame_{00..15}.png",
+      "cooked": "15_Cooking_Contents/pot_macaroni/02_cooked.png"
+    },
+    {
+      "id": "pot_rice",
+      "raw": "15_Cooking_Contents/pot_rice/00_raw.png",
+      "cooking": "15_Cooking_Contents/pot_rice/01_cooking.png",
+      "loop": "15_Cooking_Contents/pot_rice/loop/frame_{00..15}.png",
+      "cooked": "15_Cooking_Contents/pot_rice/02_cooked.png"
+    },
+    {
+      "id": "wok_scrambled",
+      "raw": "15_Cooking_Contents/wok_scrambled/00_raw.png",
+      "cooking": "15_Cooking_Contents/wok_scrambled/01_cooking.png",
+      "loop": "15_Cooking_Contents/wok_scrambled/loop/frame_{00..15}.png",
+      "cooked": "15_Cooking_Contents/wok_scrambled/02_cooked.png"
+    },
+    {
+      "id": "wok_ham",
+      "raw": "15_Cooking_Contents/wok_ham/00_raw.png",
+      "cooking": "15_Cooking_Contents/wok_ham/01_cooking.png",
+      "loop": "15_Cooking_Contents/wok_ham/loop/frame_{00..15}.png",
+      "cooked": "15_Cooking_Contents/wok_ham/02_cooked.png"
+    }
+  ]
+}

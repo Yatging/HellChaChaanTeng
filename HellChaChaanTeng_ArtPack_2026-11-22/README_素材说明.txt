@@ -63,3 +63,9 @@ v2 更新 · 2026-11-23
 先播生料，開始加熱後重播循環，熟成信號來時直接切完成圖。
 循環可任意延長。詳見該目錄的 使用说明.txt 和 PLAYBACK.json。
 本版共 247 張 PNG，新增 96 張內容貼圖及 1 張總覽。
+
+### 半寫實餐點與鍋內動畫 v3 · 2026-11-26
+13_Single_Servings 提供火腿、完整烚蛋、炒蛋、白飯與湯通粉的獨立上桌 PNG。
+14_Prep_Trays 是四種大盤原料。15_Cooking_Contents 是五組無鍋體烹調動畫，適用於實體鍋具投影。每組包含入鍋、熟成及 16 幀循環，8 fps。播放路徑見 PLAYBACK.json。
+03_Food_Only 包含 A 至 D 餐的 18 種食品改配。04_Drinks_Only 包含七款配飲。16_Empty_Settings 是用餐結束時使用的餐具。
+下載完整素材包 HellChaChaanTeng_ArtPack_v3.zip，或在貼圖庫下載單張 PNG。

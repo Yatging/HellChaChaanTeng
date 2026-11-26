@@ -113,276 +113,276 @@
     "file": "03_Food_Only/food_a_boiled_extra_ham.png",
     "zh": "A餐 轉烚蛋加腿",
     "en": "A Boiled egg + extra ham",
-    "group": "existing-vector-export",
+    "group": "imagegen",
     "width": 1024,
     "height": 1024,
     "alpha": true,
     "transparent": true,
-    "sha256": "872534ae6228ab403808c9994947c67baf82ea1bc746c019e38cfdcd956c49d9"
+    "sha256": "a3804fa957987eb4c8744df56a9783e28a45c81566e2904e5dfa7fcdd3f8dc9a"
   },
   {
     "file": "03_Food_Only/food_a_boiled.png",
     "zh": "A餐 轉烚蛋",
     "en": "A Boiled egg instead",
-    "group": "existing-vector-export",
+    "group": "imagegen",
     "width": 1024,
     "height": 1024,
     "alpha": true,
     "transparent": true,
-    "sha256": "d431d52d2b892b7bf6bb79124d1edc81120f414120385ace6c2a2c4df1bc72e2"
+    "sha256": "ad8de86fc0fc638e62aab55d07c89fee6e1b3cf9711c5c6fda7ffca93e40fbb2"
   },
   {
     "file": "03_Food_Only/food_a_extra_ham.png",
     "zh": "A餐 加腿",
     "en": "A Extra ham",
-    "group": "existing-vector-export",
+    "group": "imagegen",
     "width": 1024,
     "height": 1024,
     "alpha": true,
     "transparent": true,
-    "sha256": "a68b569e7669fca5f6bbffff1c2973a25819ea867675b18af147726e58fc70f1"
+    "sha256": "249434630bcae1045fa28132c649c9aa33d3286af88bfcd9f2542277c827b904"
   },
   {
     "file": "03_Food_Only/food_a_no_egg_extra_ham.png",
     "zh": "A餐 走蛋加腿",
     "en": "A No egg + extra ham",
-    "group": "existing-vector-export",
+    "group": "imagegen",
     "width": 1024,
     "height": 1024,
     "alpha": true,
     "transparent": true,
-    "sha256": "37bc65b414e927e445df822540b8df4afd74a5d1637703f129532b83558f9d78"
+    "sha256": "8ce86fcbfb2e5f55350125867d1a6c39d4e8b726b7738b5954259c2f0a815bb5"
   },
   {
     "file": "03_Food_Only/food_a_no_egg.png",
     "zh": "A餐 走蛋",
     "en": "A No egg",
-    "group": "existing-vector-export",
+    "group": "imagegen",
     "width": 1024,
     "height": 1024,
     "alpha": true,
     "transparent": true,
-    "sha256": "271119e9a4b513e9673f59edbff98fc952289c319792dc6a1c32595b5680a5ab"
+    "sha256": "0a9c8f817298eeecfa419d7b53eaaf49f7208e45e484021e8d8c33fa4515c712"
   },
   {
     "file": "03_Food_Only/food_a_regular.png",
     "zh": "A餐 照舊",
     "en": "A Regular",
-    "group": "existing-vector-export",
+    "group": "imagegen",
     "width": 1024,
     "height": 1024,
     "alpha": true,
     "transparent": true,
-    "sha256": "24f24b9a52c6c3d770a342d601cdf8134e8fd3c4da78a33a5600c24656939c72"
+    "sha256": "81a3a2a8a8b10a39c4dc1792554753c0158de01838e4bca8e41d43d9ce4c2e54"
   },
   {
     "file": "03_Food_Only/food_b_boiled_extra_ham.png",
     "zh": "B餐 轉烚蛋加腿",
     "en": "B Boiled egg + extra ham",
-    "group": "existing-vector-export",
+    "group": "imagegen",
     "width": 1024,
     "height": 1024,
     "alpha": true,
     "transparent": true,
-    "sha256": "89aa49d1c830feed2cd5fab5bd523a69d26b06ff47f060c0b641885502d50095"
+    "sha256": "6a7768cb90d0263fecdb241e435d0863a4bfa505ed02ded1341fb7c6ef5d1775"
   },
   {
     "file": "03_Food_Only/food_b_boiled.png",
     "zh": "B餐 轉烚蛋",
     "en": "B Boiled egg instead",
-    "group": "existing-vector-export",
+    "group": "imagegen",
     "width": 1024,
     "height": 1024,
     "alpha": true,
     "transparent": true,
-    "sha256": "2dc0a55caa7e8f1877062ee58dfc8f3ba7330c2fe1d2f5a92c1c098664da2136"
+    "sha256": "790834babeb799cbda9bd477d5f1a81ed0686d7ab8690ddc9e5c24d3a65bb3e7"
   },
   {
     "file": "03_Food_Only/food_b_extra_ham.png",
     "zh": "B餐 加腿",
     "en": "B Extra ham",
-    "group": "existing-vector-export",
+    "group": "imagegen",
     "width": 1024,
     "height": 1024,
     "alpha": true,
     "transparent": true,
-    "sha256": "52d903d8e56ec9c5e1f475795dc760363f810493e53c66822acde77718669c1e"
+    "sha256": "935261034019232bf1b562194b4af0a1598465238b9eabbe04a0386546086ce6"
   },
   {
     "file": "03_Food_Only/food_b_no_egg_extra_ham.png",
     "zh": "B餐 走蛋加腿",
     "en": "B No egg + extra ham",
-    "group": "existing-vector-export",
+    "group": "imagegen",
     "width": 1024,
     "height": 1024,
     "alpha": true,
     "transparent": true,
-    "sha256": "1ba16ec6ce1eeb00f4f062714eb0dea45a530ae105d918c6990f66461972a39e"
+    "sha256": "bfe4cad65b246b3ec05a427f4ad1fe4b11267693cb04ef79bba3078d0720eef3"
   },
   {
     "file": "03_Food_Only/food_b_no_egg.png",
     "zh": "B餐 走蛋",
     "en": "B No egg",
-    "group": "existing-vector-export",
+    "group": "imagegen",
     "width": 1024,
     "height": 1024,
     "alpha": true,
     "transparent": true,
-    "sha256": "5631db8f9e6ab9ad32c08c1e8f1bc766deca9a4ff44cf915ccdcab6096c0f6e8"
+    "sha256": "823649a3cda5a38254779e8f4b417848ed7e1193d7c707ab6abb039b1f7b2f18"
   },
   {
     "file": "03_Food_Only/food_b_regular.png",
     "zh": "B餐 照舊",
     "en": "B Regular",
-    "group": "existing-vector-export",
+    "group": "imagegen",
     "width": 1024,
     "height": 1024,
     "alpha": true,
     "transparent": true,
-    "sha256": "ec74b0ee19dd4d327d86d32a8b9b50293e4acb9cd995e36d756eb095d4b58ed6"
+    "sha256": "344bedfb36abbb71ed741e9a7f58eaba148ad6c2457d6938e01a10ae9573066b"
   },
   {
     "file": "03_Food_Only/food_c_extra_ham.png",
     "zh": "C餐 加腿",
     "en": "C Extra ham",
-    "group": "existing-vector-export",
+    "group": "imagegen",
     "width": 1024,
     "height": 1024,
     "alpha": true,
     "transparent": true,
-    "sha256": "37bc65b414e927e445df822540b8df4afd74a5d1637703f129532b83558f9d78"
+    "sha256": "8ce86fcbfb2e5f55350125867d1a6c39d4e8b726b7738b5954259c2f0a815bb5"
   },
   {
     "file": "03_Food_Only/food_c_regular.png",
     "zh": "C餐 照舊",
     "en": "C Regular",
-    "group": "existing-vector-export",
+    "group": "imagegen",
     "width": 1024,
     "height": 1024,
     "alpha": true,
     "transparent": true,
-    "sha256": "271119e9a4b513e9673f59edbff98fc952289c319792dc6a1c32595b5680a5ab"
+    "sha256": "0a9c8f817298eeecfa419d7b53eaaf49f7208e45e484021e8d8c33fa4515c712"
   },
   {
     "file": "03_Food_Only/food_d_boiled_extra_ham.png",
     "zh": "D餐 轉烚蛋加腿",
     "en": "D Boiled egg + extra ham",
-    "group": "existing-vector-export",
+    "group": "imagegen",
     "width": 1024,
     "height": 1024,
     "alpha": true,
     "transparent": true,
-    "sha256": "e94050bee565d9c30b0d413aa5da61140b37a517b26c24a57aaf425306b2ebfe"
+    "sha256": "970147b41f3cb7f44cd03b975599371cdc6c86c0d4c2cfbf3fcc1320969ef3d7"
   },
   {
     "file": "03_Food_Only/food_d_boiled.png",
     "zh": "D餐 轉烚蛋",
     "en": "D Boiled egg instead",
-    "group": "existing-vector-export",
+    "group": "imagegen",
     "width": 1024,
     "height": 1024,
     "alpha": true,
     "transparent": true,
-    "sha256": "28a45de8162f291438868e9fc67ff7bd31e4cbe5aa9fac2053b1d5836494b260"
+    "sha256": "cd2cb3261e2081c80c9e16fc4c90ffd74b23b75d18ef877b89a7c70fffb332ad"
   },
   {
     "file": "03_Food_Only/food_d_extra_ham.png",
     "zh": "D餐 加腿",
     "en": "D Extra ham",
-    "group": "existing-vector-export",
+    "group": "imagegen",
     "width": 1024,
     "height": 1024,
     "alpha": true,
     "transparent": true,
-    "sha256": "47d2d0d3bda58345470b587b54af81a4335c9c38bdea130c26543a96df7f0bf8"
+    "sha256": "70bba900c2cfe94acf7f62791d491c57aed298dca26abde160407ef9ad05d80f"
   },
   {
     "file": "03_Food_Only/food_d_regular.png",
     "zh": "D餐 照舊",
     "en": "D Regular",
-    "group": "existing-vector-export",
+    "group": "imagegen",
     "width": 1024,
     "height": 1024,
     "alpha": true,
     "transparent": true,
-    "sha256": "cf425c31fdde46156eb5dfe5360b005aae74287ea70557342ba1bf7f8c03c463"
+    "sha256": "e2df03fbdc632ba4b7ce98d1bf723f41cf1e7f9dde05a4c970bfe9f70be25c89"
   },
   {
     "file": "04_Drinks_Only/drink_coffee_hot_black.png",
     "zh": "熱啡飛沙走奶",
     "en": "Hot unsweetened black coffee",
-    "group": "existing-vector-export",
+    "group": "imagegen",
     "width": 1024,
     "height": 1024,
     "alpha": true,
     "transparent": true,
-    "sha256": "32369ff3ceb58ed44537837a5d5b55e1e85627299fe5d6605c5253b243bc571d"
+    "sha256": "f4eb58617eef44d5633320547d4680c068f4cf6f170305a4c66d37de4e6425c7"
   },
   {
     "file": "04_Drinks_Only/drink_coffee_hot_regular.png",
     "zh": "熱咖啡",
     "en": "Hot coffee",
-    "group": "existing-vector-export",
+    "group": "imagegen",
     "width": 1024,
     "height": 1024,
     "alpha": true,
     "transparent": true,
-    "sha256": "e6ffbffb78139918968ece978621df61d281f3dfb983bbbb2a61d39e2f972aa6"
+    "sha256": "b05c98efc7b808aaac26207256ec7b977afffd6aed3a6cada4a4bcc2ea155a97"
   },
   {
     "file": "04_Drinks_Only/drink_lemonTea_hot_extraLemon.png",
     "zh": "熱檸茶加檸",
     "en": "Hot lemon tea, extra lemon",
-    "group": "existing-vector-export",
+    "group": "imagegen",
     "width": 1024,
     "height": 1024,
     "alpha": true,
     "transparent": true,
-    "sha256": "64a74af811f1ad6e7ab4fc46ec675f4c87700722bf4dde0646cb27fe05c06340"
+    "sha256": "db183da9223f8bc1d712fe5ae2c91839b61f1324bdb6754e0ee671803e69b329"
   },
   {
     "file": "04_Drinks_Only/drink_lemonTea_hot_regular.png",
     "zh": "熱檸檬茶",
     "en": "Hot lemon tea",
-    "group": "existing-vector-export",
+    "group": "imagegen",
     "width": 1024,
     "height": 1024,
     "alpha": true,
     "transparent": true,
-    "sha256": "a99d7dd3d0c97b797114fe4729683dde298d8cc092cb015bf97f34c1cf47e4fa"
+    "sha256": "2adf519675dfa864eccc19d6428d316d750604b111fb3db83e95e7374f1cbfd7"
   },
   {
     "file": "04_Drinks_Only/drink_milkTea_hot_condensed.png",
     "zh": "熱茶走",
     "en": "Hot condensed milk tea",
-    "group": "existing-vector-export",
+    "group": "imagegen",
     "width": 1024,
     "height": 1024,
     "alpha": true,
     "transparent": true,
-    "sha256": "84520e4db30612b8749a7f5687ccbfe87944e83f68eebbfbf4ce7402ae59aed9"
+    "sha256": "33ef3e494bd5a849f7414ceeffd2e580310fc10e79796b787ec795591d05f6f7"
   },
   {
     "file": "04_Drinks_Only/drink_milkTea_hot_regular.png",
     "zh": "熱奶茶",
     "en": "Hot milk tea",
-    "group": "existing-vector-export",
+    "group": "imagegen",
     "width": 1024,
     "height": 1024,
     "alpha": true,
     "transparent": true,
-    "sha256": "5b3fbb450fe9b01a2f1c705c90d55f54e4d6cb8b65ea1a4f6ff1c7f15ad1923e"
+    "sha256": "b95fd660410f49ead4c8c67383543235f7e5dedb347362a56460b0df6cecabf3"
   },
   {
     "file": "04_Drinks_Only/drink_water_regular.png",
     "zh": "清水",
     "en": "Water",
-    "group": "existing-vector-export",
+    "group": "imagegen",
     "width": 1024,
     "height": 1024,
     "alpha": true,
     "transparent": true,
-    "sha256": "22f2624a2d03b06cbb0b4290fb5cfdd5b52981da6913a429177d325ccd556768"
+    "sha256": "bfa0ff78bef373a6aca0ed0482837ac8724d69e4f191b349ca75455864eed14c"
   },
   {
     "file": "05_Ingredients_Bulk/ingredient_bulk_egg_tray.png",
@@ -1642,11 +1642,11 @@
     "zh": "分組預覽",
     "en": "Contact sheet",
     "group": "preview",
-    "width": 960,
-    "height": 1540,
+    "width": 1150,
+    "height": 1055,
     "alpha": true,
     "transparent": false,
-    "sha256": "0a025b34f8ab9c50a00b9177a428340916387d32b1e8c69351ccdd3199b95292"
+    "sha256": "ff8b4ac01e1402a7a4ed2729114548e1cf9f115a98ec6bffb4dd43fda551c2c4"
   },
   {
     "file": "11_Preview/contact_kitchen.png",
@@ -3114,5 +3114,1604 @@
       "fps": 8,
       "frames": 16
     }
+  },
+  {
+    "file": "13_Single_Servings/served_boiled.png",
+    "zh": "單上 · 烚蛋",
+    "en": "Boiled egg on a saucer",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "6d19ae9f37c5b4850957393e46a666706cbe7f9d4db93deaf30e83936b287706"
+  },
+  {
+    "file": "13_Single_Servings/served_ham.png",
+    "zh": "煎火腿 · 單獨上桌",
+    "en": "Pan-seared ham · Single serving",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "d560a8f93db2b1bc2a9e06ac5b43752d227975db67c537a18cc63d64bccd1697"
+  },
+  {
+    "file": "13_Single_Servings/served_macaroni.png",
+    "zh": "湯通粉 · 單獨上桌",
+    "en": "Soup macaroni · Single serving",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "825594811955bc764725c6e49151a5183145de1f8a348794a01d2d91860cd3eb"
+  },
+  {
+    "file": "13_Single_Servings/served_rice.png",
+    "zh": "白飯 · 單獨上桌",
+    "en": "Steamed rice · Single serving",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "f0b8af4fd8e37f2abb29d7cf02f205aa6438190a8f1419e6954517cacd0ce8e7"
+  },
+  {
+    "file": "13_Single_Servings/served_scrambled.png",
+    "zh": "炒蛋 · 單獨上桌",
+    "en": "Scrambled egg · Single serving",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "e0924b00153506555925183229a99bb9def1140af92d14aaba682d97dd667a9b"
+  },
+  {
+    "file": "14_Prep_Trays/tray_egg.png",
+    "zh": "雞蛋 · 備料盤",
+    "en": "Eggs · Prep tray",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "8fa4ad4f1ef35b5f304f91f108f1d63fe0ad42740cdc8388e9e8acca779aef08"
+  },
+  {
+    "file": "14_Prep_Trays/tray_ham.png",
+    "zh": "火腿 · 備料盤",
+    "en": "Sliced ham · Prep tray",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "2ea17f2e86d8d5582816600a21de167be2de74b4902b46925dacdd557d9166f9"
+  },
+  {
+    "file": "14_Prep_Trays/tray_macaroni.png",
+    "zh": "通粉 · 備料盤",
+    "en": "Dry macaroni · Prep tray",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "3af542d9ee783e8b9eef2d3839f06773bfdfc05746ae3141dab996eaae6c17ef"
+  },
+  {
+    "file": "14_Prep_Trays/tray_rice.png",
+    "zh": "生米 · 備料盤",
+    "en": "Dry rice · Prep tray",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "b7335e8109a003b8b82f69ed71a781c20a2e77d6623d943c4653ac16f40ce714"
+  },
+  {
+    "file": "15_Cooking_Contents/pot_egg/00_raw.png",
+    "zh": "烚蛋 · 入鍋",
+    "en": "Boiled egg · Start",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "ff545ca020624faa1950c8864487b3fad3da42357a49f97feadc3d2611833e5f"
+  },
+  {
+    "file": "15_Cooking_Contents/pot_egg/01_cooking.png",
+    "zh": "烚蛋 · 烹調中",
+    "en": "Boiled egg · Cooking",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "7cdc8aec9cb6eab6b77ba8455f29cddfdbd09d9299261a85e5ed38211eb0e749"
+  },
+  {
+    "file": "15_Cooking_Contents/pot_egg/02_cooked.png",
+    "zh": "烚蛋 · 熟成",
+    "en": "Boiled egg · Cooked",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "1f597c022f98616ff083662d0495f72589ced5867e1b6fdc17f50101f1410c04"
+  },
+  {
+    "file": "15_Cooking_Contents/pot_egg/loop/frame_00.png",
+    "zh": "烚蛋 · 循環 1/16",
+    "en": "Boiled egg · Frame 1/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "e8d00729c6790a48e5951689f552d6a06020a9e64efe93f992d0f0afa0018164",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/pot_egg/loop/frame_01.png",
+    "zh": "烚蛋 · 循環 2/16",
+    "en": "Boiled egg · Frame 2/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "b2bb831cf883f3c708f927b015899698e598be2f6fa20ae19c9ed3f14d1a24ff",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/pot_egg/loop/frame_02.png",
+    "zh": "烚蛋 · 循環 3/16",
+    "en": "Boiled egg · Frame 3/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "62b20bb0a801bf86e7d6e8454c8c8c20204b5aef1fc8fa50368b51ffa324f56c",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/pot_egg/loop/frame_03.png",
+    "zh": "烚蛋 · 循環 4/16",
+    "en": "Boiled egg · Frame 4/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "f41fa40f34191a1f5b7624e0a29ae0973f31f5beb5621164b2b709f7342b6cf8",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/pot_egg/loop/frame_04.png",
+    "zh": "烚蛋 · 循環 5/16",
+    "en": "Boiled egg · Frame 5/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "7cdc8aec9cb6eab6b77ba8455f29cddfdbd09d9299261a85e5ed38211eb0e749",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/pot_egg/loop/frame_05.png",
+    "zh": "烚蛋 · 循環 6/16",
+    "en": "Boiled egg · Frame 6/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "cda219b04cc69f421b1e2e6b3416bdffc427c894c9c51df17fc75356a567755b",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/pot_egg/loop/frame_06.png",
+    "zh": "烚蛋 · 循環 7/16",
+    "en": "Boiled egg · Frame 7/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "b0f8e2eaed11e82206c857c3e097f13d49f62628b58eaba92c3dd741806ce011",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/pot_egg/loop/frame_07.png",
+    "zh": "烚蛋 · 循環 8/16",
+    "en": "Boiled egg · Frame 8/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "3fa810b352b41c9ae32ce730b205585f08b6ac9c20088df53d4f7d15a391b74d",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/pot_egg/loop/frame_08.png",
+    "zh": "烚蛋 · 循環 9/16",
+    "en": "Boiled egg · Frame 9/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "011c6c0d5da0eb9fc28dcb3fe1c081f28ceee46717bfae43495f9a12d0a7bc14",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/pot_egg/loop/frame_09.png",
+    "zh": "烚蛋 · 循環 10/16",
+    "en": "Boiled egg · Frame 10/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "5176cb1d82d0ac4037c85845451021b90904fa08e0c6155f2dfb8ac18ae3a50e",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/pot_egg/loop/frame_10.png",
+    "zh": "烚蛋 · 循環 11/16",
+    "en": "Boiled egg · Frame 11/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "de8d34bac8e8cd1d4a8371498266cf54965cd2c4bf05bc5eedf2f9e9326b605a",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/pot_egg/loop/frame_11.png",
+    "zh": "烚蛋 · 循環 12/16",
+    "en": "Boiled egg · Frame 12/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "1b8380613d20db2c5e80879b22b39a29ab727459c74732e9c82ce4d6ee5fff95",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/pot_egg/loop/frame_12.png",
+    "zh": "烚蛋 · 循環 13/16",
+    "en": "Boiled egg · Frame 13/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "80292141d4770686c08f675b97fcbed206acbab1b327f51f54f7e7b7b577bc06",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/pot_egg/loop/frame_13.png",
+    "zh": "烚蛋 · 循環 14/16",
+    "en": "Boiled egg · Frame 14/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "97addaa60599ee96f095f31bc9bf775b8c96184f831fcb90458545a48974a40e",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/pot_egg/loop/frame_14.png",
+    "zh": "烚蛋 · 循環 15/16",
+    "en": "Boiled egg · Frame 15/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "3a26ea7bd1684174b05f57b6c3a12f34412f1e98ed2ec2c5e6d1267d0ebd8554",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/pot_egg/loop/frame_15.png",
+    "zh": "烚蛋 · 循環 16/16",
+    "en": "Boiled egg · Frame 16/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "383c3ed87bd7b28e649691d45f320161e7fb0f6a3df68ec949eb70a5773a1937",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/pot_macaroni/00_raw.png",
+    "zh": "湯通粉 · 入鍋",
+    "en": "Soup macaroni · Start",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "6c2bd93c0ce69eb48916d42635b9569119244378798d927e8bd1ecfa813736e4"
+  },
+  {
+    "file": "15_Cooking_Contents/pot_macaroni/01_cooking.png",
+    "zh": "湯通粉 · 烹調中",
+    "en": "Soup macaroni · Cooking",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "a1113daac835a19ab3381bcdc2139db3b3eb9f8ed08bbf7680f8a076822f12e2"
+  },
+  {
+    "file": "15_Cooking_Contents/pot_macaroni/02_cooked.png",
+    "zh": "湯通粉 · 熟成",
+    "en": "Soup macaroni · Cooked",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "df0b3fbad2b09d2ac1eb929935d98ceb04d9247420ac6278de9f0bdf7cb48c2a"
+  },
+  {
+    "file": "15_Cooking_Contents/pot_macaroni/loop/frame_00.png",
+    "zh": "湯通粉 · 循環 1/16",
+    "en": "Soup macaroni · Frame 1/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "9a55650a6f1be78c662cf6369b706f11b6d6a7af22c2a8b08dffbfd64b1ecd31",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/pot_macaroni/loop/frame_01.png",
+    "zh": "湯通粉 · 循環 2/16",
+    "en": "Soup macaroni · Frame 2/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "2987b13903ef80daf4bdac3166e69321c02407228a072ce2ef05f576bca8a10d",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/pot_macaroni/loop/frame_02.png",
+    "zh": "湯通粉 · 循環 3/16",
+    "en": "Soup macaroni · Frame 3/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "99562ef998441f97d74f44dffd6a7ebea3f8de3357658f43b722200e0df844d9",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/pot_macaroni/loop/frame_03.png",
+    "zh": "湯通粉 · 循環 4/16",
+    "en": "Soup macaroni · Frame 4/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "1453ad042a8d378bf9bc0d174afc00d93a26934a572663cd5ec95ba87a4e649f",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/pot_macaroni/loop/frame_04.png",
+    "zh": "湯通粉 · 循環 5/16",
+    "en": "Soup macaroni · Frame 5/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "a1113daac835a19ab3381bcdc2139db3b3eb9f8ed08bbf7680f8a076822f12e2",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/pot_macaroni/loop/frame_05.png",
+    "zh": "湯通粉 · 循環 6/16",
+    "en": "Soup macaroni · Frame 6/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "8f37a2440bdf4059c7370791aba58f441c6fa9086e9e72ec97b8beabad210d91",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/pot_macaroni/loop/frame_06.png",
+    "zh": "湯通粉 · 循環 7/16",
+    "en": "Soup macaroni · Frame 7/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "ef1e82f19dea11e49d3d9590f6e592fedd2e917109994bcb7296cf229d4e1c95",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/pot_macaroni/loop/frame_07.png",
+    "zh": "湯通粉 · 循環 8/16",
+    "en": "Soup macaroni · Frame 8/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "abdfa8acbe2b07c7c0612d816a3a9897f18d413c5842b5f6ced892a1395f09b0",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/pot_macaroni/loop/frame_08.png",
+    "zh": "湯通粉 · 循環 9/16",
+    "en": "Soup macaroni · Frame 9/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "f88a17e2dc70185bea4286169c108fa3bd703c9e61c0f05ffec79a6c8c59e77c",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/pot_macaroni/loop/frame_09.png",
+    "zh": "湯通粉 · 循環 10/16",
+    "en": "Soup macaroni · Frame 10/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "d1998e4316489214c496b8195908e1b5af6ecec5ba1d0e85712aec35d4de3448",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/pot_macaroni/loop/frame_10.png",
+    "zh": "湯通粉 · 循環 11/16",
+    "en": "Soup macaroni · Frame 11/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "d8ed765129887a50e7b449b076b0a7e7c0ef3c32ae7cc59b8d249dbd91e84870",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/pot_macaroni/loop/frame_11.png",
+    "zh": "湯通粉 · 循環 12/16",
+    "en": "Soup macaroni · Frame 12/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "f8e057a8431c1f1ee0b6721ffef7025f76e152e6bd0c3ee9af1bad450edf04d7",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/pot_macaroni/loop/frame_12.png",
+    "zh": "湯通粉 · 循環 13/16",
+    "en": "Soup macaroni · Frame 13/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "cffc9c5ccbb5d269b257456538b7ec1562cb16ddfdd1030c87fdedaa4a2e99ea",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/pot_macaroni/loop/frame_13.png",
+    "zh": "湯通粉 · 循環 14/16",
+    "en": "Soup macaroni · Frame 14/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "c5d4104fb4b76cd1b7b3f57205ee7e190b4c7f187abfebc068ae7e28c6b3e1a9",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/pot_macaroni/loop/frame_14.png",
+    "zh": "湯通粉 · 循環 15/16",
+    "en": "Soup macaroni · Frame 15/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "cf24c74b369071e68f476a6941c40eb5ed7fb25c416287c8ce719b47bd35fa9b",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/pot_macaroni/loop/frame_15.png",
+    "zh": "湯通粉 · 循環 16/16",
+    "en": "Soup macaroni · Frame 16/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "5d7d0a2c847835bfdff2922b66741ac8e4a6730a1e7ab68559abfc8ea77d8bc1",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/pot_rice/00_raw.png",
+    "zh": "白飯 · 入鍋",
+    "en": "Steamed rice · Start",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "1f43b2295b70a775e3bf4cc2b3976c1afd542b9ffa128a6b1d19f914e8ec3b77"
+  },
+  {
+    "file": "15_Cooking_Contents/pot_rice/01_cooking.png",
+    "zh": "白飯 · 烹調中",
+    "en": "Steamed rice · Cooking",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "da737eaa717e9cb56cb3adb1c24bfe08df35e0e30dc8fbcbb3dc01f345762925"
+  },
+  {
+    "file": "15_Cooking_Contents/pot_rice/02_cooked.png",
+    "zh": "白飯 · 熟成",
+    "en": "Steamed rice · Cooked",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "21a65fd7e0590b0df8846ce9382476893112cd65d225a46b50bbd1f71765ca7a"
+  },
+  {
+    "file": "15_Cooking_Contents/pot_rice/loop/frame_00.png",
+    "zh": "白飯 · 循環 1/16",
+    "en": "Steamed rice · Frame 1/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "d092b5f3c8027534af3f26ce79752cc1bb29fe72e822e683d36821c11378b4e0",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/pot_rice/loop/frame_01.png",
+    "zh": "白飯 · 循環 2/16",
+    "en": "Steamed rice · Frame 2/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "07b255737e5782579ff1aca22ca3891151582fa992e624e28c6620275f1a5c21",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/pot_rice/loop/frame_02.png",
+    "zh": "白飯 · 循環 3/16",
+    "en": "Steamed rice · Frame 3/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "852a5a71e369daac54cf719231f0816cf0106e6408ceef3092b9a67847a7bc3e",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/pot_rice/loop/frame_03.png",
+    "zh": "白飯 · 循環 4/16",
+    "en": "Steamed rice · Frame 4/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "4d1440ab8433c7d5d2e6931d7abba1cf3a718d2b40b657f7462997d61faf7ec0",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/pot_rice/loop/frame_04.png",
+    "zh": "白飯 · 循環 5/16",
+    "en": "Steamed rice · Frame 5/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "da737eaa717e9cb56cb3adb1c24bfe08df35e0e30dc8fbcbb3dc01f345762925",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/pot_rice/loop/frame_05.png",
+    "zh": "白飯 · 循環 6/16",
+    "en": "Steamed rice · Frame 6/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "ab0f46efd9733f4efa7adaec444d2a2359693d50db81e8d58431033c06c6c042",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/pot_rice/loop/frame_06.png",
+    "zh": "白飯 · 循環 7/16",
+    "en": "Steamed rice · Frame 7/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "b32ed4a63e5046f560f288660d8b8a200f8d6df7c047988171be25439a8ae9d2",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/pot_rice/loop/frame_07.png",
+    "zh": "白飯 · 循環 8/16",
+    "en": "Steamed rice · Frame 8/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "673ba91ff5aebd078cd0661ef0bbce54228196ceb250bbc43d98eba9e8d42d9e",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/pot_rice/loop/frame_08.png",
+    "zh": "白飯 · 循環 9/16",
+    "en": "Steamed rice · Frame 9/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "57d8b1d01bb02f9aa9b5ea46af6daba96aa4a167101fe7b712365e252c820794",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/pot_rice/loop/frame_09.png",
+    "zh": "白飯 · 循環 10/16",
+    "en": "Steamed rice · Frame 10/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "e4a38baeffd19eb8eabd31887dc5fe1e775a3f0e4f7d44aba9c115d9043f2a44",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/pot_rice/loop/frame_10.png",
+    "zh": "白飯 · 循環 11/16",
+    "en": "Steamed rice · Frame 11/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "82e2b612c8e5eb932a194e748e533d805c7795107e745b2579114294d733f8c9",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/pot_rice/loop/frame_11.png",
+    "zh": "白飯 · 循環 12/16",
+    "en": "Steamed rice · Frame 12/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "0471e992fd19f09b66b89cc9bb2b0c98795d9de7db22f1c5d94da7998eafc852",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/pot_rice/loop/frame_12.png",
+    "zh": "白飯 · 循環 13/16",
+    "en": "Steamed rice · Frame 13/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "ca362af92720e1844c507e9a62635fc1b849e406ab8451e6f81084c512b53a26",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/pot_rice/loop/frame_13.png",
+    "zh": "白飯 · 循環 14/16",
+    "en": "Steamed rice · Frame 14/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "e7b8640e22f3115219ffb1be1bb24ebeba89123d9268db30ce308e3ecec88b90",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/pot_rice/loop/frame_14.png",
+    "zh": "白飯 · 循環 15/16",
+    "en": "Steamed rice · Frame 15/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "7eb3f28690af5656d22e01e3ab260d190b09a60a520589c97d8e85358048cbe7",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/pot_rice/loop/frame_15.png",
+    "zh": "白飯 · 循環 16/16",
+    "en": "Steamed rice · Frame 16/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "89681004ebb93c2d1d4159390c27bde0b87233bc0be23b64dcdbebc302f05f0d",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/water_only.png",
+    "zh": "清水",
+    "en": "Water",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "206a307adb7b6a96ecfaf07e7c064b5e469bb7e33e795c7446e18d57273fd55d"
+  },
+  {
+    "file": "15_Cooking_Contents/wok_ham/00_raw.png",
+    "zh": "煎火腿 · 入鍋",
+    "en": "Pan-seared ham · Start",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "c001567343048381d5df0501c0868b14ca671dd39fc84ea12e2f0cacf0148e45"
+  },
+  {
+    "file": "15_Cooking_Contents/wok_ham/01_cooking.png",
+    "zh": "煎火腿 · 烹調中",
+    "en": "Pan-seared ham · Cooking",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "07690af83d1a8eaabaf895b1b6370a87c9a286ff0584834808487c45b4f7dff6"
+  },
+  {
+    "file": "15_Cooking_Contents/wok_ham/02_cooked.png",
+    "zh": "煎火腿 · 熟成",
+    "en": "Pan-seared ham · Cooked",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "d3befd9031b26eb6516366914b740a23378e98a73a7c9e45a47b065894f60124"
+  },
+  {
+    "file": "15_Cooking_Contents/wok_ham/loop/frame_00.png",
+    "zh": "煎火腿 · 循環 1/16",
+    "en": "Pan-seared ham · Frame 1/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "d6fd7ea9b11891809a0c6a089949139303da8a9ca73efbaf7c24f5af74959111",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/wok_ham/loop/frame_01.png",
+    "zh": "煎火腿 · 循環 2/16",
+    "en": "Pan-seared ham · Frame 2/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "91b954055f5219cb7abea015b6b9633b9bc676b71293f01d0351e8952c31e2a5",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/wok_ham/loop/frame_02.png",
+    "zh": "煎火腿 · 循環 3/16",
+    "en": "Pan-seared ham · Frame 3/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "d4aca11bc0ab4e9810b340bebd511957abc53189d0c3872f57b26d5219809c63",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/wok_ham/loop/frame_03.png",
+    "zh": "煎火腿 · 循環 4/16",
+    "en": "Pan-seared ham · Frame 4/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "0fa7db10fff3911aed5bbdf076922c82951a0ebd21e5695ee5d76aadd29f19c4",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/wok_ham/loop/frame_04.png",
+    "zh": "煎火腿 · 循環 5/16",
+    "en": "Pan-seared ham · Frame 5/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "07690af83d1a8eaabaf895b1b6370a87c9a286ff0584834808487c45b4f7dff6",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/wok_ham/loop/frame_05.png",
+    "zh": "煎火腿 · 循環 6/16",
+    "en": "Pan-seared ham · Frame 6/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "f4cae95a88166647381f506ac51ad44945bba7e9c708e8978528fce7f9d372f2",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/wok_ham/loop/frame_06.png",
+    "zh": "煎火腿 · 循環 7/16",
+    "en": "Pan-seared ham · Frame 7/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "88814ee4cd3aa444b23a276f1abe0ee983551afee0c3cd46ec5e7f3eeda871b8",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/wok_ham/loop/frame_07.png",
+    "zh": "煎火腿 · 循環 8/16",
+    "en": "Pan-seared ham · Frame 8/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "57f2af43b430757e2887dd7149b6d374fe0108afdf72a7f70284ddece46758ac",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/wok_ham/loop/frame_08.png",
+    "zh": "煎火腿 · 循環 9/16",
+    "en": "Pan-seared ham · Frame 9/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "0ad9731a00dfce4dd9772052636f5e5e4f21a8183fd9cdb563e81e4c3b64695f",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/wok_ham/loop/frame_09.png",
+    "zh": "煎火腿 · 循環 10/16",
+    "en": "Pan-seared ham · Frame 10/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "805c4c6514ca4689403760f62d68dbc55e3d73d48a40d4b6b106fdb90fe54752",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/wok_ham/loop/frame_10.png",
+    "zh": "煎火腿 · 循環 11/16",
+    "en": "Pan-seared ham · Frame 11/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "cdadd50fcb6a0f246089f82deec81ed84e083aacc61547d825b84843303708fd",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/wok_ham/loop/frame_11.png",
+    "zh": "煎火腿 · 循環 12/16",
+    "en": "Pan-seared ham · Frame 12/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "371a8e93205ce247df330026aca17d6f401e140a0ecb82446af392985eaed66d",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/wok_ham/loop/frame_12.png",
+    "zh": "煎火腿 · 循環 13/16",
+    "en": "Pan-seared ham · Frame 13/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "05b0cfa90cbb8adc670bc8b13dd249873d4521bf105998be4aed5efcdb4df0a0",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/wok_ham/loop/frame_13.png",
+    "zh": "煎火腿 · 循環 14/16",
+    "en": "Pan-seared ham · Frame 14/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "6d29a784e37715fe53bf678867031d77e481e0701fe5db991a300896fdbf843f",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/wok_ham/loop/frame_14.png",
+    "zh": "煎火腿 · 循環 15/16",
+    "en": "Pan-seared ham · Frame 15/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "6d32f64c413800bb8b40edda2e3a510cefbef554529d65359b89a8738f968d2e",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/wok_ham/loop/frame_15.png",
+    "zh": "煎火腿 · 循環 16/16",
+    "en": "Pan-seared ham · Frame 16/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "87c86ad1cfa3ced96c2e4fd2bb21a9bb939595f05fca2e24291c734678fcc663",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/wok_scrambled/00_raw.png",
+    "zh": "炒蛋 · 入鍋",
+    "en": "Scrambled egg · Start",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "98dc9a51c2edc63f50e0879eee63e6d3504ef70c58eae490f1617c479f113f8f"
+  },
+  {
+    "file": "15_Cooking_Contents/wok_scrambled/01_cooking.png",
+    "zh": "炒蛋 · 烹調中",
+    "en": "Scrambled egg · Cooking",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "423b53c852d26bce55b0ba4156d40c44600e1bfa2c9284983128fbe2f0272d30"
+  },
+  {
+    "file": "15_Cooking_Contents/wok_scrambled/02_cooked.png",
+    "zh": "炒蛋 · 熟成",
+    "en": "Scrambled egg · Cooked",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "a3e82d3cbcba8a177ad8401513b77c0ff338c4f3eff918d4305a51f35ff726f5"
+  },
+  {
+    "file": "15_Cooking_Contents/wok_scrambled/loop/frame_00.png",
+    "zh": "炒蛋 · 循環 1/16",
+    "en": "Scrambled egg · Frame 1/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "bd82cbeb874df8002adb4accf5994d1d97953b968508bd9ae7ee307357d34490",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/wok_scrambled/loop/frame_01.png",
+    "zh": "炒蛋 · 循環 2/16",
+    "en": "Scrambled egg · Frame 2/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "53f81b9a959dfeced2526dba8bcebf16cad0ebaec2cfb6a8b231dda334c8794f",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/wok_scrambled/loop/frame_02.png",
+    "zh": "炒蛋 · 循環 3/16",
+    "en": "Scrambled egg · Frame 3/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "47707cfbd23248b3f688eb7a9313d2a391d43811905ae2b42b4c1a15774dd6d5",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/wok_scrambled/loop/frame_03.png",
+    "zh": "炒蛋 · 循環 4/16",
+    "en": "Scrambled egg · Frame 4/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "8be63e1542497f7e849efed252a92457ce17998b9482c1f4cd94ba5fbc9c09b9",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/wok_scrambled/loop/frame_04.png",
+    "zh": "炒蛋 · 循環 5/16",
+    "en": "Scrambled egg · Frame 5/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "423b53c852d26bce55b0ba4156d40c44600e1bfa2c9284983128fbe2f0272d30",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/wok_scrambled/loop/frame_05.png",
+    "zh": "炒蛋 · 循環 6/16",
+    "en": "Scrambled egg · Frame 6/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "9d1067e9054cb1e38dbb495088b61959a324a2d9da9b9e466c12a3d63aebb1e4",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/wok_scrambled/loop/frame_06.png",
+    "zh": "炒蛋 · 循環 7/16",
+    "en": "Scrambled egg · Frame 7/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "f74111e775c33b82e7a71316bca39f8baa236683aba9caebceae531b051743e5",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/wok_scrambled/loop/frame_07.png",
+    "zh": "炒蛋 · 循環 8/16",
+    "en": "Scrambled egg · Frame 8/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "a2fe70e775d307078358384ca4ed1d816db15def548784e9eb261a0757958051",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/wok_scrambled/loop/frame_08.png",
+    "zh": "炒蛋 · 循環 9/16",
+    "en": "Scrambled egg · Frame 9/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "d071a921f31fc854c419468bad94bd1668c1384021a9abbadd951af704cae6b5",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/wok_scrambled/loop/frame_09.png",
+    "zh": "炒蛋 · 循環 10/16",
+    "en": "Scrambled egg · Frame 10/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "7079e94357d4c273cb970909a86fa68780ad01852876ae31758c74865724cf44",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/wok_scrambled/loop/frame_10.png",
+    "zh": "炒蛋 · 循環 11/16",
+    "en": "Scrambled egg · Frame 11/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "a7c93ad291f99a95501adaa08a22a78f80746f0433cf04e3fede77863eaf35a5",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/wok_scrambled/loop/frame_11.png",
+    "zh": "炒蛋 · 循環 12/16",
+    "en": "Scrambled egg · Frame 12/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "2491c18a8b3cae7ca614ba250363fb69a1c08cae7e5bba45b0f47be45fafa487",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/wok_scrambled/loop/frame_12.png",
+    "zh": "炒蛋 · 循環 13/16",
+    "en": "Scrambled egg · Frame 13/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "f6acdfcb5c14db8559d96f835b50bc6d4e38500a80726b5915ba534a7dcb178a",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/wok_scrambled/loop/frame_13.png",
+    "zh": "炒蛋 · 循環 14/16",
+    "en": "Scrambled egg · Frame 14/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "e21f0207abf275f985a206698e17dd98c9fed45d9bca35f8239f9b26d7e70519",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/wok_scrambled/loop/frame_14.png",
+    "zh": "炒蛋 · 循環 15/16",
+    "en": "Scrambled egg · Frame 15/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "457e74341f86e0aee4f8a003f3c33ed6208d4dd3fc9dca15af9cc95af7444c45",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "15_Cooking_Contents/wok_scrambled/loop/frame_15.png",
+    "zh": "炒蛋 · 循環 16/16",
+    "en": "Scrambled egg · Frame 16/16",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "5a7c97b7b3ae2e38ec37f099ac620df1e2faf5435f7e6d3dddfd62fc89cac25f",
+    "animation": {
+      "type": "loop",
+      "fps": 8,
+      "frames": 16
+    }
+  },
+  {
+    "file": "16_Empty_Settings/empty_bowl.png",
+    "zh": "空湯碗",
+    "en": "Empty soup bowl",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "3a4866439e90bf6a3f9330f105211b27c3d9c89085745b6060e3635e676cd28c"
+  },
+  {
+    "file": "16_Empty_Settings/empty_cup.png",
+    "zh": "空茶杯",
+    "en": "Empty teacup",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "7d994f59a76fbcb984953f061853ca9abf35b23bdf17c55c663c76cfa50c3b56"
+  },
+  {
+    "file": "16_Empty_Settings/empty_glass.png",
+    "zh": "空水杯",
+    "en": "Empty water glass",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "6e83532be14e26da11771982887bc95dc83a45daa5888aca3e43a5009828a3d8"
+  },
+  {
+    "file": "16_Empty_Settings/empty_plate.png",
+    "zh": "空餐碟",
+    "en": "Empty dinner plate",
+    "group": "imagegen",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "transparent": true,
+    "sha256": "6cc4f87f7ee9e126f177b20317dfb154704623cdb7f7719c9a3a36d26e79da02"
   }
 ]

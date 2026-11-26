@@ -95,7 +95,7 @@ for(const b of beverages){
   document.querySelector('#drinks .gallery').append(figure(src,b.zh,b.en,()=>({src,key:b.key})));
 }
 for(const [key,names] of Object.entries({...stock,pot:['煮鍋','Boiling pot'],wok:['炒鑊','Wok']})){
-  const url='assets/'+key+'.png',fig=figure(url,...names);
+  const url=stock[key]?MenuArt.tray(key):'assets/'+key+'.png',fig=figure(url,...names);
   const a=element('a','','↓ 下載 / Save PNG');a.download=key+'.png';a.href=url;a.setAttribute('aria-label',names.join(' / ')+' PNG');
   fig.querySelector('figcaption').append(a);
   if(key==='pot')fig.append(element('p','note','×2 · 烚通粉、煮飯、烚蛋 / Boil macaroni, rice or eggs.'));
